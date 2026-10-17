@@ -1,0 +1,33 @@
+name: Basic reproduction
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  windows-basic:
+    runs-on: windows-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: pip
+          cache-dependency-path: requirements-repro-win-py312.txt
+      - name: Create isolated basic environment
+        run: python -m venv .runtime/repro-venv
+      - name: Install verified dependency versions
+        run: ./.runtime/repro-venv/Scripts/python.exe -m pip install -r requirements-repro-win-py312.txt
+      - name: Verify tests, HTTP endpoints, persistence and BM25
+        run: ./.runtime/repro-venv/Scripts/python.exe scripts/verify_reproduction.py --output reports/ci-reproduction.json
+      - name: Upload reproduction evidence
+        uses: actions/upload-artifact@v4
+        with:
+          name: windows-basic-reproduction
+          path: reports/ci-reproduction.json
+          if-no-files-found: error

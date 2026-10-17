@@ -1,0 +1,1887 @@
+{
+  "created_at": "2026-10-17T20:28:52.138178+00:00",
+  "python": "3.12.10",
+  "platform": "Windows",
+  "machine": "AMD64",
+  "system_site_packages": false,
+  "optional_packages_present": {
+    "torch": false,
+    "numpy": false,
+    "sentence_transformers": false
+  },
+  "source_copy_excluded": [
+    ".env",
+    "data",
+    ".venv",
+    ".runtime",
+    ".git"
+  ],
+  "dependency_lock": "requirements-repro-win-py312.txt",
+  "dependency_lock_matches": true,
+  "packages": {
+    "annotated-doc": "0.0.5",
+    "annotated-types": "0.8.0",
+    "anyio": "4.15.1",
+    "certifi": "2026.7.22",
+    "click": "8.5.0",
+    "colorama": "0.4.6",
+    "fastapi": "0.143.3",
+    "h11": "0.16.0",
+    "httpcore": "1.0.9",
+    "httpx": "0.28.1",
+    "idna": "3.20",
+    "iniconfig": "2.3.1",
+    "opentelemetry-api": "1.45.1",
+    "packaging": "26.3",
+    "pip": "25.0.1",
+    "pluggy": "1.7.0",
+    "pydantic": "2.14.1",
+    "pydantic_core": "2.50.1",
+    "Pygments": "2.21.0",
+    "pypdf": "6.21.1",
+    "pytest": "9.1.1",
+    "python-dotenv": "1.2.4",
+    "python-multipart": "0.0.32",
+    "starlette": "1.8.0",
+    "typing_extensions": "4.16.0",
+    "typing-inspection": "0.4.4",
+    "uvicorn": "0.54.0"
+  },
+  "generation_calls": 0,
+  "live_database_used": false,
+  "files_sha256": {
+    ".env.example": "c08c1eb58e20f4029da3c6f8bef10c94838603e12dd2f6aaaa85ccef0b1f2b59",
+    "app/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "app/answer_evaluation.py": "0490b206336a873079038e15378a83cd63016b6503a6e19759703269ee64b4bc",
+    "app/answer_review.py": "10a8bd4841d4168d621062cf08cfe98b5c32ddf0a7872eb88ac0871bf8ff9a6b",
+    "app/config.py": "bed54c21faf912fffd455fe4a7454c216f738ef4a011f86379a63867cccb4dad",
+    "app/document_policy.py": "e65aa9513b1da1a71fe9f5e54754779188a8c12c3dd04bdbedfac4805b36af2f",
+    "app/documents.py": "3d4fc40e66a423c3785d6d427eabfed7c2b43140c84c8d29dcffa6ef96b144a8",
+    "app/evaluation.py": "14f3004c9ca04e6782cac0149cff589c3f3941b6225194ba29f3102966e4f295",
+    "app/main.py": "c56ad9300b2c966812ef621582154d789243f517b0769c60c00b58093b1ed29d",
+    "app/query_planning.py": "dab3b32adc16915176ccddfbd3e43db1cc39b597fef594d3f19c370fb5e6efa8",
+    "app/reranking.py": "8b04907026c41485db646ac8a1885dfa86a7416622026699e3b0a3b79df2a738",
+    "app/retrieval.py": "a2bd9b4067c34dd294451a62fe64df2af5275066eaf6557d8b1c2a2b38c4e88c",
+    "app/service.py": "915f4768d709a0147780964e705cfb689b10b413ef7375ac708532bbbef2ead3",
+    "app/store.py": "dd5d95efcd0ae58659a4c0b36a214259577cad00911e8f31265a38b90f625296",
+    "docs/answer-evaluation.md": "d8ce116b0a6f33cd07e6e3e8db9078d3b0932dacae9ff6b3e0ecb73f149f3d53",
+    "docs/answer-review.json": "02821922875b4739cb8fafc1f8edcbee8cd3e6398ebacf7bfd7d9f2e38c1518d",
+    "docs/answer-run.json": "3a464f6eee988e17c69a3540c92a900594118ece108fe83579b2e92d176357a5",
+    "docs/decomposition-analysis.md": "93159c0938e69745704b27b5bbccded2c42e810283ac71fc444f09e652110ce1",
+    "docs/decomposition-known-run.json": "d46a52c4167e494d4d3f0c07902c40527c6b518030a3c868a5355dbabcf7c0dc",
+    "docs/decomposition-known.md": "a7fbcd5344b6f6d58bee44d22af7f28eeffe61296f42c9294bbfae061ffaf8fb",
+    "docs/decomposition-run.json": "e707cd9222f1941831a526f96edcf63464c7c143db9f7c198c7d5c14bf86e722",
+    "docs/document-versions.md": "98c45bc4658944d2e7401506ccb125dd3da52d63c6b7e258910a886db52e6b2b",
+    "docs/evaluation.md": "b27bfde3817df91da026f849f4cbe2ff68589c61522004d3d3a402b8b64dd18c",
+    "docs/public-answer-evaluation.md": "290c73a96c3158f6e30eee12a3ac10907fd4a66e0041071a02180f0c92575fde",
+    "docs/public-answer-review.json": "54064e78ed5736022417f892fb467dec962240539c371f4fb64e61a70def5cc9",
+    "docs/public-answer-run.json": "a762d5b5fd801bbf393da9388d9c372f00ff812151548fbfda485d4049d21ae2",
+    "docs/public-answer-run.md": "961ec528692242285b21b40255c96410ee980508b992d640a0da6cf7ad1360d8",
+    "docs/public-evaluation.md": "81b5f2bcb4bc809b36fdb85d14c9c62e9c2717e5b85ab41cf0c304c22e40f12c",
+    "docs/public-run.json": "82e88eed1ba436219d4946613fc75ae8c233879406d59255369b19896468857b",
+    "docs/query-decomposition.md": "9e75bd6379bc5f0c76f4cd8e57df90549c01ea326b696cdb11d022ebb17a7f5a",
+    "docs/reproduction.md": "d43e08bf11d6b7924f487c03133bd58be6a79e22092905d1fd5af9a44c8ea836",
+    "docs/reranking-run.json": "11f9e9e79fa77c0b9cc5c12aa79ab6d367126a123a24f8feb6397ce0d4281159",
+    "docs/reranking.md": "c0d2fe25aa054de3077a423aef895a3c1c441cbe0686d918a5db2f9513fadb7f",
+    "evals/answers.json": "ed98c4a792b75612e6b1caa318e3d6e136a1db134a436045de0257ad2f439961",
+    "evals/benchmark.json": "cbf7c54dd51641ffc0268e1341442f10e3323a16b22c815198d3e3545379ecf9",
+    "evals/corpus/01_国内差旅.md": "b523268545eeaae3f52d8f9dec3e3b0bfdcd41c182511f07f1e42025585d6d29",
+    "evals/corpus/02_海外差旅.md": "2623667c0d3e9840cb6bf1917d64cbb5d5054a5ad7d4574a5de9b7205a752c56",
+    "evals/corpus/03_客户接待.md": "86ef4e47fc7eaec3031426a7f0108e2a36d166e06f0d49b022f4aabd845f23f6",
+    "evals/corpus/04_费用付款.md": "74e0ae9932f1e90895ec3cc4013bcda537cc293a19ba9e5eeb3add1969300d29",
+    "evals/corpus/05_员工年假.md": "18401f5a0749eb2deddcd911e8b66064b69bf03b2748018456b90afe706a12c2",
+    "evals/corpus/06_远程办公.md": "01926dc92b507a521980356d34878b1f786964dbd557349db0a9941d4d6c96a8",
+    "evals/corpus/07_账号安全.md": "7691f77b5c705c1e8c5668dbba091862fe00615e013e0481de5a00222ce7a122",
+    "evals/corpus/08_设备维修.md": "8238fec83e17823c28a43c2ed51e99e070fa9411f16d04e17257f95374260f59",
+    "evals/corpus/09_采购审批.md": "2541ced96b0c5934a14d60e6a7fd256da92807aa0707b6a8be9e4d57e904d9b2",
+    "evals/corpus/10_软件采购.md": "45dc9a47e369eb85cd640fa048cbaa7b3b9b93ce038ffc8a6e1645f814b71f9d",
+    "evals/corpus/11_数据分级.md": "90818e7cc7045a0920aafa25850da13e4ff654b36b9952dfa85cc645aa0d9143",
+    "evals/corpus/12_入职办理.md": "f24f562ec358ca05ae5db3ea26e8e7ed71b44cec7952690447a84fc7ca144f85",
+    "evals/corpus/13_离职交接.md": "18da9a3f4a707a18a3dc1d83ffe9be3f765712167cf4bd9d54ee4c277a93ebe5",
+    "evals/corpus/14_故障响应.md": "1f0aafe8fa91b7c77893d37c25254f30073ad65168e1229e81937febcac8cd23",
+    "evals/corpus/15_备份恢复.md": "f419e4b91b9a0a9a761a1a16a8c79d4ceda434767cfc259c10c79223240d71de",
+    "evals/corpus/16_培训报销.md": "d29ef73b52fca30a53a86964d2ec7bfd68fa85c308a3c26b2f64579404e628c6",
+    "evals/paraphrases.json": "c9b0477bd947b08a959205457029907dc42fa6ed3c80534c7c7e777f9e549f69",
+    "evals/public-fastapi/answers.json": "f25eca2948d395a0f3de98ee74daf5e48e73b2e8c229fe2950d57a68ae4cb971",
+    "evals/public-fastapi/benchmark.json": "c7da01a98afc64e88f3423ceae09198afa9e2d21de5dbe2216f4221c2f889e65",
+    "evals/public-fastapi/corpus/body.md": "16db7d2ac3d05e01e0e437f3e507119c5bbadd5ab04082b5361f435c3e5a258b",
+    "evals/public-fastapi/corpus/dependencies.md": "15414f521c9d508d60ac0f65777d4d8499c1dd66abbeaeb265862aa75d1e416f",
+    "evals/public-fastapi/corpus/handling-errors.md": "1a563f8f491a2cc981294ec69ea5d7f6545849870817e0a5775441447d7cc6d1",
+    "evals/public-fastapi/corpus/path-params.md": "06ff14e12d1c5af886fd8a78ee470a607ffa48525abbbd74ea84563f5cace3ab",
+    "evals/public-fastapi/corpus/query-params.md": "804e51f8c9bb9a5877f720195e903170e3d855de48880d02118726fb585d94c7",
+    "evals/public-fastapi/corpus/response-model.md": "4e37eb98ba4770e2dd96bde5f80aa5dcf63b652b4ba776be579e6447aec2a84f",
+    "evals/public-fastapi/decomposition.json": "2604eb2dbd8ae6e9821dd6e9bb411535a15e843f9f9da557662ce51264e6c11a",
+    "evals/public-fastapi/LICENSE": "4ec89ffc81485b97fec584b2d4a961032eeffe834453894fd9c1274906cc744e",
+    "evals/public-fastapi/README.md": "0a269fc268718a98669d7d2257fc89c989ac28e0b238a062f8ac34e189bb51c6",
+    "evals/public-fastapi/sources.json": "e39991211e9c433efe17be063abb7b9b6fc011271f25f820bc819be5158a4705",
+    "evals/questions.json": "c1332cdd5c43750f62fa23a8be38e38e8ce8ca448efef33f6b13688a6e4b68b5",
+    "examples/versions/员工手册_待核实版.md": "4e81c8623fab13d34ef244c8752b37b8cc0edd42ba4922b1a70ebae613cc03c1",
+    "examples/versions/员工手册_新版.md": "b2fc8fd30fb10c920db68d817357ffdfc033581a9c59189c1271f60b402889c8",
+    "examples/versions/员工手册_旧版.md": "5c71311a2ac45710d93fb513cb0217aef5ade06e790fa722a45823e592d87e30",
+    "examples/星河科技员工手册.md": "6e48624ad1a71ed5196a0e4b6f5df54d23bec53455c5236f6a9e2d7b428e62d0",
+    "README.md": "b38882cf704581e4414954e32dbbf8b561724b4dbcf2e89a02d8dfed43ff020b",
+    "requirements-dev.txt": "8636f9ab1a075be9f3039e2a6471837259c4f36b625bcaf7a3d9a1edd2419c6d",
+    "requirements-models.txt": "7bcff0f755ca22a58bca8d9cfc80d9066353f52bf15f92afd2bc0fdfb16dcf11",
+    "requirements-repro-win-py312.txt": "ef4995e5fed9849d5b83c59753e45ee2b24537a2227986fdcbcec6474b49dd4a",
+    "requirements.txt": "6814beecf4a6e86eb902f58deb6dcb653ba9156625cd0a3cc136b6f99d0f2d97",
+    "scripts/benchmark.py": "3c81666ef9079e179a79b87eaa157ce3ccef849fd647cbaf1bb879506c74eaaa",
+    "scripts/compare_decomposition.py": "5e77619b2e6bed4cbcd1dcef7f49ae4aeb96c7a531299cd3f84d5a6c86077360",
+    "scripts/compare_reranking.py": "94c3362a5261798113fbec9909ab8b9797a5b42957a9a86acc88ab8751e8d53c",
+    "scripts/compare_retrieval.py": "1bc83e44df8122d6754277ef980297ae27757e91d468ef74f1ada3a9b1902452",
+    "scripts/evaluate.py": "d1b6ca636d11361218526b7cd8e18584a6c1dec2da1a13d6ef95f4fb0addce3d",
+    "scripts/evaluate_answers.py": "7e97a9afd37edc045b22a57bcdcc5f0fd6641a91dbbae7866447e912aee36d80",
+    "scripts/prepare_model.py": "e771d6b84734006a071457697bcaf5025309137931b3b2153457c54aab3909bb",
+    "scripts/prepare_public_corpus.py": "a21de16a78aab7ecf021259fcca5ffbd7967bddb548167f390bcb4998d30851e",
+    "scripts/prepare_reranker.py": "8b2efb52bc28db4138dc81d081b98e5b3c6d024baade474eec1276add4b372e7",
+    "scripts/reindex.py": "7ab10966c43c89efad5f1f589d47b6639baef67fd763f20e6b2c4b91707eed80",
+    "scripts/report_answers.py": "b6762d94459d3de0bb717a039abef7446867dde0efd87313464b6a0caaf879bc",
+    "scripts/report_public_answers.py": "9f3df8b9f1109168a0c998786e0858e9264e4f3d9bf5b27ea0acc63900c16ece",
+    "scripts/verify_reproduction.py": "74f8224f3e717b46eaca291c6bddc32c83350870895fbef43190dbdf163658a5",
+    "static/app.js": "e49fe8bacc793e69600984671cf5964f5ecc8e606e00c120419a3a26ad985a75",
+    "static/index.html": "ce31de3bb0e3694c356926dfbb4cecf30b15863a077ddc28ce8e596597abc10e",
+    "static/metadata.css": "5e2e435d82c0430938819d634fb1084a3aba70b15dcb2d202e411b3fdf44205a",
+    "static/style.css": "2782a22128867d091efc1c4f3db636ba4e48d6a66a795c1651c41d01e8516174",
+    "tests/test_answer_evaluation.py": "05a86a2c3a82dc75787262a608e8a3ce54e5fac4718dc4db5b4de908ae7970e5",
+    "tests/test_document_versions.py": "cdc1396f974a0581681430b8d5335d14ea59dc35d23ee573a592b9b0ba5620b8",
+    "tests/test_evaluation.py": "e7efb92566280a3107695c717f0b149aecfb600613a33682ee6cd44c38e6cb85",
+    "tests/test_public_answers.py": "8924db09ffe1a2291f87106409eeddf76dc85225eb67bd24653e13fe349dce95",
+    "tests/test_query_decomposition.py": "96fb244cc701d5d56251f6c8d5f006f77afa0fd61ea9a138bf38a5c8ea11ac45",
+    "tests/test_rag.py": "44e1495e12a6532e1be68bb2e653c872c2857309f7e9bd7bc82bb890fdd535be",
+    "tests/test_reranking.py": "42f17f514fa2d4cd98ea4bf890ebd33afea341b8650e3d57f3b6b7697a9010c7"
+  },
+  "pip_check": "No broken requirements found.",
+  "pytest": "........................................................................ [ 93%]\n..s..                                                                    [100%]\n============================== warnings summary ===============================\nD:\\RAG\\.runtime\\repro-venv\\Lib\\site-packages\\fastapi\\testclient.py:1\n  D:\\RAG\\.runtime\\repro-venv\\Lib\\site-packages\\fastapi\\testclient.py:1: StarletteDeprecationWarning: Using `httpx` with `starlette.testclient` is deprecated; install `httpx2` instead.\n    from starlette.testclient import TestClient as TestClient  # noqa\n\n-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html\n=========================== short test summary info ===========================\nSKIPPED [1] tests\\test_reranking.py:64: could not import 'numpy': No module named 'numpy'\n76 passed, 1 skipped, 1 warning in 3.18s",
+  "smoke_checks": [
+    "basic_health_without_models_or_generation",
+    "page_assets_and_openapi",
+    "empty_library",
+    "upload_and_deduplicate",
+    "bm25_decomposition",
+    "excerpt_answer",
+    "restart_preserves_documents_and_retrieval",
+    "delete_removes_chunks"
+  ],
+  "benchmark": {
+    "created_at": "2026-10-17T20:28:58.537549+00:00",
+    "dataset": {
+      "version": "fastapi-zh-0.115.0-v1",
+      "description": "FastAPI 0.115.0 六篇公开中文教程原文；项目手工编写问题与证据，非真实用户日志或外部盲测。",
+      "dataset_sha256": "c7da01a98afc64e88f3423ceae09198afa9e2d21de5dbe2216f4221c2f889e65",
+      "corpus_sha256": "a8349f25d521fdfcf2a82ef3df1d6d63c54af894c3e15bb7f40f7c3ca55d6d2e",
+      "document_count": 6,
+      "chunk_count": 50,
+      "total_case_count": 30,
+      "documents": [
+        {
+          "name": "body.md",
+          "sha256": "16db7d2ac3d05e01e0e437f3e507119c5bbadd5ab04082b5361f435c3e5a258b",
+          "chunks": 8
+        },
+        {
+          "name": "dependencies.md",
+          "sha256": "15414f521c9d508d60ac0f65777d4d8499c1dd66abbeaeb265862aa75d1e416f",
+          "chunks": 7
+        },
+        {
+          "name": "handling-errors.md",
+          "sha256": "1a563f8f491a2cc981294ec69ea5d7f6545849870817e0a5775441447d7cc6d1",
+          "chunks": 10
+        },
+        {
+          "name": "path-params.md",
+          "sha256": "06ff14e12d1c5af886fd8a78ee470a607ffa48525abbbd74ea84563f5cace3ab",
+          "chunks": 9
+        },
+        {
+          "name": "query-params.md",
+          "sha256": "804e51f8c9bb9a5877f720195e903170e3d855de48880d02118726fb585d94c7",
+          "chunks": 6
+        },
+        {
+          "name": "response-model.md",
+          "sha256": "4e37eb98ba4770e2dd96bde5f80aa5dcf63b652b4ba776be579e6447aec2a84f",
+          "chunks": 10
+        }
+      ],
+      "provenance": {
+        "project": "FastAPI",
+        "repository": "https://github.com/fastapi/fastapi",
+        "revision": "0.115.0",
+        "revision_kind": "release_tag_with_sha256_lock",
+        "retrieved_at": "2026-10-17T19:16:53.656776+00:00",
+        "license": "MIT",
+        "files": [
+          {
+            "file": "path-params.md",
+            "source_path": "docs/zh/docs/tutorial/path-params.md",
+            "download_url": "https://cdn.jsdelivr.net/gh/fastapi/fastapi@0.115.0/docs/zh/docs/tutorial/path-params.md",
+            "source_url": "https://github.com/fastapi/fastapi/blob/0.115.0/docs/zh/docs/tutorial/path-params.md",
+            "sha256": "06ff14e12d1c5af886fd8a78ee470a607ffa48525abbbd74ea84563f5cace3ab"
+          },
+          {
+            "file": "query-params.md",
+            "source_path": "docs/zh/docs/tutorial/query-params.md",
+            "download_url": "https://cdn.jsdelivr.net/gh/fastapi/fastapi@0.115.0/docs/zh/docs/tutorial/query-params.md",
+            "source_url": "https://github.com/fastapi/fastapi/blob/0.115.0/docs/zh/docs/tutorial/query-params.md",
+            "sha256": "804e51f8c9bb9a5877f720195e903170e3d855de48880d02118726fb585d94c7"
+          },
+          {
+            "file": "body.md",
+            "source_path": "docs/zh/docs/tutorial/body.md",
+            "download_url": "https://cdn.jsdelivr.net/gh/fastapi/fastapi@0.115.0/docs/zh/docs/tutorial/body.md",
+            "source_url": "https://github.com/fastapi/fastapi/blob/0.115.0/docs/zh/docs/tutorial/body.md",
+            "sha256": "16db7d2ac3d05e01e0e437f3e507119c5bbadd5ab04082b5361f435c3e5a258b"
+          },
+          {
+            "file": "handling-errors.md",
+            "source_path": "docs/zh/docs/tutorial/handling-errors.md",
+            "download_url": "https://cdn.jsdelivr.net/gh/fastapi/fastapi@0.115.0/docs/zh/docs/tutorial/handling-errors.md",
+            "source_url": "https://github.com/fastapi/fastapi/blob/0.115.0/docs/zh/docs/tutorial/handling-errors.md",
+            "sha256": "1a563f8f491a2cc981294ec69ea5d7f6545849870817e0a5775441447d7cc6d1"
+          },
+          {
+            "file": "response-model.md",
+            "source_path": "docs/zh/docs/tutorial/response-model.md",
+            "download_url": "https://cdn.jsdelivr.net/gh/fastapi/fastapi@0.115.0/docs/zh/docs/tutorial/response-model.md",
+            "source_url": "https://github.com/fastapi/fastapi/blob/0.115.0/docs/zh/docs/tutorial/response-model.md",
+            "sha256": "4e37eb98ba4770e2dd96bde5f80aa5dcf63b652b4ba776be579e6447aec2a84f"
+          },
+          {
+            "file": "dependencies.md",
+            "source_path": "docs/zh/docs/tutorial/dependencies/index.md",
+            "download_url": "https://fastly.jsdelivr.net/gh/fastapi/fastapi@0.115.0/docs/zh/docs/tutorial/dependencies/index.md",
+            "source_url": "https://github.com/fastapi/fastapi/blob/0.115.0/docs/zh/docs/tutorial/dependencies/index.md",
+            "sha256": "15414f521c9d508d60ac0f65777d4d8499c1dd66abbeaeb265862aa75d1e416f"
+          },
+          {
+            "file": "LICENSE",
+            "source_path": "LICENSE",
+            "download_url": "https://cdn.jsdelivr.net/gh/fastapi/fastapi@0.115.0/LICENSE",
+            "source_url": "https://github.com/fastapi/fastapi/blob/0.115.0/LICENSE",
+            "sha256": "4ec89ffc81485b97fec584b2d4a961032eeffe834453894fd9c1274906cc744e"
+          }
+        ],
+        "manifest_sha256": "e39991211e9c433efe17be063abb7b9b6fc011271f25f820bc819be5158a4705"
+      }
+    },
+    "evaluated_case_count": 10,
+    "split": "dev",
+    "top_k": [
+      1,
+      3,
+      5
+    ],
+    "dataset_path": "evals/public-fastapi/benchmark.json",
+    "corpus_path": "evals/public-fastapi/corpus",
+    "embedding_model": "",
+    "environment": {
+      "python": "3.12.10",
+      "packages": {
+        "sentence-transformers": "not installed",
+        "torch": "not installed",
+        "transformers": "not installed"
+      }
+    },
+    "generation_calls": 0,
+    "live_database_used": false,
+    "chunking": {
+      "size_characters": 700,
+      "overlap_characters": 100
+    },
+    "filters": {
+      "bm25": "score > 0",
+      "vector": "cosine > 0.25",
+      "rrf_constant": 60
+    },
+    "modes": {
+      "bm25": {
+        "median_latency_ms": 4.991,
+        "at_k": {
+          "1": {
+            "metrics": {
+              "all": {
+                "case_count": 10,
+                "answerable_count": 8,
+                "unanswerable_count": 2,
+                "full_evidence_hit_rate": 0.5,
+                "mean_evidence_recall": 0.625,
+                "mrr": 0.75,
+                "unanswerable_retrieval_rate": 1,
+                "by_category": {
+                  "literal": {
+                    "case_count": 2,
+                    "answerable_count": 2,
+                    "unanswerable_count": 0,
+                    "full_evidence_hit_rate": 1,
+                    "mean_evidence_recall": 1.0,
+                    "mrr": 1.0,
+                    "unanswerable_retrieval_rate": null
+                  },
+                  "multi_evidence": {
+                    "case_count": 2,
+                    "answerable_count": 2,
+                    "unanswerable_count": 0,
+                    "full_evidence_hit_rate": 0,
+                    "mean_evidence_recall": 0.25,
+                    "mrr": 0.5,
+                    "unanswerable_retrieval_rate": null
+                  },
+                  "paraphrase": {
+                    "case_count": 2,
+                    "answerable_count": 2,
+                    "unanswerable_count": 0,
+                    "full_evidence_hit_rate": 0.5,
+                    "mean_evidence_recall": 0.5,
+                    "mrr": 0.5,
+                    "unanswerable_retrieval_rate": null
+                  },
+                  "scope": {
+                    "case_count": 2,
+                    "answerable_count": 2,
+                    "unanswerable_count": 0,
+                    "full_evidence_hit_rate": 0.5,
+                    "mean_evidence_recall": 0.75,
+                    "mrr": 1.0,
+                    "unanswerable_retrieval_rate": null
+                  },
+                  "unanswerable": {
+                    "case_count": 2,
+                    "answerable_count": 0,
+                    "unanswerable_count": 2,
+                    "full_evidence_hit_rate": null,
+                    "mean_evidence_recall": null,
+                    "mrr": null,
+                    "unanswerable_retrieval_rate": 1
+                  }
+                }
+              },
+              "dev": {
+                "case_count": 10,
+                "answerable_count": 8,
+                "unanswerable_count": 2,
+                "full_evidence_hit_rate": 0.5,
+                "mean_evidence_recall": 0.625,
+                "mrr": 0.75,
+                "unanswerable_retrieval_rate": 1,
+                "by_category": {
+                  "literal": {
+                    "case_count": 2,
+                    "answerable_count": 2,
+                    "unanswerable_count": 0,
+                    "full_evidence_hit_rate": 1,
+                    "mean_evidence_recall": 1.0,
+                    "mrr": 1.0,
+                    "unanswerable_retrieval_rate": null
+                  },
+                  "multi_evidence": {
+                    "case_count": 2,
+                    "answerable_count": 2,
+                    "unanswerable_count": 0,
+                    "full_evidence_hit_rate": 0,
+                    "mean_evidence_recall": 0.25,
+                    "mrr": 0.5,
+                    "unanswerable_retrieval_rate": null
+                  },
+                  "paraphrase": {
+                    "case_count": 2,
+                    "answerable_count": 2,
+                    "unanswerable_count": 0,
+                    "full_evidence_hit_rate": 0.5,
+                    "mean_evidence_recall": 0.5,
+                    "mrr": 0.5,
+                    "unanswerable_retrieval_rate": null
+                  },
+                  "scope": {
+                    "case_count": 2,
+                    "answerable_count": 2,
+                    "unanswerable_count": 0,
+                    "full_evidence_hit_rate": 0.5,
+                    "mean_evidence_recall": 0.75,
+                    "mrr": 1.0,
+                    "unanswerable_retrieval_rate": null
+                  },
+                  "unanswerable": {
+                    "case_count": 2,
+                    "answerable_count": 0,
+                    "unanswerable_count": 2,
+                    "full_evidence_hit_rate": null,
+                    "mean_evidence_recall": null,
+                    "mrr": null,
+                    "unanswerable_retrieval_rate": 1
+                  }
+                }
+              }
+            },
+            "results": [
+              {
+                "id": "FL01",
+                "question": "查询字符串位于 URL 的什么位置？多个键值对用什么符号分隔？",
+                "split": "dev",
+                "category": "literal",
+                "reason": null,
+                "evidence": [
+                  {
+                    "document": "query-params.md",
+                    "contains": "这些键值对位于 URL 的 `?` 之后，以 `&` 分隔。",
+                    "rank": 1
+                  }
+                ],
+                "full_hit": true,
+                "evidence_recall": 1.0,
+                "reciprocal_rank": 1.0,
+                "returned_any": true,
+                "sources": [
+                  {
+                    "document_name": "query-params.md",
+                    "ordinal": 1,
+                    "text": "# 查询参数\n\n声明的参数不是路径参数时，路径操作函数会把该参数自动解释为**查询**参数。\n\n```Python hl_lines=\"9\"\n{!../../../docs_src/query_params/tutorial001.py!}\n```\n\n查询字符串是键值对的集合，这些键值对位于 URL 的 `?` 之后，以 `&` 分隔。\n\n例如，以下 URL 中：\n\n```\nhttp://127.0.0.1:8000/items/?skip=0&limit=10\n```\n\n……查询参数为：\n\n* `skip`：值为 `0`\n* `limit`：值为 `10`\n\n这些值都是 URL 的组成部分，因此，它们的类型**本应**是字符串。\n\n但声明 Python 类型（上例中为 `int`）之后，这些值就会转换为声明的类型，并进行类型校验。\n\n所有应用于路径参数的流程也适用于查询参数：\n\n* （显而易见的）编辑器支持\n* 数据<abbr title=\"将来自 HTTP 请求的字符串转换为 Python 数据类型\">**解析**</abbr>\n* 数据校验\n* API 文档\n\n## 默认值\n\n查询参数不是路径的固定内容，它是可选的，还支持默认值。\n\n上例用 `skip=0` 和 `limit=10` 设定默认值。\n\n访问 URL：\n\n```\nhttp://127.0.0.1:8000/items/\n```\n\n与访问以下地址相同：\n\n```\nhttp://127.0.0.1:8000/items/?skip=0&limit=10\n```\n\n但如果访问：\n\n```",
+                    "score": 30.620621
+                  }
+                ],
+                "search_latency_ms": 4.229
+              },
+              {
+                "id": "FL02",
+                "question": "要让 file_path 接收包含斜杠的路径，路由中的路径转换器应该怎样写？",
+                "split": "dev",
+                "category": "literal",
+                "reason": null,
+                "evidence": [
+                  {
+                    "document": "path-params.md",
+                    "contains": "/files/{file_path:path}",
+                    "rank": 1
+                  }
+                ],
+                "full_hit": true,
+                "evidence_recall": 1.0,
+                "reciprocal_rank": 1.0,
+                "returned_any": true,
+                "sources": [
+                  {
+                    "document_name": "path-params.md",
+                    "ordinal": 9,
+                    "text": "测试和定义更加困难。\n\n不过，仍可使用 Starlette 内置工具在 **FastAPI** 中实现这一功能。\n\n而且不影响文档正常运行，但是不会添加该参数包含路径的说明。\n\n### 路径转换器\n\n直接使用 Starlette 的选项声明包含*路径*的*路径参数*：\n\n```\n/files/{file_path:path}\n```\n\n本例中，参数名为 `file_path`，结尾部分的 `:path` 说明该参数应匹配*路径*。\n\n用法如下：\n\n```Python hl_lines=\"6\"\n{!../../../docs_src/path_params/tutorial004.py!}\n```\n\n/// tip | \"提示\"\n\n注意，包含 `/home/johndoe/myfile.txt` 的路径参数要以斜杠（`/`）开头。\n\n本例中的 URL 是 `/files//home/johndoe/myfile.txt`。注意，`files` 和 `home` 之间要使用**双斜杠**（`//`）。\n\n///\n\n## 小结\n\n通过简短、直观的 Python 标准类型声明，**FastAPI** 可以获得：\n\n- 编辑器支持：错误检查，代码自动补全等\n- 数据**<abbr title=\"把来自 HTTP 请求中的字符串转换为 Python 数据类型\">解析</abbr>**\n- 数据校验\n- API 注解和 API 文档\n\n只需要声明一次即可。\n\n这可能是除了性能以外，**FastAPI** 与其它框架相比的主要优势。",
+                    "score": 22.603123
+                  }
+                ],
+                "search_latency_ms": 4.188
+              },
+              {
+                "id": "FP01",
+                "question": "想查自己的资料，/users/me 却被当成了用户编号 me，两个路由应该怎么排？",
+                "split": "dev",
+                "category": "paraphrase",
+                "reason": null,
+                "evidence": [
+                  {
+                    "document": "path-params.md",
+                    "contains": "一定要在 `/users/{user_id}` 之前声明 `/users/me`",
+                    "rank": 1
+                  }
+                ],
+                "full_hit": true,
+                "evidence_recall": 1.0,
+                "reciprocal_rank": 1.0,
+                "returned_any": true,
+                "sources": [
+                  {
+                    "document_name": "path-params.md",
+                    "ordinal": 5,
+                    "text": "c</a>：\n\n<img src=\"/img/tutorial/path-params/image02.png\">\n\n同样，还有很多兼容工具，包括多种语言的代码生成工具。\n\n## Pydantic\n\nFastAPI 充分地利用了 <a href=\"https://docs.pydantic.dev/\" class=\"external-link\" target=\"_blank\">Pydantic</a> 的优势，用它在后台校验数据。众所周知，Pydantic 擅长的就是数据校验。\n\n同样，`str`、`float`、`bool` 以及很多复合数据类型都可以使用类型声明。\n\n下一章介绍详细内容。\n\n## 顺序很重要\n\n有时，*路径操作*中的路径是写死的。\n\n比如要使用 `/users/me` 获取当前用户的数据。\n\n然后还要使用 `/users/{user_id}`，通过用户 ID 获取指定用户的数据。\n\n由于*路径操作*是按顺序依次运行的，因此，一定要在 `/users/{user_id}` 之前声明 `/users/me` ：\n\n```Python hl_lines=\"6  11\"\n{!../../../docs_src/path_params/tutorial003.py!}\n```\n\n否则，`/users/{user_id}` 将匹配 `/users/me`，FastAPI 会**认为**正在接收值为 `\"me\"` 的 `user_id` 参数。\n\n## 预设值",
+                    "score": 13.549613
+                  }
+                ],
+                "search_latency_ms": 6.59
+              },
+              {
+                "id": "FP02",
+                "question": "地址栏里给开关参数 short 填 yes、on 或 1，声明成 bool 后拿到的是真还是假？",
+                "split": "dev",
+                "category": "paraphrase",
+                "reason": null,
+                "evidence": [
+                  {
+                    "document": "query-params.md",
+                    "contains": "http://127.0.0.1:8000/items/foo?short=yes",
+                    "rank": null
+                  },
+                  {
+                    "document": "query-params.md",
+                    "contains": "函数接收的 `short` 参数都是布尔值 `True`。",
+                    "rank": null
+                  }
+                ],
+                "full_hit": false,
+                "evidence_recall": 0.0,
+                "reciprocal_rank": 0.0,
+                "returned_any": true,
+                "sources": [
+                  {
+                    "document_name": "query-params.md",
+                    "ordinal": 3,
+                    "text": "出 `item_id` 是路径参数，`q` 不是路径参数，而是查询参数。\n\n///\n\n/// note | \"笔记\"\n\n因为默认值为 `= None`，FastAPI 把 `q` 识别为可选参数。\n\nFastAPI 不使用 `Optional[str]` 中的 `Optional`（只使用 `str`），但 `Optional[str]` 可以帮助编辑器发现代码中的错误。\n\n///\n\n## 查询参数类型转换\n\n参数还可以声明为 `bool` 类型，FastAPI 会自动转换参数类型：\n\n//// tab | Python 3.10+\n\n```Python hl_lines=\"7\"\n{!> ../../../docs_src/query_params/tutorial003_py310.py!}\n```\n\n////\n\n//// tab | Python 3.8+\n\n```Python hl_lines=\"9\"\n{!> ../../../docs_src/query_params/tutorial003.py!}\n```\n\n////\n\n本例中，访问：\n\n```\nhttp://127.0.0.1:8000/items/foo?short=1\n```\n\n或\n\n```\nhttp://127.0.0.1:8000/items/foo?short=True\n```\n\n或\n\n```\nhttp://127.0.0.1:8000/items/foo?short=true\n```\n\n或\n\n```\nhttp://127.0.0.1:8000/items/foo?short=on\n```\n\n或",
+                    "score": 20.542398
+                  }
+                ],
+                "search_latency_ms": 5.023
+              },
+              {
+                "id": "FS01",
+                "question": "查询参数 q 之所以可选，是由 Optional[str] 还是默认值 None 决定的？",
+                "split": "dev",
+                "category": "scope",
+                "reason": null,
+                "evidence": [
+                  {
+                    "document": "query-params.md",
+                    "contains": "因为默认值为 `= None`，FastAPI 把 `q` 识别为可选参数。",
+                    "rank": 1
+                  },
+                  {
+                    "document": "query-params.md",
+                    "contains": "FastAPI 不使用 `Optional[str]` 中的 `Optional`（只使用 `str`）",
+                    "rank": null
+                  }
+                ],
+                "full_hit": false,
+                "evidence_recall": 0.5,
+                "reciprocal_rank": 1.0,
+                "returned_any": true,
+                "sources": [
+                  {
+                    "document_name": "query-params.md",
+                    "ordinal": 2,
+                    "text": ".0.1:8000/items/\n```\n\n与访问以下地址相同：\n\n```\nhttp://127.0.0.1:8000/items/?skip=0&limit=10\n```\n\n但如果访问：\n\n```\nhttp://127.0.0.1:8000/items/?skip=20\n```\n\n查询参数的值就是：\n\n* `skip=20`：在 URL 中设定的值\n* `limit=10`：使用默认值\n\n## 可选参数\n\n同理，把默认值设为 `None` 即可声明**可选的**查询参数：\n\n//// tab | Python 3.10+\n\n```Python hl_lines=\"7\"\n{!> ../../../docs_src/query_params/tutorial002_py310.py!}\n```\n\n////\n\n//// tab | Python 3.8+\n\n```Python hl_lines=\"9\"\n{!> ../../../docs_src/query_params/tutorial002.py!}\n```\n\n////\n\n本例中，查询参数 `q` 是可选的，默认值为 `None`。\n\n/// check | \"检查\"\n\n注意，**FastAPI** 可以识别出 `item_id` 是路径参数，`q` 不是路径参数，而是查询参数。\n\n///\n\n/// note | \"笔记\"\n\n因为默认值为 `= None`，FastAPI 把 `q` 识别为可选参数。",
+                    "score": 23.955067
+                  }
+                ],
+                "search_latency_ms": 5.351
+              },
+              {
+                "id": "FS02",
+                "question": "FastAPI 完全不能让 GET 带请求体吗？支持和推荐使用是一回事吗？",
+                "split": "dev",
+                "category": "scope",
+                "reason": null,
+                "evidence": [
+                  {
+                    "document": "body.md",
+                    "contains": "FastAPI 也支持这种方式，只不过仅用于非常复杂或极端的用例。",
+                    "rank": 1
+                  },
+                  {
+                    "document": "body.md",
+                    "contains": "我们不建议使用 `GET`",
+                    "rank": 1
+                  }
+                ],
+                "full_hit": true,
+                "evidence_recall": 1.0,
+                "reciprocal_rank": 1.0,
+                "returned_any": true,
+                "sources": [
+                  {
+                    "document_name": "body.md",
+                    "ordinal": 1,
+                    "text": "# 请求体\n\nFastAPI 使用**请求体**从客户端（例如浏览器）向 API 发送数据。\n\n**请求体**是客户端发送给 API 的数据。**响应体**是 API 发送给客户端的数据。\n\nAPI 基本上肯定要发送**响应体**，但是客户端不一定发送**请求体**。\n\n使用 <a href=\"https://docs.pydantic.dev/\" class=\"external-link\" target=\"_blank\">Pydantic</a> 模型声明**请求体**，能充分利用它的功能和优点。\n\n/// info | \"说明\"\n\n发送数据使用 `POST`（最常用）、`PUT`、`DELETE`、`PATCH` 等操作。\n\n规范中没有定义使用 `GET` 发送请求体的操作，但不管怎样，FastAPI 也支持这种方式，只不过仅用于非常复杂或极端的用例。\n\n我们不建议使用 `GET`，因此，在 Swagger UI 交互文档中不会显示有关 `GET` 的内容，而且代理协议也不一定支持 `GET`。\n\n///\n\n## 导入 Pydantic 的 `BaseModel`\n\n从 `pydantic` 中导入 `BaseModel`：\n\n//// tab | Python 3.10+\n\n```Python hl_lines=\"2\"\n{!> ../../../docs_src/body/tutorial001_py310.py!}\n```\n\n////\n\n//// tab | Python 3.8+\n\n```Python hl_lines=\"4\"",
+                    "score": 10.904191
+                  }
+                ],
+                "search_latency_ms": 6.893
+              },
+              {
+                "id": "FM01",
+                "question": "查询参数 q 默认 None，而请求体模型某属性没有默认值，这两项分别是可选还是必填？",
+                "split": "dev",
+                "category": "multi_evidence",
+                "reason": null,
+                "evidence": [
+                  {
+                    "document": "query-params.md",
+                    "contains": "因为默认值为 `= None`，FastAPI 把 `q` 识别为可选参数。",
+                    "rank": 1
+                  },
+                  {
+                    "document": "body.md",
+                    "contains": "包含默认值的模型属性是可选的，否则就是必选的。",
+                    "rank": null
+                  }
+                ],
+                "full_hit": false,
+                "evidence_recall": 0.5,
+                "reciprocal_rank": 1.0,
+                "returned_any": true,
+                "sources": [
+                  {
+                    "document_name": "query-params.md",
+                    "ordinal": 2,
+                    "text": ".0.1:8000/items/\n```\n\n与访问以下地址相同：\n\n```\nhttp://127.0.0.1:8000/items/?skip=0&limit=10\n```\n\n但如果访问：\n\n```\nhttp://127.0.0.1:8000/items/?skip=20\n```\n\n查询参数的值就是：\n\n* `skip=20`：在 URL 中设定的值\n* `limit=10`：使用默认值\n\n## 可选参数\n\n同理，把默认值设为 `None` 即可声明**可选的**查询参数：\n\n//// tab | Python 3.10+\n\n```Python hl_lines=\"7\"\n{!> ../../../docs_src/query_params/tutorial002_py310.py!}\n```\n\n////\n\n//// tab | Python 3.8+\n\n```Python hl_lines=\"9\"\n{!> ../../../docs_src/query_params/tutorial002.py!}\n```\n\n////\n\n本例中，查询参数 `q` 是可选的，默认值为 `None`。\n\n/// check | \"检查\"\n\n注意，**FastAPI** 可以识别出 `item_id` 是路径参数，`q` 不是路径参数，而是查询参数。\n\n///\n\n/// note | \"笔记\"\n\n因为默认值为 `= None`，FastAPI 把 `q` 识别为可选参数。",
+                    "score": 22.502932
+                  }
+                ],
+                "search_latency_ms": 4.68
+              },
+              {
+                "id": "FM02",
+                "question": "无效请求数据触发的异常叫什么？另外，要限制正常响应只输出模型允许的字段，用什么参数？",
+                "split": "dev",
+                "category": "multi_evidence",
+                "reason": null,
+                "evidence": [
+                  {
+                    "document": "handling-errors.md",
+                    "contains": "请求中包含无效数据时，**FastAPI** 内部会触发 `RequestValidationError`。",
+                    "rank": null
+                  },
+                  {
+                    "document": "response-model.md",
+                    "contains": "FastAPI 将使用此 `response_model` 来：",
+                    "rank": null
+                  },
+                  {
+                    "document": "response-model.md",
+                    "contains": "会将输出数据限制在该模型定义内。",
+                    "rank": null
+                  }
+                ],
+                "full_hit": false,
+                "evidence_recall": 0.0,
+                "reciprocal_rank": 0.0,
+                "returned_any": true,
+                "sources": [
+                  {
+                    "document_name": "handling-errors.md",
+                    "ordinal": 3,
+                    "text": "ample.com/items/bar`（`item_id` `「bar」` 不存在时），则会接收到 HTTP 状态码 - 404（「未找到」错误）及如下 JSON 响应结果：\n\n```JSON\n{\n  \"detail\": \"Item not found\"\n}\n\n```\n\n/// tip | \"提示\"\n\n触发 `HTTPException` 时，可以用参数 `detail` 传递任何能转换为 JSON 的值，不仅限于 `str`。\n\n还支持传递 `dict`、`list` 等数据结构。\n\n**FastAPI** 能自动处理这些数据，并将之转换为 JSON。\n\n///\n\n## 添加自定义响应头\n\n有些场景下要为 HTTP 错误添加自定义响应头。例如，出于某些方面的安全需要。\n\n一般情况下可能不会需要在代码中直接使用响应头。\n\n但对于某些高级应用场景，还是需要添加自定义响应头：\n\n```Python hl_lines=\"14\"\n{!../../../docs_src/handling_errors/tutorial002.py!}\n\n```\n\n## 安装自定义异常处理器\n\n添加自定义处理器，要使用 [Starlette 的异常工具](https://www.starlette.io/exceptions/)。\n\n假设要触发的自定义异常叫作 `UnicornException`。\n\n且需要 FastAPI 实现全局处理该异常。\n\n此时，可以用 `@app.exception_handler()` 添加自定义异常控制器：",
+                    "score": 17.000195
+                  }
+                ],
+                "search_latency_ms": 4.959
+              },
+              {
+                "id": "FN01",
+                "question": "这些文档给出的生产环境数据库连接池推荐大小是多少？",
+                "split": "dev",
+                "category": "unanswerable",
+                "reason": "资料提到共享数据库连接，但没有连接池大小或生产调优参数。",
+                "evidence": [],
+                "full_hit": null,
+                "evidence_recall": null,
+                "reciprocal_rank": null,
+                "returned_any": true,
+                "sources": [
+                  {
+                    "document_name": "dependencies.md",
+                    "ordinal": 1,
+                    "text": "# 依赖项\n\nFastAPI 提供了简单易用，但功能强大的**<abbr title=\"也称为组件、资源、提供者、服务、可注入项\">依赖注入</abbr>**系统。\n\n这个依赖系统设计的简单易用，可以让开发人员轻松地把组件集成至 **FastAPI**。\n\n## 什么是「依赖注入」\n\n编程中的**「依赖注入」**是声明代码（本文中为*路径操作函数* ）运行所需的，或要使用的「依赖」的一种方式。\n\n然后，由系统（本文中为 **FastAPI**）负责执行任意需要的逻辑，为代码提供这些依赖（「注入」依赖项）。\n\n依赖注入常用于以下场景：\n\n* 共享业务逻辑（复用相同的代码逻辑）\n* 共享数据库连接\n* 实现安全、验证、角色权限\n* 等……\n\n上述场景均可以使用**依赖注入**，将代码重复最小化。\n\n## 第一步\n\n接下来，我们学习一个非常简单的例子，尽管它过于简单，不是很实用。\n\n但通过这个例子，您可以初步了解「依赖注入」的工作机制。\n\n### 创建依赖项\n\n首先，要关注的是依赖项。\n\n依赖项就是一个函数，且可以使用与*路径操作函数*相同的参数：\n\n```Python hl_lines=\"8-11\"\n{!../../../docs_src/dependencies/tutorial001.py!}\n```\n\n大功告成。\n\n只用了**2 行**代码。\n\n依赖项函数的形式和结构与*路径操作函数*一样。\n\n因此，可以把依赖项当作没有「装饰器」（即，没有 `@app.get(\"/some-path\")` ）的路径操作函数。\n\n依赖项可以返回各种内容。\n\n本例中的依赖项预期接收如下参数：",
+                    "score": 7.837926
+                  }
+                ],
+                "search_latency_ms": 4.802
+              },
+              {
+                "id": "FN02",
+                "question": "依赖项中调用外部 API 时，FastAPI 默认几秒超时，又自动重试几次？",
+                "split": "dev",
+                "category": "unanswerable",
+                "reason": "资料仅列出外部 API 兼容性，没有超时或重试策略。",
+                "evidence": [],
+                "full_hit": null,
+                "evidence_recall": null,
+                "reciprocal_rank": null,
+                "returned_any": true,
+                "sources": [
+                  {
+                    "document_name": "dependencies.md",
+                    "ordinal": 5,
+                    "text": "的参数调用函数，并提取请求中的数据。\n\n实际上，所有（或大多数）网络框架的工作方式都是这样的。\n\n开发人员永远都不需要直接调用这些函数，这些函数是由框架（在此为 **FastAPI** ）调用的。\n\n通过依赖注入系统，只要告诉 **FastAPI** *路径操作函数* 还要「依赖」其他在*路径操作函数*之前执行的内容，**FastAPI** 就会执行函数代码，并「注入」函数返回的结果。\n\n其他与「依赖注入」概念相同的术语为：\n\n* 资源（Resource）\n* 提供方（Provider）\n* 服务（Service）\n* 可注入（Injectable）\n* 组件（Component）\n\n## **FastAPI** 插件\n\n**依赖注入**系统支持构建集成和「插件」。但实际上，FastAPI 根本**不需要创建「插件」**，因为使用依赖项可以声明不限数量的、可用于*路径操作函数*的集成与交互。\n\n创建依赖项非常简单、直观，并且还支持导入 Python 包。毫不夸张地说，只要几行代码就可以把需要的 Python 包与 API 函数集成在一起。\n\n下一章将详细介绍在关系型数据库、NoSQL 数据库、安全等方面使用依赖项的例子。\n\n## **FastAPI** 兼容性\n\n依赖注入系统如此简洁的特性，让 **FastAPI** 可以与下列系统兼容：\n\n* 关系型数据库\n* NoSQL 数据库\n* 外部支持库\n* 外部 API\n* 认证和鉴权系统\n* API 使用监控系统\n* 响应数据注入系统\n* 等等……\n\n## 简单而强大",
+                    "score": 14.591721
+                  }
+                ],
+                "search_latency_ms": 6.155
+              }
+            ]
+          },
+          "3": {
+            "metrics": {
+              "all": {
+                "case_count": 10,
+                "answerable_count": 8,
+                "unanswerable_count": 2,
+                "full_evidence_hit_rate": 1,
+                "mean_evidence_recall": 1.0,
+                "mrr": 0.875,
+                "unanswerable_retrieval_rate": 1,
+                "by_category": {
+                  "literal": {
+                    "case_count": 2,
+                    "answerable_count": 2,
+                    "unanswerable_count": 0,
+                    "full_evidence_hit_rate": 1,
+                    "mean_evidence_recall": 1.0,
+                    "mrr": 1.0,
+                    "unanswerable_retrieval_rate": null
+                  },
+                  "multi_evidence": {
+                    "case_count": 2,
+                    "answerable_count": 2,
+                    "unanswerable_count": 0,
+                    "full_evidence_hit_rate": 1,
+                    "mean_evidence_recall": 1.0,
+                    "mrr": 0.75,
+                    "unanswerable_retrieval_rate": null
+                  },
+                  "paraphrase": {
+                    "case_count": 2,
+                    "answerable_count": 2,
+                    "unanswerable_count": 0,
+                    "full_evidence_hit_rate": 1,
+                    "mean_evidence_recall": 1.0,
+                    "mrr": 0.75,
+                    "unanswerable_retrieval_rate": null
+                  },
+                  "scope": {
+                    "case_count": 2,
+                    "answerable_count": 2,
+                    "unanswerable_count": 0,
+                    "full_evidence_hit_rate": 1,
+                    "mean_evidence_recall": 1.0,
+                    "mrr": 1.0,
+                    "unanswerable_retrieval_rate": null
+                  },
+                  "unanswerable": {
+                    "case_count": 2,
+                    "answerable_count": 0,
+                    "unanswerable_count": 2,
+                    "full_evidence_hit_rate": null,
+                    "mean_evidence_recall": null,
+                    "mrr": null,
+                    "unanswerable_retrieval_rate": 1
+                  }
+                }
+              },
+              "dev": {
+                "case_count": 10,
+                "answerable_count": 8,
+                "unanswerable_count": 2,
+                "full_evidence_hit_rate": 1,
+                "mean_evidence_recall": 1.0,
+                "mrr": 0.875,
+                "unanswerable_retrieval_rate": 1,
+                "by_category": {
+                  "literal": {
+                    "case_count": 2,
+                    "answerable_count": 2,
+                    "unanswerable_count": 0,
+                    "full_evidence_hit_rate": 1,
+                    "mean_evidence_recall": 1.0,
+                    "mrr": 1.0,
+                    "unanswerable_retrieval_rate": null
+                  },
+                  "multi_evidence": {
+                    "case_count": 2,
+                    "answerable_count": 2,
+                    "unanswerable_count": 0,
+                    "full_evidence_hit_rate": 1,
+                    "mean_evidence_recall": 1.0,
+                    "mrr": 0.75,
+                    "unanswerable_retrieval_rate": null
+                  },
+                  "paraphrase": {
+                    "case_count": 2,
+                    "answerable_count": 2,
+                    "unanswerable_count": 0,
+                    "full_evidence_hit_rate": 1,
+                    "mean_evidence_recall": 1.0,
+                    "mrr": 0.75,
+                    "unanswerable_retrieval_rate": null
+                  },
+                  "scope": {
+                    "case_count": 2,
+                    "answerable_count": 2,
+                    "unanswerable_count": 0,
+                    "full_evidence_hit_rate": 1,
+                    "mean_evidence_recall": 1.0,
+                    "mrr": 1.0,
+                    "unanswerable_retrieval_rate": null
+                  },
+                  "unanswerable": {
+                    "case_count": 2,
+                    "answerable_count": 0,
+                    "unanswerable_count": 2,
+                    "full_evidence_hit_rate": null,
+                    "mean_evidence_recall": null,
+                    "mrr": null,
+                    "unanswerable_retrieval_rate": 1
+                  }
+                }
+              }
+            },
+            "results": [
+              {
+                "id": "FL01",
+                "question": "查询字符串位于 URL 的什么位置？多个键值对用什么符号分隔？",
+                "split": "dev",
+                "category": "literal",
+                "reason": null,
+                "evidence": [
+                  {
+                    "document": "query-params.md",
+                    "contains": "这些键值对位于 URL 的 `?` 之后，以 `&` 分隔。",
+                    "rank": 1
+                  }
+                ],
+                "full_hit": true,
+                "evidence_recall": 1.0,
+                "reciprocal_rank": 1.0,
+                "returned_any": true,
+                "sources": [
+                  {
+                    "document_name": "query-params.md",
+                    "ordinal": 1,
+                    "text": "# 查询参数\n\n声明的参数不是路径参数时，路径操作函数会把该参数自动解释为**查询**参数。\n\n```Python hl_lines=\"9\"\n{!../../../docs_src/query_params/tutorial001.py!}\n```\n\n查询字符串是键值对的集合，这些键值对位于 URL 的 `?` 之后，以 `&` 分隔。\n\n例如，以下 URL 中：\n\n```\nhttp://127.0.0.1:8000/items/?skip=0&limit=10\n```\n\n……查询参数为：\n\n* `skip`：值为 `0`\n* `limit`：值为 `10`\n\n这些值都是 URL 的组成部分，因此，它们的类型**本应**是字符串。\n\n但声明 Python 类型（上例中为 `int`）之后，这些值就会转换为声明的类型，并进行类型校验。\n\n所有应用于路径参数的流程也适用于查询参数：\n\n* （显而易见的）编辑器支持\n* 数据<abbr title=\"将来自 HTTP 请求的字符串转换为 Python 数据类型\">**解析**</abbr>\n* 数据校验\n* API 文档\n\n## 默认值\n\n查询参数不是路径的固定内容，它是可选的，还支持默认值。\n\n上例用 `skip=0` 和 `limit=10` 设定默认值。\n\n访问 URL：\n\n```\nhttp://127.0.0.1:8000/items/\n```\n\n与访问以下地址相同：\n\n```\nhttp://127.0.0.1:8000/items/?skip=0&limit=10\n```\n\n但如果访问：\n\n```",
+                    "score": 30.620621
+                  },
+                  {
+                    "document_name": "query-params.md",
+                    "ordinal": 4,
+                    "text": "://127.0.0.1:8000/items/foo?short=true\n```\n\n或\n\n```\nhttp://127.0.0.1:8000/items/foo?short=on\n```\n\n或\n\n```\nhttp://127.0.0.1:8000/items/foo?short=yes\n```\n\n或其它任意大小写形式（大写、首字母大写等），函数接收的 `short` 参数都是布尔值 `True`。值为 `False` 时也一样。\n\n## 多个路径和查询参数\n\n**FastAPI** 可以识别同时声明的多个路径参数和查询参数。\n\n而且声明查询参数的顺序并不重要。\n\nFastAPI 通过参数名进行检测：\n\n//// tab | Python 3.10+\n\n```Python hl_lines=\"6 8\"\n{!> ../../../docs_src/query_params/tutorial004_py310.py!}\n```\n\n////\n\n//// tab | Python 3.8+\n\n```Python hl_lines=\"8 10\"\n{!> ../../../docs_src/query_params/tutorial004.py!}\n```\n\n////\n\n## 必选查询参数\n\n为不是路径参数的参数声明默认值（至此，仅有查询参数），该参数就**不是必选**的了。\n\n如果只想把参数设为**可选**，但又不想指定参数的值，则要把默认值设为 `None`。\n\n如果要把查询参数设置为**必选**，就不要声明默认值：\n\n```Python hl_lines=\"6-7\"",
+                    "score": 6.16875
+                  },
+                  {
+                    "document_name": "query-params.md",
+                    "ordinal": 5,
+                    "text": "如果只想把参数设为**可选**，但又不想指定参数的值，则要把默认值设为 `None`。\n\n如果要把查询参数设置为**必选**，就不要声明默认值：\n\n```Python hl_lines=\"6-7\"\n{!../../../docs_src/query_params/tutorial005.py!}\n```\n\n这里的查询参数 `needy` 是类型为 `str` 的必选查询参数。\n\n在浏览器中打开如下 URL：\n\n```\nhttp://127.0.0.1:8000/items/foo-item\n```\n\n……因为路径中没有必选参数 `needy`，返回的响应中会显示如下错误信息：\n\n```JSON\n{\n    \"detail\": [\n        {\n            \"loc\": [\n                \"query\",\n                \"needy\"\n            ],\n            \"msg\": \"field required\",\n            \"type\": \"value_error.missing\"\n        }\n    ]\n}\n```\n\n`needy` 是必选参数，因此要在 URL 中设置值：\n\n```\nhttp://127.0.0.1:8000/items/foo-item?needy=sooooneedy\n```\n\n……这样就正常了：\n\n```JSON\n{\n    \"item_id\": \"foo-item\",\n    \"needy\": \"sooooneedy\"\n}\n```",
+                    "score": 5.905655
+                  }
+                ],
+                "search_latency_ms": 4.229
+              },
+              {
+                "id": "FL02",
+                "question": "要让 file_path 接收包含斜杠的路径，路由中的路径转换器应该怎样写？",
+                "split": "dev",
+                "category": "literal",
+                "reason": null,
+                "evidence": [
+                  {
+                    "document": "path-params.md",
+                    "contains": "/files/{file_path:path}",
+                    "rank": 1
+                  }
+                ],
+                "full_hit": true,
+                "evidence_recall": 1.0,
+                "reciprocal_rank": 1.0,
+                "returned_any": true,
+                "sources": [
+                  {
+                    "document_name": "path-params.md",
+                    "ordinal": 9,
+                    "text": "测试和定义更加困难。\n\n不过，仍可使用 Starlette 内置工具在 **FastAPI** 中实现这一功能。\n\n而且不影响文档正常运行，但是不会添加该参数包含路径的说明。\n\n### 路径转换器\n\n直接使用 Starlette 的选项声明包含*路径*的*路径参数*：\n\n```\n/files/{file_path:path}\n```\n\n本例中，参数名为 `file_path`，结尾部分的 `:path` 说明该参数应匹配*路径*。\n\n用法如下：\n\n```Python hl_lines=\"6\"\n{!../../../docs_src/path_params/tutorial004.py!}\n```\n\n/// tip | \"提示\"\n\n注意，包含 `/home/johndoe/myfile.txt` 的路径参数要以斜杠（`/`）开头。\n\n本例中的 URL 是 `/files//home/johndoe/myfile.txt`。注意，`files` 和 `home` 之间要使用**双斜杠**（`//`）。\n\n///\n\n## 小结\n\n通过简短、直观的 Python 标准类型声明，**FastAPI** 可以获得：\n\n- 编辑器支持：错误检查，代码自动补全等\n- 数据**<abbr title=\"把来自 HTTP 请求中的字符串转换为 Python 数据类型\">解析</abbr>**\n- 数据校验\n- API 注解和 API 文档\n\n只需要声明一次即可。\n\n这可能是除了性能以外，**FastAPI** 与其它框架相比的主要优势。",
+                    "score": 22.603123
+                  },
+                  {
+                    "document_name": "path-params.md",
+                    "ordinal": 8,
+                    "text": "orial005.py!}\n```\n\n/// tip | \"提示\"\n\n使用 `ModelName.lenet.value` 也能获取值 `\"lenet\"`。\n\n///\n\n#### 返回*枚举元素*\n\n即使嵌套在 JSON 请求体里（例如， `dict`），也可以从*路径操作*返回*枚举元素*。\n\n返回给客户端之前，要把枚举元素转换为对应的值（本例中为字符串）：\n\n```Python hl_lines=\"18  21  23\"\n{!../../../docs_src/path_params/tutorial005.py!}\n```\n\n客户端中的 JSON 响应如下：\n\n```JSON\n{\n  \"model_name\": \"alexnet\",\n  \"message\": \"Deep Learning FTW!\"\n}\n```\n\n## 包含路径的路径参数\n\n假设*路径操作*的路径为 `/files/{file_path}`。\n\n但需要 `file_path` 中也包含*路径*，比如，`home/johndoe/myfile.txt`。\n\n此时，该文件的 URL 是这样的：`/files/home/johndoe/myfile.txt`。\n\n### OpenAPI 支持\n\nOpenAPI 不支持声明包含路径的*路径参数*，因为这会导致测试和定义更加困难。\n\n不过，仍可使用 Starlette 内置工具在 **FastAPI** 中实现这一功能。\n\n而且不影响文档正常运行，但是不会添加该参数包含路径的说明。\n\n### 路径转换器",
+                    "score": 19.172823
+                  },
+                  {
+                    "document_name": "dependencies.md",
+                    "ordinal": 4,
+                    "text": "I** 调用依赖项的方式与*路径操作函数*一样，因此，定义依赖项函数，也要应用与路径操作函数相同的规则。\n\n即，既可以使用异步的 `async def`，也可以使用普通的 `def` 定义依赖项。\n\n在普通的 `def` *路径操作函数*中，可以声明异步的 `async def` 依赖项；也可以在异步的 `async def` *路径操作函数*中声明普通的 `def` 依赖项。\n\n上述这些操作都是可行的，**FastAPI** 知道该怎么处理。\n\n/// note | \"笔记\"\n\n如里不了解异步，请参阅[异步：*“着急了？”*](../../async.md){.internal-link target=_blank} 一章中 `async` 和 `await` 的内容。\n\n///\n\n## 与 OpenAPI 集成\n\n依赖项及子依赖项的所有请求声明、验证和需求都可以集成至同一个 OpenAPI 概图。\n\n所以，交互文档里也会显示依赖项的所有信息：\n\n<img src=\"/img/tutorial/dependencies/image01.png\">\n\n## 简单用法\n\n观察一下就会发现，只要*路径* 和*操作*匹配，就可以使用声明的路径操作函数。然后，**FastAPI** 会用正确的参数调用函数，并提取请求中的数据。\n\n实际上，所有（或大多数）网络框架的工作方式都是这样的。\n\n开发人员永远都不需要直接调用这些函数，这些函数是由框架（在此为 **FastAPI** ）调用的。",
+                    "score": 6.180618
+                  }
+                ],
+                "search_latency_ms": 4.188
+              },
+              {
+                "id": "FP01",
+                "question": "想查自己的资料，/users/me 却被当成了用户编号 me，两个路由应该怎么排？",
+                "split": "dev",
+                "category": "paraphrase",
+                "reason": null,
+                "evidence": [
+                  {
+                    "document": "path-params.md",
+                    "contains": "一定要在 `/users/{user_id}` 之前声明 `/users/me`",
+                    "rank": 1
+                  }
+                ],
+                "full_hit": true,
+                "evidence_recall": 1.0,
+                "reciprocal_rank": 1.0,
+                "returned_any": true,
+                "sources": [
+                  {
+                    "document_name": "path-params.md",
+                    "ordinal": 5,
+                    "text": "c</a>：\n\n<img src=\"/img/tutorial/path-params/image02.png\">\n\n同样，还有很多兼容工具，包括多种语言的代码生成工具。\n\n## Pydantic\n\nFastAPI 充分地利用了 <a href=\"https://docs.pydantic.dev/\" class=\"external-link\" target=\"_blank\">Pydantic</a> 的优势，用它在后台校验数据。众所周知，Pydantic 擅长的就是数据校验。\n\n同样，`str`、`float`、`bool` 以及很多复合数据类型都可以使用类型声明。\n\n下一章介绍详细内容。\n\n## 顺序很重要\n\n有时，*路径操作*中的路径是写死的。\n\n比如要使用 `/users/me` 获取当前用户的数据。\n\n然后还要使用 `/users/{user_id}`，通过用户 ID 获取指定用户的数据。\n\n由于*路径操作*是按顺序依次运行的，因此，一定要在 `/users/{user_id}` 之前声明 `/users/me` ：\n\n```Python hl_lines=\"6  11\"\n{!../../../docs_src/path_params/tutorial003.py!}\n```\n\n否则，`/users/{user_id}` 将匹配 `/users/me`，FastAPI 会**认为**正在接收值为 `\"me\"` 的 `user_id` 参数。\n\n## 预设值",
+                    "score": 13.549613
+                  },
+                  {
+                    "document_name": "response-model.md",
+                    "ordinal": 4,
+                    "text": ".py!}\n```\n\n////\n\n这样，即便我们的*路径操作函数*将会返回包含密码的相同输入用户：\n\n//// tab | Python 3.10+\n\n```Python hl_lines=\"24\"\n{!> ../../../docs_src/response_model/tutorial003_py310.py!}\n```\n\n////\n\n//// tab | Python 3.8+\n\n```Python hl_lines=\"24\"\n{!> ../../../docs_src/response_model/tutorial003.py!}\n```\n\n////\n\n...我们已经将 `response_model` 声明为了不包含密码的 `UserOut` 模型：\n\n//// tab | Python 3.10+\n\n```Python hl_lines=\"22\"\n{!> ../../../docs_src/response_model/tutorial003_py310.py!}\n```\n\n////\n\n//// tab | Python 3.8+\n\n```Python hl_lines=\"22\"\n{!> ../../../docs_src/response_model/tutorial003.py!}\n```\n\n////\n\n因此，**FastAPI** 将会负责过滤掉未在输出模型中声明的所有数据（使用 Pydantic）。\n\n## 在文档中查看\n\n当你查看自动化文档时，你可以检查输入模型和输出模型是否都具有自己的 JSON Schema：",
+                    "score": 8.619704
+                  },
+                  {
+                    "document_name": "path-params.md",
+                    "ordinal": 6,
+                    "text": "!}\n```\n\n否则，`/users/{user_id}` 将匹配 `/users/me`，FastAPI 会**认为**正在接收值为 `\"me\"` 的 `user_id` 参数。\n\n## 预设值\n\n路径操作使用 Python 的 <abbr title=\"Enumeration\">`Enum`</abbr> 类型接收预设的*路径参数*。\n\n### 创建 `Enum` 类\n\n导入 `Enum` 并创建继承自 `str` 和 `Enum` 的子类。\n\n通过从 `str` 继承，API 文档就能把值的类型定义为**字符串**，并且能正确渲染。\n\n然后，创建包含固定值的类属性，这些固定值是可用的有效值：\n\n```Python hl_lines=\"1  6-9\"\n{!../../../docs_src/path_params/tutorial005.py!}\n```\n\n/// info | \"说明\"\n\nPython 3.4 及之后版本支持<a href=\"https://docs.python.org/3/library/enum.html\" class=\"external-link\" target=\"_blank\">枚举（即 enums）</a>。\n\n///\n\n/// tip | \"提示\"\n\n**AlexNet**、**ResNet**、**LeNet** 是机器学习<abbr title=\"技术上来说是深度学习模型架构\">模型</abbr>。\n\n///\n\n### 声明*路径参数*\n\n使用 Enum 类（`ModelName`）创建使用类型注解的*路径参数*：",
+                    "score": 7.745604
+                  }
+                ],
+                "search_latency_ms": 6.59
+              },
+              {
+                "id": "FP02",
+                "question": "地址栏里给开关参数 short 填 yes、on 或 1，声明成 bool 后拿到的是真还是假？",
+                "split": "dev",
+                "category": "paraphrase",
+                "reason": null,
+                "evidence": [
+                  {
+                    "document": "query-params.md",
+                    "contains": "http://127.0.0.1:8000/items/foo?short=yes",
+                    "rank": 2
+                  },
+                  {
+                    "document": "query-params.md",
+                    "contains": "函数接收的 `short` 参数都是布尔值 `True`。",
+                    "rank": 2
+                  }
+                ],
+                "full_hit": true,
+                "evidence_recall": 1.0,
+                "reciprocal_rank": 0.5,
+                "returned_any": true,
+                "sources": [
+                  {
+                    "document_name": "query-params.md",
+                    "ordinal": 3,
+                    "text": "出 `item_id` 是路径参数，`q` 不是路径参数，而是查询参数。\n\n///\n\n/// note | \"笔记\"\n\n因为默认值为 `= None`，FastAPI 把 `q` 识别为可选参数。\n\nFastAPI 不使用 `Optional[str]` 中的 `Optional`（只使用 `str`），但 `Optional[str]` 可以帮助编辑器发现代码中的错误。\n\n///\n\n## 查询参数类型转换\n\n参数还可以声明为 `bool` 类型，FastAPI 会自动转换参数类型：\n\n//// tab | Python 3.10+\n\n```Python hl_lines=\"7\"\n{!> ../../../docs_src/query_params/tutorial003_py310.py!}\n```\n\n////\n\n//// tab | Python 3.8+\n\n```Python hl_lines=\"9\"\n{!> ../../../docs_src/query_params/tutorial003.py!}\n```\n\n////\n\n本例中，访问：\n\n```\nhttp://127.0.0.1:8000/items/foo?short=1\n```\n\n或\n\n```\nhttp://127.0.0.1:8000/items/foo?short=True\n```\n\n或\n\n```\nhttp://127.0.0.1:8000/items/foo?short=true\n```\n\n或\n\n```\nhttp://127.0.0.1:8000/items/foo?short=on\n```\n\n或",
+                    "score": 20.542398
+                  },
+                  {
+                    "document_name": "query-params.md",
+                    "ordinal": 4,
+                    "text": "://127.0.0.1:8000/items/foo?short=true\n```\n\n或\n\n```\nhttp://127.0.0.1:8000/items/foo?short=on\n```\n\n或\n\n```\nhttp://127.0.0.1:8000/items/foo?short=yes\n```\n\n或其它任意大小写形式（大写、首字母大写等），函数接收的 `short` 参数都是布尔值 `True`。值为 `False` 时也一样。\n\n## 多个路径和查询参数\n\n**FastAPI** 可以识别同时声明的多个路径参数和查询参数。\n\n而且声明查询参数的顺序并不重要。\n\nFastAPI 通过参数名进行检测：\n\n//// tab | Python 3.10+\n\n```Python hl_lines=\"6 8\"\n{!> ../../../docs_src/query_params/tutorial004_py310.py!}\n```\n\n////\n\n//// tab | Python 3.8+\n\n```Python hl_lines=\"8 10\"\n{!> ../../../docs_src/query_params/tutorial004.py!}\n```\n\n////\n\n## 必选查询参数\n\n为不是路径参数的参数声明默认值（至此，仅有查询参数），该参数就**不是必选**的了。\n\n如果只想把参数设为**可选**，但又不想指定参数的值，则要把默认值设为 `None`。\n\n如果要把查询参数设置为**必选**，就不要声明默认值：\n\n```Python hl_lines=\"6-7\"",
+                    "score": 18.594537
+                  },
+                  {
+                    "document_name": "query-params.md",
+                    "ordinal": 2,
+                    "text": ".0.1:8000/items/\n```\n\n与访问以下地址相同：\n\n```\nhttp://127.0.0.1:8000/items/?skip=0&limit=10\n```\n\n但如果访问：\n\n```\nhttp://127.0.0.1:8000/items/?skip=20\n```\n\n查询参数的值就是：\n\n* `skip=20`：在 URL 中设定的值\n* `limit=10`：使用默认值\n\n## 可选参数\n\n同理，把默认值设为 `None` 即可声明**可选的**查询参数：\n\n//// tab | Python 3.10+\n\n```Python hl_lines=\"7\"\n{!> ../../../docs_src/query_params/tutorial002_py310.py!}\n```\n\n////\n\n//// tab | Python 3.8+\n\n```Python hl_lines=\"9\"\n{!> ../../../docs_src/query_params/tutorial002.py!}\n```\n\n////\n\n本例中，查询参数 `q` 是可选的，默认值为 `None`。\n\n/// check | \"检查\"\n\n注意，**FastAPI** 可以识别出 `item_id` 是路径参数，`q` 不是路径参数，而是查询参数。\n\n///\n\n/// note | \"笔记\"\n\n因为默认值为 `= None`，FastAPI 把 `q` 识别为可选参数。",
+                    "score": 7.133489
+                  }
+                ],
+                "search_latency_ms": 5.023
+              },
+              {
+                "id": "FS01",
+                "question": "查询参数 q 之所以可选，是由 Optional[str] 还是默认值 None 决定的？",
+                "split": "dev",
+                "category": "scope",
+                "reason": null,
+                "evidence": [
+                  {
+                    "document": "query-params.md",
+                    "contains": "因为默认值为 `= None`，FastAPI 把 `q` 识别为可选参数。",
+                    "rank": 1
+                  },
+                  {
+                    "document": "query-params.md",
+                    "contains": "FastAPI 不使用 `Optional[str]` 中的 `Optional`（只使用 `str`）",
+                    "rank": 2
+                  }
+                ],
+                "full_hit": true,
+                "evidence_recall": 1.0,
+                "reciprocal_rank": 1.0,
+                "returned_any": true,
+                "sources": [
+                  {
+                    "document_name": "query-params.md",
+                    "ordinal": 2,
+                    "text": ".0.1:8000/items/\n```\n\n与访问以下地址相同：\n\n```\nhttp://127.0.0.1:8000/items/?skip=0&limit=10\n```\n\n但如果访问：\n\n```\nhttp://127.0.0.1:8000/items/?skip=20\n```\n\n查询参数的值就是：\n\n* `skip=20`：在 URL 中设定的值\n* `limit=10`：使用默认值\n\n## 可选参数\n\n同理，把默认值设为 `None` 即可声明**可选的**查询参数：\n\n//// tab | Python 3.10+\n\n```Python hl_lines=\"7\"\n{!> ../../../docs_src/query_params/tutorial002_py310.py!}\n```\n\n////\n\n//// tab | Python 3.8+\n\n```Python hl_lines=\"9\"\n{!> ../../../docs_src/query_params/tutorial002.py!}\n```\n\n////\n\n本例中，查询参数 `q` 是可选的，默认值为 `None`。\n\n/// check | \"检查\"\n\n注意，**FastAPI** 可以识别出 `item_id` 是路径参数，`q` 不是路径参数，而是查询参数。\n\n///\n\n/// note | \"笔记\"\n\n因为默认值为 `= None`，FastAPI 把 `q` 识别为可选参数。",
+                    "score": 23.955067
+                  },
+                  {
+                    "document_name": "query-params.md",
+                    "ordinal": 3,
+                    "text": "出 `item_id` 是路径参数，`q` 不是路径参数，而是查询参数。\n\n///\n\n/// note | \"笔记\"\n\n因为默认值为 `= None`，FastAPI 把 `q` 识别为可选参数。\n\nFastAPI 不使用 `Optional[str]` 中的 `Optional`（只使用 `str`），但 `Optional[str]` 可以帮助编辑器发现代码中的错误。\n\n///\n\n## 查询参数类型转换\n\n参数还可以声明为 `bool` 类型，FastAPI 会自动转换参数类型：\n\n//// tab | Python 3.10+\n\n```Python hl_lines=\"7\"\n{!> ../../../docs_src/query_params/tutorial003_py310.py!}\n```\n\n////\n\n//// tab | Python 3.8+\n\n```Python hl_lines=\"9\"\n{!> ../../../docs_src/query_params/tutorial003.py!}\n```\n\n////\n\n本例中，访问：\n\n```\nhttp://127.0.0.1:8000/items/foo?short=1\n```\n\n或\n\n```\nhttp://127.0.0.1:8000/items/foo?short=True\n```\n\n或\n\n```\nhttp://127.0.0.1:8000/items/foo?short=true\n```\n\n或\n\n```\nhttp://127.0.0.1:8000/items/foo?short=on\n```\n\n或",
+                    "score": 21.649836
+                  },
+                  {
+                    "document_name": "body.md",
+                    "ordinal": 8,
+                    "text": "/../docs_src/body/tutorial004_py310.py!}\n```\n\n////\n\n//// tab | Python 3.8+\n\n```Python hl_lines=\"18\"\n{!> ../../../docs_src/body/tutorial004.py!}\n```\n\n////\n\n函数参数按如下规则进行识别：\n\n- **路径**中声明了相同参数的参数，是路径参数\n- 类型是（`int`、`float`、`str`、`bool` 等）**单类型**的参数，是**查询**参数\n- 类型是 **Pydantic 模型**的参数，是**请求体**\n\n/// note | \"笔记\"\n\n因为默认值是 `None`， FastAPI 会把 `q` 当作可选参数。\n\nFastAPI 不使用 `Optional[str]` 中的 `Optional`， 但 `Optional` 可以让编辑器提供更好的支持，并检测错误。\n\n///\n\n## 不使用 Pydantic\n\n即便不使用 Pydantic 模型也能使用 **Body** 参数。详见[请求体 - 多参数：请求体中的单值](body-multiple-params.md#_2){.internal-link target=\\_blank}。",
+                    "score": 17.785441
+                  }
+                ],
+                "search_latency_ms": 5.351
+              },
+              {
+                "id": "FS02",
+                "question": "FastAPI 完全不能让 GET 带请求体吗？支持和推荐使用是一回事吗？",
+                "split": "dev",
+                "category": "scope",
+                "reason": null,
+                "evidence": [
+                  {
+                    "document": "body.md",
+                    "contains": "FastAPI 也支持这种方式，只不过仅用于非常复杂或极端的用例。",
+                    "rank": 1
+                  },
+                  {
+                    "document": "body.md",
+                    "contains": "我们不建议使用 `GET`",
+                    "rank": 1
+                  }
+                ],
+                "full_hit": true,
+                "evidence_recall": 1.0,
+                "reciprocal_rank": 1.0,
+                "returned_any": true,
+                "sources": [
+                  {
+                    "document_name": "body.md",
+                    "ordinal": 1,
+                    "text": "# 请求体\n\nFastAPI 使用**请求体**从客户端（例如浏览器）向 API 发送数据。\n\n**请求体**是客户端发送给 API 的数据。**响应体**是 API 发送给客户端的数据。\n\nAPI 基本上肯定要发送**响应体**，但是客户端不一定发送**请求体**。\n\n使用 <a href=\"https://docs.pydantic.dev/\" class=\"external-link\" target=\"_blank\">Pydantic</a> 模型声明**请求体**，能充分利用它的功能和优点。\n\n/// info | \"说明\"\n\n发送数据使用 `POST`（最常用）、`PUT`、`DELETE`、`PATCH` 等操作。\n\n规范中没有定义使用 `GET` 发送请求体的操作，但不管怎样，FastAPI 也支持这种方式，只不过仅用于非常复杂或极端的用例。\n\n我们不建议使用 `GET`，因此，在 Swagger UI 交互文档中不会显示有关 `GET` 的内容，而且代理协议也不一定支持 `GET`。\n\n///\n\n## 导入 Pydantic 的 `BaseModel`\n\n从 `pydantic` 中导入 `BaseModel`：\n\n//// tab | Python 3.10+\n\n```Python hl_lines=\"2\"\n{!> ../../../docs_src/body/tutorial001_py310.py!}\n```\n\n////\n\n//// tab | Python 3.8+\n\n```Python hl_lines=\"4\"",
+                    "score": 10.904191
+                  },
+                  {
+                    "document_name": "body.md",
+                    "ordinal": 6,
+                    "text": "\">PyCharm</a> 和大多数 Python 编辑器也支持同样的功能：\n\n<img src=\"/img/tutorial/body/image05.png\">\n\n/// tip | \"提示\"\n\n使用 <a href=\"https://www.jetbrains.com/pycharm/\" class=\"external-link\" target=\"_blank\">PyCharm</a> 编辑器时，推荐安装 <a href=\"https://github.com/koxudaxi/pydantic-pycharm-plugin/\" class=\"external-link\" target=\"_blank\">Pydantic PyCharm 插件</a>。\n\n该插件用于完善 PyCharm 对 Pydantic 模型的支持，优化的功能如下：\n\n* 自动补全\n* 类型检查\n* 代码重构\n* 查找\n* 代码审查\n\n///\n\n## 使用模型\n\n在*路径操作*函数内部直接访问模型对象的属性：\n\n//// tab | Python 3.10+\n\n```Python hl_lines=\"19\"\n{!> ../../../docs_src/body/tutorial002_py310.py!}\n```\n\n////\n\n//// tab | Python 3.8+\n\n```Python hl_lines=\"21\"\n{!> ../../../docs_src/body/tutorial002.py!}\n```\n\n////\n\n## 请求体 + 路径参数",
+                    "score": 8.566852
+                  },
+                  {
+                    "document_name": "response-model.md",
+                    "ordinal": 2,
+                    "text": "////\n\n/// note\n\n注意，`response_model`是「装饰器」方法（`get`，`post` 等）的一个参数。不像之前的所有参数和请求体，它不属于*路径操作函数*。\n\n///\n\n它接收的类型与你将为 Pydantic 模型属性所声明的类型相同，因此它可以是一个 Pydantic 模型，但也可以是一个由 Pydantic 模型组成的 `list`，例如 `List[Item]`。\n\nFastAPI 将使用此 `response_model` 来：\n\n* 将输出数据转换为其声明的类型。\n* 校验数据。\n* 在 OpenAPI 的*路径操作*中为响应添加一个 JSON Schema。\n* 并在自动生成文档系统中使用。\n\n但最重要的是：\n\n* 会将输出数据限制在该模型定义内。下面我们会看到这一点有多重要。\n\n/// note | \"技术细节\"\n\n响应模型在参数中被声明，而不是作为函数返回类型的注解，这是因为路径函数可能不会真正返回该响应模型，而是返回一个 `dict`、数据库对象或其他模型，然后再使用 `response_model` 来执行字段约束和序列化。\n\n///\n\n## 返回与输入相同的数据\n\n现在我们声明一个 `UserIn` 模型，它将包含一个明文密码属性。\n\n```Python hl_lines=\"9  11\"\n{!../../../docs_src/response_model/tutorial002.py!}\n```\n\n我们正在使用此模型声明输入数据，并使用同一模型声明输出数据：\n\n```Python hl_lines=\"17-18\"",
+                    "score": 7.433525
+                  }
+                ],
+                "search_latency_ms": 6.893
+              },
+              {
+                "id": "FM01",
+                "question": "查询参数 q 默认 None，而请求体模型某属性没有默认值，这两项分别是可选还是必填？",
+                "split": "dev",
+                "category": "multi_evidence",
+                "reason": null,
+                "evidence": [
+                  {
+                    "document": "query-params.md",
+                    "contains": "因为默认值为 `= None`，FastAPI 把 `q` 识别为可选参数。",
+                    "rank": 1
+                  },
+                  {
+                    "document": "body.md",
+                    "contains": "包含默认值的模型属性是可选的，否则就是必选的。",
+                    "rank": 2
+                  }
+                ],
+                "full_hit": true,
+                "evidence_recall": 1.0,
+                "reciprocal_rank": 1.0,
+                "returned_any": true,
+                "sources": [
+                  {
+                    "document_name": "query-params.md",
+                    "ordinal": 2,
+                    "text": ".0.1:8000/items/\n```\n\n与访问以下地址相同：\n\n```\nhttp://127.0.0.1:8000/items/?skip=0&limit=10\n```\n\n但如果访问：\n\n```\nhttp://127.0.0.1:8000/items/?skip=20\n```\n\n查询参数的值就是：\n\n* `skip=20`：在 URL 中设定的值\n* `limit=10`：使用默认值\n\n## 可选参数\n\n同理，把默认值设为 `None` 即可声明**可选的**查询参数：\n\n//// tab | Python 3.10+\n\n```Python hl_lines=\"7\"\n{!> ../../../docs_src/query_params/tutorial002_py310.py!}\n```\n\n////\n\n//// tab | Python 3.8+\n\n```Python hl_lines=\"9\"\n{!> ../../../docs_src/query_params/tutorial002.py!}\n```\n\n////\n\n本例中，查询参数 `q` 是可选的，默认值为 `None`。\n\n/// check | \"检查\"\n\n注意，**FastAPI** 可以识别出 `item_id` 是路径参数，`q` 不是路径参数，而是查询参数。\n\n///\n\n/// note | \"笔记\"\n\n因为默认值为 `= None`，FastAPI 把 `q` 识别为可选参数。",
+                    "score": 22.502932
+                  },
+                  {
+                    "document_name": "body.md",
+                    "ordinal": 2,
+                    "text": "./../docs_src/body/tutorial001_py310.py!}\n```\n\n////\n\n//// tab | Python 3.8+\n\n```Python hl_lines=\"4\"\n{!> ../../../docs_src/body/tutorial001.py!}\n```\n\n////\n\n## 创建数据模型\n\n把数据模型声明为继承 `BaseModel` 的类。\n\n使用 Python 标准类型声明所有属性：\n\n//// tab | Python 3.10+\n\n```Python hl_lines=\"5-9\"\n{!> ../../../docs_src/body/tutorial001_py310.py!}\n```\n\n////\n\n//// tab | Python 3.8+\n\n```Python hl_lines=\"7-11\"\n{!> ../../../docs_src/body/tutorial001.py!}\n```\n\n////\n\n与声明查询参数一样，包含默认值的模型属性是可选的，否则就是必选的。默认值为 `None` 的模型属性也是可选的。\n\n例如，上述模型声明如下 JSON **对象**（即 Python **字典**）：\n\n```JSON\n{\n    \"name\": \"Foo\",\n    \"description\": \"An optional description\",\n    \"price\": 45.2,\n    \"tax\": 3.5\n}\n```",
+                    "score": 22.413556
+                  },
+                  {
+                    "document_name": "response-model.md",
+                    "ordinal": 5,
+                    "text": "I** 将会负责过滤掉未在输出模型中声明的所有数据（使用 Pydantic）。\n\n## 在文档中查看\n\n当你查看自动化文档时，你可以检查输入模型和输出模型是否都具有自己的 JSON Schema：\n\n<img src=\"https://fastapi.tiangolo.com/img/tutorial/response-model/image01.png\">\n\n并且两种模型都将在交互式 API 文档中使用：\n\n<img src=\"https://fastapi.tiangolo.com/img/tutorial/response-model/image02.png\">\n\n## 响应模型编码参数\n\n你的响应模型可以具有默认值，例如：\n\n```Python hl_lines=\"11  13-14\"\n{!../../../docs_src/response_model/tutorial004.py!}\n```\n\n* `description: Union[str, None] = None` 具有默认值 `None`。\n* `tax: float = 10.5` 具有默认值 `10.5`.\n* `tags: List[str] = []` 具有一个空列表作为默认值： `[]`.\n\n但如果它们并没有存储实际的值，你可能想从结果中忽略它们的默认值。\n\n举个例子，当你在 NoSQL 数据库中保存了具有许多可选属性的模型，但你又不想发送充满默认值的很长的 JSON 响应。\n\n### 使用 `response_model_exclude_unset` 参数",
+                    "score": 18.450793
+                  }
+                ],
+                "search_latency_ms": 4.68
+              },
+              {
+                "id": "FM02",
+                "question": "无效请求数据触发的异常叫什么？另外，要限制正常响应只输出模型允许的字段，用什么参数？",
+                "split": "dev",
+                "category": "multi_evidence",
+                "reason": null,
+                "evidence": [
+                  {
+                    "document": "handling-errors.md",
+                    "contains": "请求中包含无效数据时，**FastAPI** 内部会触发 `RequestValidationError`。",
+                    "rank": 2
+                  },
+                  {
+                    "document": "response-model.md",
+                    "contains": "FastAPI 将使用此 `response_model` 来：",
+                    "rank": 3
+                  },
+                  {
+                    "document": "response-model.md",
+                    "contains": "会将输出数据限制在该模型定义内。",
+                    "rank": 3
+                  }
+                ],
+                "full_hit": true,
+                "evidence_recall": 1.0,
+                "reciprocal_rank": 0.5,
+                "returned_any": true,
+                "sources": [
+                  {
+                    "document_name": "handling-errors.md",
+                    "ordinal": 3,
+                    "text": "ample.com/items/bar`（`item_id` `「bar」` 不存在时），则会接收到 HTTP 状态码 - 404（「未找到」错误）及如下 JSON 响应结果：\n\n```JSON\n{\n  \"detail\": \"Item not found\"\n}\n\n```\n\n/// tip | \"提示\"\n\n触发 `HTTPException` 时，可以用参数 `detail` 传递任何能转换为 JSON 的值，不仅限于 `str`。\n\n还支持传递 `dict`、`list` 等数据结构。\n\n**FastAPI** 能自动处理这些数据，并将之转换为 JSON。\n\n///\n\n## 添加自定义响应头\n\n有些场景下要为 HTTP 错误添加自定义响应头。例如，出于某些方面的安全需要。\n\n一般情况下可能不会需要在代码中直接使用响应头。\n\n但对于某些高级应用场景，还是需要添加自定义响应头：\n\n```Python hl_lines=\"14\"\n{!../../../docs_src/handling_errors/tutorial002.py!}\n\n```\n\n## 安装自定义异常处理器\n\n添加自定义处理器，要使用 [Starlette 的异常工具](https://www.starlette.io/exceptions/)。\n\n假设要触发的自定义异常叫作 `UnicornException`。\n\n且需要 FastAPI 实现全局处理该异常。\n\n此时，可以用 `@app.exception_handler()` 添加自定义异常控制器：",
+                    "score": 17.000195
+                  },
+                  {
+                    "document_name": "handling-errors.md",
+                    "ordinal": 5,
+                    "text": "` 相同的 `fastapi.responses` 作为快捷方式，但大部分响应操作都可以直接从 Starlette 导入。同理，`Request` 也是如此。\n\n///\n\n## 覆盖默认异常处理器\n\n**FastAPI** 自带了一些默认异常处理器。\n\n触发 `HTTPException` 或请求无效数据时，这些处理器返回默认的 JSON 响应结果。\n\n不过，也可以使用自定义处理器覆盖默认异常处理器。\n\n### 覆盖请求验证异常\n\n请求中包含无效数据时，**FastAPI** 内部会触发 `RequestValidationError`。\n\n该异常也内置了默认异常处理器。\n\n覆盖默认异常处理器时需要导入 `RequestValidationError`，并用 `@app.excption_handler(RequestValidationError)` 装饰异常处理器。\n\n这样，异常处理器就可以接收 `Request` 与异常。\n\n```Python hl_lines=\"2  14-16\"\n{!../../../docs_src/handling_errors/tutorial004.py!}\n\n```\n\n访问 `/items/foo`，可以看到默认的 JSON 错误信息：\n\n```JSON\n{\n    \"detail\": [\n        {\n            \"loc\": [\n                \"path\",\n                \"item_id\"\n            ],",
+                    "score": 13.66431
+                  },
+                  {
+                    "document_name": "response-model.md",
+                    "ordinal": 2,
+                    "text": "////\n\n/// note\n\n注意，`response_model`是「装饰器」方法（`get`，`post` 等）的一个参数。不像之前的所有参数和请求体，它不属于*路径操作函数*。\n\n///\n\n它接收的类型与你将为 Pydantic 模型属性所声明的类型相同，因此它可以是一个 Pydantic 模型，但也可以是一个由 Pydantic 模型组成的 `list`，例如 `List[Item]`。\n\nFastAPI 将使用此 `response_model` 来：\n\n* 将输出数据转换为其声明的类型。\n* 校验数据。\n* 在 OpenAPI 的*路径操作*中为响应添加一个 JSON Schema。\n* 并在自动生成文档系统中使用。\n\n但最重要的是：\n\n* 会将输出数据限制在该模型定义内。下面我们会看到这一点有多重要。\n\n/// note | \"技术细节\"\n\n响应模型在参数中被声明，而不是作为函数返回类型的注解，这是因为路径函数可能不会真正返回该响应模型，而是返回一个 `dict`、数据库对象或其他模型，然后再使用 `response_model` 来执行字段约束和序列化。\n\n///\n\n## 返回与输入相同的数据\n\n现在我们声明一个 `UserIn` 模型，它将包含一个明文密码属性。\n\n```Python hl_lines=\"9  11\"\n{!../../../docs_src/response_model/tutorial002.py!}\n```\n\n我们正在使用此模型声明输入数据，并使用同一模型声明输出数据：\n\n```Python hl_lines=\"17-18\"",
+                    "score": 12.936815
+                  }
+                ],
+                "search_latency_ms": 4.959
+              },
+              {
+                "id": "FN01",
+                "question": "这些文档给出的生产环境数据库连接池推荐大小是多少？",
+                "split": "dev",
+                "category": "unanswerable",
+                "reason": "资料提到共享数据库连接，但没有连接池大小或生产调优参数。",
+                "evidence": [],
+                "full_hit": null,
+                "evidence_recall": null,
+                "reciprocal_rank": null,
+                "returned_any": true,
+                "sources": [
+                  {
+                    "document_name": "dependencies.md",
+                    "ordinal": 1,
+                    "text": "# 依赖项\n\nFastAPI 提供了简单易用，但功能强大的**<abbr title=\"也称为组件、资源、提供者、服务、可注入项\">依赖注入</abbr>**系统。\n\n这个依赖系统设计的简单易用，可以让开发人员轻松地把组件集成至 **FastAPI**。\n\n## 什么是「依赖注入」\n\n编程中的**「依赖注入」**是声明代码（本文中为*路径操作函数* ）运行所需的，或要使用的「依赖」的一种方式。\n\n然后，由系统（本文中为 **FastAPI**）负责执行任意需要的逻辑，为代码提供这些依赖（「注入」依赖项）。\n\n依赖注入常用于以下场景：\n\n* 共享业务逻辑（复用相同的代码逻辑）\n* 共享数据库连接\n* 实现安全、验证、角色权限\n* 等……\n\n上述场景均可以使用**依赖注入**，将代码重复最小化。\n\n## 第一步\n\n接下来，我们学习一个非常简单的例子，尽管它过于简单，不是很实用。\n\n但通过这个例子，您可以初步了解「依赖注入」的工作机制。\n\n### 创建依赖项\n\n首先，要关注的是依赖项。\n\n依赖项就是一个函数，且可以使用与*路径操作函数*相同的参数：\n\n```Python hl_lines=\"8-11\"\n{!../../../docs_src/dependencies/tutorial001.py!}\n```\n\n大功告成。\n\n只用了**2 行**代码。\n\n依赖项函数的形式和结构与*路径操作函数*一样。\n\n因此，可以把依赖项当作没有「装饰器」（即，没有 `@app.get(\"/some-path\")` ）的路径操作函数。\n\n依赖项可以返回各种内容。\n\n本例中的依赖项预期接收如下参数：",
+                    "score": 7.837926
+                  },
+                  {
+                    "document_name": "dependencies.md",
+                    "ordinal": 5,
+                    "text": "的参数调用函数，并提取请求中的数据。\n\n实际上，所有（或大多数）网络框架的工作方式都是这样的。\n\n开发人员永远都不需要直接调用这些函数，这些函数是由框架（在此为 **FastAPI** ）调用的。\n\n通过依赖注入系统，只要告诉 **FastAPI** *路径操作函数* 还要「依赖」其他在*路径操作函数*之前执行的内容，**FastAPI** 就会执行函数代码，并「注入」函数返回的结果。\n\n其他与「依赖注入」概念相同的术语为：\n\n* 资源（Resource）\n* 提供方（Provider）\n* 服务（Service）\n* 可注入（Injectable）\n* 组件（Component）\n\n## **FastAPI** 插件\n\n**依赖注入**系统支持构建集成和「插件」。但实际上，FastAPI 根本**不需要创建「插件」**，因为使用依赖项可以声明不限数量的、可用于*路径操作函数*的集成与交互。\n\n创建依赖项非常简单、直观，并且还支持导入 Python 包。毫不夸张地说，只要几行代码就可以把需要的 Python 包与 API 函数集成在一起。\n\n下一章将详细介绍在关系型数据库、NoSQL 数据库、安全等方面使用依赖项的例子。\n\n## **FastAPI** 兼容性\n\n依赖注入系统如此简洁的特性，让 **FastAPI** 可以与下列系统兼容：\n\n* 关系型数据库\n* NoSQL 数据库\n* 外部支持库\n* 外部 API\n* 认证和鉴权系统\n* API 使用监控系统\n* 响应数据注入系统\n* 等等……\n\n## 简单而强大",
+                    "score": 5.35991
+                  },
+                  {
+                    "document_name": "dependencies.md",
+                    "ordinal": 6,
+                    "text": "与下列系统兼容：\n\n* 关系型数据库\n* NoSQL 数据库\n* 外部支持库\n* 外部 API\n* 认证和鉴权系统\n* API 使用监控系统\n* 响应数据注入系统\n* 等等……\n\n## 简单而强大\n\n虽然，**层级式依赖注入系统**的定义与使用十分简单，但它却非常强大。\n\n比如，可以定义依赖其他依赖项的依赖项。\n\n最后，依赖项层级树构建后，**依赖注入系统**会处理所有依赖项及其子依赖项，并为每一步操作提供（注入）结果。\n\n比如，下面有 4 个 API 路径操作（*端点*）：\n\n* `/items/public/`\n* `/items/private/`\n* `/users/{user_id}/activate`\n* `/items/pro/`\n\n开发人员可以使用依赖项及其子依赖项为这些路径操作添加不同的权限：\n\n```mermaid\ngraph TB\n\ncurrent_user([\"current_user\"])\nactive_user([\"active_user\"])\nadmin_user([\"admin_user\"])\npaying_user([\"paying_user\"])\n\npublic[\"/items/public/\"]\nprivate[\"/items/private/\"]\nactivate_user[\"/users/{user_id}/activate\"]\npro_items[\"/items/pro/\"]\n\ncurrent_user --> active_user\nactive_user --> admin_user",
+                    "score": 4.707983
+                  }
+                ],
+                "search_latency_ms": 4.802
+              },
+              {
+                "id": "FN02",
+                "question": "依赖项中调用外部 API 时，FastAPI 默认几秒超时，又自动重试几次？",
+                "split": "dev",
+                "category": "unanswerable",
+                "reason": "资料仅列出外部 API 兼容性，没有超时或重试策略。",
+                "evidence": [],
+                "full_hit": null,
+                "evidence_recall": null,
+                "reciprocal_rank": null,
+                "returned_any": true,
+                "sources": [
+                  {
+                    "document_name": "dependencies.md",
+                    "ordinal": 5,
+                    "text": "的参数调用函数，并提取请求中的数据。\n\n实际上，所有（或大多数）网络框架的工作方式都是这样的。\n\n开发人员永远都不需要直接调用这些函数，这些函数是由框架（在此为 **FastAPI** ）调用的。\n\n通过依赖注入系统，只要告诉 **FastAPI** *路径操作函数* 还要「依赖」其他在*路径操作函数*之前执行的内容，**FastAPI** 就会执行函数代码，并「注入」函数返回的结果。\n\n其他与「依赖注入」概念相同的术语为：\n\n* 资源（Resource）\n* 提供方（Provider）\n* 服务（Service）\n* 可注入（Injectable）\n* 组件（Component）\n\n## **FastAPI** 插件\n\n**依赖注入**系统支持构建集成和「插件」。但实际上，FastAPI 根本**不需要创建「插件」**，因为使用依赖项可以声明不限数量的、可用于*路径操作函数*的集成与交互。\n\n创建依赖项非常简单、直观，并且还支持导入 Python 包。毫不夸张地说，只要几行代码就可以把需要的 Python 包与 API 函数集成在一起。\n\n下一章将详细介绍在关系型数据库、NoSQL 数据库、安全等方面使用依赖项的例子。\n\n## **FastAPI** 兼容性\n\n依赖注入系统如此简洁的特性，让 **FastAPI** 可以与下列系统兼容：\n\n* 关系型数据库\n* NoSQL 数据库\n* 外部支持库\n* 外部 API\n* 认证和鉴权系统\n* API 使用监控系统\n* 响应数据注入系统\n* 等等……\n\n## 简单而强大",
+                    "score": 14.591721
+                  },
+                  {
+                    "document_name": "dependencies.md",
+                    "ordinal": 6,
+                    "text": "与下列系统兼容：\n\n* 关系型数据库\n* NoSQL 数据库\n* 外部支持库\n* 外部 API\n* 认证和鉴权系统\n* API 使用监控系统\n* 响应数据注入系统\n* 等等……\n\n## 简单而强大\n\n虽然，**层级式依赖注入系统**的定义与使用十分简单，但它却非常强大。\n\n比如，可以定义依赖其他依赖项的依赖项。\n\n最后，依赖项层级树构建后，**依赖注入系统**会处理所有依赖项及其子依赖项，并为每一步操作提供（注入）结果。\n\n比如，下面有 4 个 API 路径操作（*端点*）：\n\n* `/items/public/`\n* `/items/private/`\n* `/users/{user_id}/activate`\n* `/items/pro/`\n\n开发人员可以使用依赖项及其子依赖项为这些路径操作添加不同的权限：\n\n```mermaid\ngraph TB\n\ncurrent_user([\"current_user\"])\nactive_user([\"active_user\"])\nadmin_user([\"admin_user\"])\npaying_user([\"paying_user\"])\n\npublic[\"/items/public/\"]\nprivate[\"/items/private/\"]\nactivate_user[\"/users/{user_id}/activate\"]\npro_items[\"/items/pro/\"]\n\ncurrent_user --> active_user\nactive_user --> admin_user",
+                    "score": 13.805016
+                  },
+                  {
+                    "document_name": "dependencies.md",
+                    "ordinal": 4,
+                    "text": "I** 调用依赖项的方式与*路径操作函数*一样，因此，定义依赖项函数，也要应用与路径操作函数相同的规则。\n\n即，既可以使用异步的 `async def`，也可以使用普通的 `def` 定义依赖项。\n\n在普通的 `def` *路径操作函数*中，可以声明异步的 `async def` 依赖项；也可以在异步的 `async def` *路径操作函数*中声明普通的 `def` 依赖项。\n\n上述这些操作都是可行的，**FastAPI** 知道该怎么处理。\n\n/// note | \"笔记\"\n\n如里不了解异步，请参阅[异步：*“着急了？”*](../../async.md){.internal-link target=_blank} 一章中 `async` 和 `await` 的内容。\n\n///\n\n## 与 OpenAPI 集成\n\n依赖项及子依赖项的所有请求声明、验证和需求都可以集成至同一个 OpenAPI 概图。\n\n所以，交互文档里也会显示依赖项的所有信息：\n\n<img src=\"/img/tutorial/dependencies/image01.png\">\n\n## 简单用法\n\n观察一下就会发现，只要*路径* 和*操作*匹配，就可以使用声明的路径操作函数。然后，**FastAPI** 会用正确的参数调用函数，并提取请求中的数据。\n\n实际上，所有（或大多数）网络框架的工作方式都是这样的。\n\n开发人员永远都不需要直接调用这些函数，这些函数是由框架（在此为 **FastAPI** ）调用的。",
+                    "score": 10.676052
+                  }
+                ],
+                "search_latency_ms": 6.155
+              }
+            ]
+          },
+          "5": {
+            "metrics": {
+              "all": {
+                "case_count": 10,
+                "answerable_count": 8,
+                "unanswerable_count": 2,
+                "full_evidence_hit_rate": 1,
+                "mean_evidence_recall": 1.0,
+                "mrr": 0.875,
+                "unanswerable_retrieval_rate": 1,
+                "by_category": {
+                  "literal": {
+                    "case_count": 2,
+                    "answerable_count": 2,
+                    "unanswerable_count": 0,
+                    "full_evidence_hit_rate": 1,
+                    "mean_evidence_recall": 1.0,
+                    "mrr": 1.0,
+                    "unanswerable_retrieval_rate": null
+                  },
+                  "multi_evidence": {
+                    "case_count": 2,
+                    "answerable_count": 2,
+                    "unanswerable_count": 0,
+                    "full_evidence_hit_rate": 1,
+                    "mean_evidence_recall": 1.0,
+                    "mrr": 0.75,
+                    "unanswerable_retrieval_rate": null
+                  },
+                  "paraphrase": {
+                    "case_count": 2,
+                    "answerable_count": 2,
+                    "unanswerable_count": 0,
+                    "full_evidence_hit_rate": 1,
+                    "mean_evidence_recall": 1.0,
+                    "mrr": 0.75,
+                    "unanswerable_retrieval_rate": null
+                  },
+                  "scope": {
+                    "case_count": 2,
+                    "answerable_count": 2,
+                    "unanswerable_count": 0,
+                    "full_evidence_hit_rate": 1,
+                    "mean_evidence_recall": 1.0,
+                    "mrr": 1.0,
+                    "unanswerable_retrieval_rate": null
+                  },
+                  "unanswerable": {
+                    "case_count": 2,
+                    "answerable_count": 0,
+                    "unanswerable_count": 2,
+                    "full_evidence_hit_rate": null,
+                    "mean_evidence_recall": null,
+                    "mrr": null,
+                    "unanswerable_retrieval_rate": 1
+                  }
+                }
+              },
+              "dev": {
+                "case_count": 10,
+                "answerable_count": 8,
+                "unanswerable_count": 2,
+                "full_evidence_hit_rate": 1,
+                "mean_evidence_recall": 1.0,
+                "mrr": 0.875,
+                "unanswerable_retrieval_rate": 1,
+                "by_category": {
+                  "literal": {
+                    "case_count": 2,
+                    "answerable_count": 2,
+                    "unanswerable_count": 0,
+                    "full_evidence_hit_rate": 1,
+                    "mean_evidence_recall": 1.0,
+                    "mrr": 1.0,
+                    "unanswerable_retrieval_rate": null
+                  },
+                  "multi_evidence": {
+                    "case_count": 2,
+                    "answerable_count": 2,
+                    "unanswerable_count": 0,
+                    "full_evidence_hit_rate": 1,
+                    "mean_evidence_recall": 1.0,
+                    "mrr": 0.75,
+                    "unanswerable_retrieval_rate": null
+                  },
+                  "paraphrase": {
+                    "case_count": 2,
+                    "answerable_count": 2,
+                    "unanswerable_count": 0,
+                    "full_evidence_hit_rate": 1,
+                    "mean_evidence_recall": 1.0,
+                    "mrr": 0.75,
+                    "unanswerable_retrieval_rate": null
+                  },
+                  "scope": {
+                    "case_count": 2,
+                    "answerable_count": 2,
+                    "unanswerable_count": 0,
+                    "full_evidence_hit_rate": 1,
+                    "mean_evidence_recall": 1.0,
+                    "mrr": 1.0,
+                    "unanswerable_retrieval_rate": null
+                  },
+                  "unanswerable": {
+                    "case_count": 2,
+                    "answerable_count": 0,
+                    "unanswerable_count": 2,
+                    "full_evidence_hit_rate": null,
+                    "mean_evidence_recall": null,
+                    "mrr": null,
+                    "unanswerable_retrieval_rate": 1
+                  }
+                }
+              }
+            },
+            "results": [
+              {
+                "id": "FL01",
+                "question": "查询字符串位于 URL 的什么位置？多个键值对用什么符号分隔？",
+                "split": "dev",
+                "category": "literal",
+                "reason": null,
+                "evidence": [
+                  {
+                    "document": "query-params.md",
+                    "contains": "这些键值对位于 URL 的 `?` 之后，以 `&` 分隔。",
+                    "rank": 1
+                  }
+                ],
+                "full_hit": true,
+                "evidence_recall": 1.0,
+                "reciprocal_rank": 1.0,
+                "returned_any": true,
+                "sources": [
+                  {
+                    "document_name": "query-params.md",
+                    "ordinal": 1,
+                    "text": "# 查询参数\n\n声明的参数不是路径参数时，路径操作函数会把该参数自动解释为**查询**参数。\n\n```Python hl_lines=\"9\"\n{!../../../docs_src/query_params/tutorial001.py!}\n```\n\n查询字符串是键值对的集合，这些键值对位于 URL 的 `?` 之后，以 `&` 分隔。\n\n例如，以下 URL 中：\n\n```\nhttp://127.0.0.1:8000/items/?skip=0&limit=10\n```\n\n……查询参数为：\n\n* `skip`：值为 `0`\n* `limit`：值为 `10`\n\n这些值都是 URL 的组成部分，因此，它们的类型**本应**是字符串。\n\n但声明 Python 类型（上例中为 `int`）之后，这些值就会转换为声明的类型，并进行类型校验。\n\n所有应用于路径参数的流程也适用于查询参数：\n\n* （显而易见的）编辑器支持\n* 数据<abbr title=\"将来自 HTTP 请求的字符串转换为 Python 数据类型\">**解析**</abbr>\n* 数据校验\n* API 文档\n\n## 默认值\n\n查询参数不是路径的固定内容，它是可选的，还支持默认值。\n\n上例用 `skip=0` 和 `limit=10` 设定默认值。\n\n访问 URL：\n\n```\nhttp://127.0.0.1:8000/items/\n```\n\n与访问以下地址相同：\n\n```\nhttp://127.0.0.1:8000/items/?skip=0&limit=10\n```\n\n但如果访问：\n\n```",
+                    "score": 30.620621
+                  },
+                  {
+                    "document_name": "query-params.md",
+                    "ordinal": 4,
+                    "text": "://127.0.0.1:8000/items/foo?short=true\n```\n\n或\n\n```\nhttp://127.0.0.1:8000/items/foo?short=on\n```\n\n或\n\n```\nhttp://127.0.0.1:8000/items/foo?short=yes\n```\n\n或其它任意大小写形式（大写、首字母大写等），函数接收的 `short` 参数都是布尔值 `True`。值为 `False` 时也一样。\n\n## 多个路径和查询参数\n\n**FastAPI** 可以识别同时声明的多个路径参数和查询参数。\n\n而且声明查询参数的顺序并不重要。\n\nFastAPI 通过参数名进行检测：\n\n//// tab | Python 3.10+\n\n```Python hl_lines=\"6 8\"\n{!> ../../../docs_src/query_params/tutorial004_py310.py!}\n```\n\n////\n\n//// tab | Python 3.8+\n\n```Python hl_lines=\"8 10\"\n{!> ../../../docs_src/query_params/tutorial004.py!}\n```\n\n////\n\n## 必选查询参数\n\n为不是路径参数的参数声明默认值（至此，仅有查询参数），该参数就**不是必选**的了。\n\n如果只想把参数设为**可选**，但又不想指定参数的值，则要把默认值设为 `None`。\n\n如果要把查询参数设置为**必选**，就不要声明默认值：\n\n```Python hl_lines=\"6-7\"",
+                    "score": 6.16875
+                  },
+                  {
+                    "document_name": "query-params.md",
+                    "ordinal": 5,
+                    "text": "如果只想把参数设为**可选**，但又不想指定参数的值，则要把默认值设为 `None`。\n\n如果要把查询参数设置为**必选**，就不要声明默认值：\n\n```Python hl_lines=\"6-7\"\n{!../../../docs_src/query_params/tutorial005.py!}\n```\n\n这里的查询参数 `needy` 是类型为 `str` 的必选查询参数。\n\n在浏览器中打开如下 URL：\n\n```\nhttp://127.0.0.1:8000/items/foo-item\n```\n\n……因为路径中没有必选参数 `needy`，返回的响应中会显示如下错误信息：\n\n```JSON\n{\n    \"detail\": [\n        {\n            \"loc\": [\n                \"query\",\n                \"needy\"\n            ],\n            \"msg\": \"field required\",\n            \"type\": \"value_error.missing\"\n        }\n    ]\n}\n```\n\n`needy` 是必选参数，因此要在 URL 中设置值：\n\n```\nhttp://127.0.0.1:8000/items/foo-item?needy=sooooneedy\n```\n\n……这样就正常了：\n\n```JSON\n{\n    \"item_id\": \"foo-item\",\n    \"needy\": \"sooooneedy\"\n}\n```",
+                    "score": 5.905655
+                  },
+                  {
+                    "document_name": "path-params.md",
+                    "ordinal": 8,
+                    "text": "orial005.py!}\n```\n\n/// tip | \"提示\"\n\n使用 `ModelName.lenet.value` 也能获取值 `\"lenet\"`。\n\n///\n\n#### 返回*枚举元素*\n\n即使嵌套在 JSON 请求体里（例如， `dict`），也可以从*路径操作*返回*枚举元素*。\n\n返回给客户端之前，要把枚举元素转换为对应的值（本例中为字符串）：\n\n```Python hl_lines=\"18  21  23\"\n{!../../../docs_src/path_params/tutorial005.py!}\n```\n\n客户端中的 JSON 响应如下：\n\n```JSON\n{\n  \"model_name\": \"alexnet\",\n  \"message\": \"Deep Learning FTW!\"\n}\n```\n\n## 包含路径的路径参数\n\n假设*路径操作*的路径为 `/files/{file_path}`。\n\n但需要 `file_path` 中也包含*路径*，比如，`home/johndoe/myfile.txt`。\n\n此时，该文件的 URL 是这样的：`/files/home/johndoe/myfile.txt`。\n\n### OpenAPI 支持\n\nOpenAPI 不支持声明包含路径的*路径参数*，因为这会导致测试和定义更加困难。\n\n不过，仍可使用 Starlette 内置工具在 **FastAPI** 中实现这一功能。\n\n而且不影响文档正常运行，但是不会添加该参数包含路径的说明。\n\n### 路径转换器",
+                    "score": 5.800418
+                  },
+                  {
+                    "document_name": "path-params.md",
+                    "ordinal": 9,
+                    "text": "测试和定义更加困难。\n\n不过，仍可使用 Starlette 内置工具在 **FastAPI** 中实现这一功能。\n\n而且不影响文档正常运行，但是不会添加该参数包含路径的说明。\n\n### 路径转换器\n\n直接使用 Starlette 的选项声明包含*路径*的*路径参数*：\n\n```\n/files/{file_path:path}\n```\n\n本例中，参数名为 `file_path`，结尾部分的 `:path` 说明该参数应匹配*路径*。\n\n用法如下：\n\n```Python hl_lines=\"6\"\n{!../../../docs_src/path_params/tutorial004.py!}\n```\n\n/// tip | \"提示\"\n\n注意，包含 `/home/johndoe/myfile.txt` 的路径参数要以斜杠（`/`）开头。\n\n本例中的 URL 是 `/files//home/johndoe/myfile.txt`。注意，`files` 和 `home` 之间要使用**双斜杠**（`//`）。\n\n///\n\n## 小结\n\n通过简短、直观的 Python 标准类型声明，**FastAPI** 可以获得：\n\n- 编辑器支持：错误检查，代码自动补全等\n- 数据**<abbr title=\"把来自 HTTP 请求中的字符串转换为 Python 数据类型\">解析</abbr>**\n- 数据校验\n- API 注解和 API 文档\n\n只需要声明一次即可。\n\n这可能是除了性能以外，**FastAPI** 与其它框架相比的主要优势。",
+                    "score": 5.514538
+                  }
+                ],
+                "search_latency_ms": 4.229
+              },
+              {
+                "id": "FL02",
+                "question": "要让 file_path 接收包含斜杠的路径，路由中的路径转换器应该怎样写？",
+                "split": "dev",
+                "category": "literal",
+                "reason": null,
+                "evidence": [
+                  {
+                    "document": "path-params.md",
+                    "contains": "/files/{file_path:path}",
+                    "rank": 1
+                  }
+                ],
+                "full_hit": true,
+                "evidence_recall": 1.0,
+                "reciprocal_rank": 1.0,
+                "returned_any": true,
+                "sources": [
+                  {
+                    "document_name": "path-params.md",
+                    "ordinal": 9,
+                    "text": "测试和定义更加困难。\n\n不过，仍可使用 Starlette 内置工具在 **FastAPI** 中实现这一功能。\n\n而且不影响文档正常运行，但是不会添加该参数包含路径的说明。\n\n### 路径转换器\n\n直接使用 Starlette 的选项声明包含*路径*的*路径参数*：\n\n```\n/files/{file_path:path}\n```\n\n本例中，参数名为 `file_path`，结尾部分的 `:path` 说明该参数应匹配*路径*。\n\n用法如下：\n\n```Python hl_lines=\"6\"\n{!../../../docs_src/path_params/tutorial004.py!}\n```\n\n/// tip | \"提示\"\n\n注意，包含 `/home/johndoe/myfile.txt` 的路径参数要以斜杠（`/`）开头。\n\n本例中的 URL 是 `/files//home/johndoe/myfile.txt`。注意，`files` 和 `home` 之间要使用**双斜杠**（`//`）。\n\n///\n\n## 小结\n\n通过简短、直观的 Python 标准类型声明，**FastAPI** 可以获得：\n\n- 编辑器支持：错误检查，代码自动补全等\n- 数据**<abbr title=\"把来自 HTTP 请求中的字符串转换为 Python 数据类型\">解析</abbr>**\n- 数据校验\n- API 注解和 API 文档\n\n只需要声明一次即可。\n\n这可能是除了性能以外，**FastAPI** 与其它框架相比的主要优势。",
+                    "score": 22.603123
+                  },
+                  {
+                    "document_name": "path-params.md",
+                    "ordinal": 8,
+                    "text": "orial005.py!}\n```\n\n/// tip | \"提示\"\n\n使用 `ModelName.lenet.value` 也能获取值 `\"lenet\"`。\n\n///\n\n#### 返回*枚举元素*\n\n即使嵌套在 JSON 请求体里（例如， `dict`），也可以从*路径操作*返回*枚举元素*。\n\n返回给客户端之前，要把枚举元素转换为对应的值（本例中为字符串）：\n\n```Python hl_lines=\"18  21  23\"\n{!../../../docs_src/path_params/tutorial005.py!}\n```\n\n客户端中的 JSON 响应如下：\n\n```JSON\n{\n  \"model_name\": \"alexnet\",\n  \"message\": \"Deep Learning FTW!\"\n}\n```\n\n## 包含路径的路径参数\n\n假设*路径操作*的路径为 `/files/{file_path}`。\n\n但需要 `file_path` 中也包含*路径*，比如，`home/johndoe/myfile.txt`。\n\n此时，该文件的 URL 是这样的：`/files/home/johndoe/myfile.txt`。\n\n### OpenAPI 支持\n\nOpenAPI 不支持声明包含路径的*路径参数*，因为这会导致测试和定义更加困难。\n\n不过，仍可使用 Starlette 内置工具在 **FastAPI** 中实现这一功能。\n\n而且不影响文档正常运行，但是不会添加该参数包含路径的说明。\n\n### 路径转换器",
+                    "score": 19.172823
+                  },
+                  {
+                    "document_name": "dependencies.md",
+                    "ordinal": 4,
+                    "text": "I** 调用依赖项的方式与*路径操作函数*一样，因此，定义依赖项函数，也要应用与路径操作函数相同的规则。\n\n即，既可以使用异步的 `async def`，也可以使用普通的 `def` 定义依赖项。\n\n在普通的 `def` *路径操作函数*中，可以声明异步的 `async def` 依赖项；也可以在异步的 `async def` *路径操作函数*中声明普通的 `def` 依赖项。\n\n上述这些操作都是可行的，**FastAPI** 知道该怎么处理。\n\n/// note | \"笔记\"\n\n如里不了解异步，请参阅[异步：*“着急了？”*](../../async.md){.internal-link target=_blank} 一章中 `async` 和 `await` 的内容。\n\n///\n\n## 与 OpenAPI 集成\n\n依赖项及子依赖项的所有请求声明、验证和需求都可以集成至同一个 OpenAPI 概图。\n\n所以，交互文档里也会显示依赖项的所有信息：\n\n<img src=\"/img/tutorial/dependencies/image01.png\">\n\n## 简单用法\n\n观察一下就会发现，只要*路径* 和*操作*匹配，就可以使用声明的路径操作函数。然后，**FastAPI** 会用正确的参数调用函数，并提取请求中的数据。\n\n实际上，所有（或大多数）网络框架的工作方式都是这样的。\n\n开发人员永远都不需要直接调用这些函数，这些函数是由框架（在此为 **FastAPI** ）调用的。",
+                    "score": 6.180618
+                  },
+                  {
+                    "document_name": "dependencies.md",
+                    "ordinal": 2,
+                    "text": "函数*一样。\n\n因此，可以把依赖项当作没有「装饰器」（即，没有 `@app.get(\"/some-path\")` ）的路径操作函数。\n\n依赖项可以返回各种内容。\n\n本例中的依赖项预期接收如下参数：\n\n* 类型为 `str` 的可选查询参数 `q`\n* 类型为 `int` 的可选查询参数 `skip`，默认值是 `0`\n* 类型为 `int` 的可选查询参数 `limit`，默认值是 `100`\n\n然后，依赖项函数返回包含这些值的 `dict`。\n\n### 导入 `Depends`\n\n```Python hl_lines=\"3\"\n{!../../../docs_src/dependencies/tutorial001.py!}\n```\n\n### 声明依赖项\n\n与在*路径操作函数*参数中使用 `Body`、`Query` 的方式相同，声明依赖项需要使用 `Depends` 和一个新的参数：\n\n```Python hl_lines=\"15  20\"\n{!../../../docs_src/dependencies/tutorial001.py!}\n```\n\n虽然，在路径操作函数的参数中使用 `Depends` 的方式与 `Body`、`Query` 相同，但 `Depends` 的工作方式略有不同。\n\n这里只能传给 Depends 一个参数。\n\n且该参数必须是可调用对象，比如函数。\n\n该函数接收的参数和*路径操作函数*的参数一样。\n\n/// tip | \"提示\"\n\n下一章介绍，除了函数还有哪些「对象」可以用作依赖项。\n\n///",
+                    "score": 6.041684
+                  },
+                  {
+                    "document_name": "path-params.md",
+                    "ordinal": 2,
+                    "text": "`int`。\n\n/// check | \"检查\"\n\n类型声明将为函数提供错误检查、代码补全等编辑器支持。\n\n///\n\n## 数据<abbr title=\"也称为：序列化、解析\">转换</abbr>\n\n运行示例并访问 <a href=\"http://127.0.0.1:8000/items/3\" class=\"external-link\" target=\"_blank\">http://127.0.0.1:8000/items/3</a>，返回的响应如下：\n\n```JSON\n{\"item_id\":3}\n```\n\n/// check | \"检查\"\n\n注意，函数接收并返回的值是 `3`（ `int`），不是 `\"3\"`（`str`）。\n\n**FastAPI** 通过类型声明自动<abbr title=\"将来自 HTTP 请求中的字符串转换为 Python 数据类型\">**解析**请求中的数据</abbr>。\n\n///\n\n## 数据校验\n\n通过浏览器访问 <a href=\"http://127.0.0.1:8000/items/foo\" class=\"external-link\" target=\"_blank\">http://127.0.0.1:8000/items/foo</a>，接收如下 HTTP 错误信息：\n\n```JSON\n{\n    \"detail\": [\n        {\n            \"loc\": [\n                \"path\",\n                \"item_id\"\n            ],",
+                    "score": 5.981361
+                  }
+                ],
+                "search_latency_ms": 4.188
+              },
+              {
+                "id": "FP01",
+                "question": "想查自己的资料，/users/me 却被当成了用户编号 me，两个路由应该怎么排？",
+                "split": "dev",
+                "category": "paraphrase",
+                "reason": null,
+                "evidence": [
+                  {
+                    "document": "path-params.md",
+                    "contains": "一定要在 `/users/{user_id}` 之前声明 `/users/me`",
+                    "rank": 1
+                  }
+                ],
+                "full_hit": true,
+                "evidence_recall": 1.0,
+                "reciprocal_rank": 1.0,
+                "returned_any": true,
+                "sources": [
+                  {
+                    "document_name": "path-params.md",
+                    "ordinal": 5,
+                    "text": "c</a>：\n\n<img src=\"/img/tutorial/path-params/image02.png\">\n\n同样，还有很多兼容工具，包括多种语言的代码生成工具。\n\n## Pydantic\n\nFastAPI 充分地利用了 <a href=\"https://docs.pydantic.dev/\" class=\"external-link\" target=\"_blank\">Pydantic</a> 的优势，用它在后台校验数据。众所周知，Pydantic 擅长的就是数据校验。\n\n同样，`str`、`float`、`bool` 以及很多复合数据类型都可以使用类型声明。\n\n下一章介绍详细内容。\n\n## 顺序很重要\n\n有时，*路径操作*中的路径是写死的。\n\n比如要使用 `/users/me` 获取当前用户的数据。\n\n然后还要使用 `/users/{user_id}`，通过用户 ID 获取指定用户的数据。\n\n由于*路径操作*是按顺序依次运行的，因此，一定要在 `/users/{user_id}` 之前声明 `/users/me` ：\n\n```Python hl_lines=\"6  11\"\n{!../../../docs_src/path_params/tutorial003.py!}\n```\n\n否则，`/users/{user_id}` 将匹配 `/users/me`，FastAPI 会**认为**正在接收值为 `\"me\"` 的 `user_id` 参数。\n\n## 预设值",
+                    "score": 13.549613
+                  },
+                  {
+                    "document_name": "response-model.md",
+                    "ordinal": 4,
+                    "text": ".py!}\n```\n\n////\n\n这样，即便我们的*路径操作函数*将会返回包含密码的相同输入用户：\n\n//// tab | Python 3.10+\n\n```Python hl_lines=\"24\"\n{!> ../../../docs_src/response_model/tutorial003_py310.py!}\n```\n\n////\n\n//// tab | Python 3.8+\n\n```Python hl_lines=\"24\"\n{!> ../../../docs_src/response_model/tutorial003.py!}\n```\n\n////\n\n...我们已经将 `response_model` 声明为了不包含密码的 `UserOut` 模型：\n\n//// tab | Python 3.10+\n\n```Python hl_lines=\"22\"\n{!> ../../../docs_src/response_model/tutorial003_py310.py!}\n```\n\n////\n\n//// tab | Python 3.8+\n\n```Python hl_lines=\"22\"\n{!> ../../../docs_src/response_model/tutorial003.py!}\n```\n\n////\n\n因此，**FastAPI** 将会负责过滤掉未在输出模型中声明的所有数据（使用 Pydantic）。\n\n## 在文档中查看\n\n当你查看自动化文档时，你可以检查输入模型和输出模型是否都具有自己的 JSON Schema：",
+                    "score": 8.619704
+                  },
+                  {
+                    "document_name": "path-params.md",
+                    "ordinal": 6,
+                    "text": "!}\n```\n\n否则，`/users/{user_id}` 将匹配 `/users/me`，FastAPI 会**认为**正在接收值为 `\"me\"` 的 `user_id` 参数。\n\n## 预设值\n\n路径操作使用 Python 的 <abbr title=\"Enumeration\">`Enum`</abbr> 类型接收预设的*路径参数*。\n\n### 创建 `Enum` 类\n\n导入 `Enum` 并创建继承自 `str` 和 `Enum` 的子类。\n\n通过从 `str` 继承，API 文档就能把值的类型定义为**字符串**，并且能正确渲染。\n\n然后，创建包含固定值的类属性，这些固定值是可用的有效值：\n\n```Python hl_lines=\"1  6-9\"\n{!../../../docs_src/path_params/tutorial005.py!}\n```\n\n/// info | \"说明\"\n\nPython 3.4 及之后版本支持<a href=\"https://docs.python.org/3/library/enum.html\" class=\"external-link\" target=\"_blank\">枚举（即 enums）</a>。\n\n///\n\n/// tip | \"提示\"\n\n**AlexNet**、**ResNet**、**LeNet** 是机器学习<abbr title=\"技术上来说是深度学习模型架构\">模型</abbr>。\n\n///\n\n### 声明*路径参数*\n\n使用 Enum 类（`ModelName`）创建使用类型注解的*路径参数*：",
+                    "score": 7.745604
+                  },
+                  {
+                    "document_name": "handling-errors.md",
+                    "ordinal": 9,
+                    "text": "ize\"\n      ],\n      \"msg\": \"value is not a valid integer\",\n      \"type\": \"type_error.integer\"\n    }\n  ],\n  \"body\": {\n    \"title\": \"towel\",\n    \"size\": \"XL\"\n  }\n}\n\n```\n\n### FastAPI `HTTPException` vs Starlette `HTTPException`\n\n**FastAPI** 也提供了自有的 `HTTPException`。\n\n**FastAPI** 的 `HTTPException` 继承自 Starlette 的 `HTTPException` 错误类。\n\n它们之间的唯一区别是，**FastAPI** 的 `HTTPException` 可以在响应中添加响应头。\n\nOAuth 2.0 等安全工具需要在内部调用这些响应头。\n\n因此你可以继续像平常一样在代码中触发 **FastAPI** 的 `HTTPException` 。\n\n但注册异常处理器时，应该注册到来自 Starlette 的 `HTTPException`。\n\n这样做是为了，当 Starlette 的内部代码、扩展或插件触发 Starlette `HTTPException` 时，处理程序能够捕获、并处理此异常。\n\n注意，本例代码中同时使用了这两个 `HTTPException`，此时，要把 Starlette 的 `HTTPException` 命名为 `StarletteHTTPException`：",
+                    "score": 6.455946
+                  },
+                  {
+                    "document_name": "response-model.md",
+                    "ordinal": 3,
+                    "text": "src/response_model/tutorial002.py!}\n```\n\n我们正在使用此模型声明输入数据，并使用同一模型声明输出数据：\n\n```Python hl_lines=\"17-18\"\n{!../../../docs_src/response_model/tutorial002.py!}\n```\n\n现在，每当浏览器使用一个密码创建用户时，API 都会在响应中返回相同的密码。\n\n在这个案例中，这可能不算是问题，因为用户自己正在发送密码。\n\n但是，如果我们在其他的*路径操作*中使用相同的模型，则可能会将用户的密码发送给每个客户端。\n\n/// danger\n\n永远不要存储用户的明文密码，也不要在响应中发送密码。\n\n///\n\n## 添加输出模型\n\n相反，我们可以创建一个有明文密码的输入模型和一个没有明文密码的输出模型：\n\n//// tab | Python 3.10+\n\n```Python hl_lines=\"9  11  16\"\n{!> ../../../docs_src/response_model/tutorial003_py310.py!}\n```\n\n////\n\n//// tab | Python 3.8+\n\n```Python hl_lines=\"9  11  16\"\n{!> ../../../docs_src/response_model/tutorial003.py!}\n```\n\n////\n\n这样，即便我们的*路径操作函数*将会返回包含密码的相同输入用户：\n\n//// tab | Python 3.10+\n\n```Python hl_lines=\"24\"",
+                    "score": 6.139998
+                  }
+                ],
+                "search_latency_ms": 6.59
+              },
+              {
+                "id": "FP02",
+                "question": "地址栏里给开关参数 short 填 yes、on 或 1，声明成 bool 后拿到的是真还是假？",
+                "split": "dev",
+                "category": "paraphrase",
+                "reason": null,
+                "evidence": [
+                  {
+                    "document": "query-params.md",
+                    "contains": "http://127.0.0.1:8000/items/foo?short=yes",
+                    "rank": 2
+                  },
+                  {
+                    "document": "query-params.md",
+                    "contains": "函数接收的 `short` 参数都是布尔值 `True`。",
+                    "rank": 2
+                  }
+                ],
+                "full_hit": true,
+                "evidence_recall": 1.0,
+                "reciprocal_rank": 0.5,
+                "returned_any": true,
+                "sources": [
+                  {
+                    "document_name": "query-params.md",
+                    "ordinal": 3,
+                    "text": "出 `item_id` 是路径参数，`q` 不是路径参数，而是查询参数。\n\n///\n\n/// note | \"笔记\"\n\n因为默认值为 `= None`，FastAPI 把 `q` 识别为可选参数。\n\nFastAPI 不使用 `Optional[str]` 中的 `Optional`（只使用 `str`），但 `Optional[str]` 可以帮助编辑器发现代码中的错误。\n\n///\n\n## 查询参数类型转换\n\n参数还可以声明为 `bool` 类型，FastAPI 会自动转换参数类型：\n\n//// tab | Python 3.10+\n\n```Python hl_lines=\"7\"\n{!> ../../../docs_src/query_params/tutorial003_py310.py!}\n```\n\n////\n\n//// tab | Python 3.8+\n\n```Python hl_lines=\"9\"\n{!> ../../../docs_src/query_params/tutorial003.py!}\n```\n\n////\n\n本例中，访问：\n\n```\nhttp://127.0.0.1:8000/items/foo?short=1\n```\n\n或\n\n```\nhttp://127.0.0.1:8000/items/foo?short=True\n```\n\n或\n\n```\nhttp://127.0.0.1:8000/items/foo?short=true\n```\n\n或\n\n```\nhttp://127.0.0.1:8000/items/foo?short=on\n```\n\n或",
+                    "score": 20.542398
+                  },
+                  {
+                    "document_name": "query-params.md",
+                    "ordinal": 4,
+                    "text": "://127.0.0.1:8000/items/foo?short=true\n```\n\n或\n\n```\nhttp://127.0.0.1:8000/items/foo?short=on\n```\n\n或\n\n```\nhttp://127.0.0.1:8000/items/foo?short=yes\n```\n\n或其它任意大小写形式（大写、首字母大写等），函数接收的 `short` 参数都是布尔值 `True`。值为 `False` 时也一样。\n\n## 多个路径和查询参数\n\n**FastAPI** 可以识别同时声明的多个路径参数和查询参数。\n\n而且声明查询参数的顺序并不重要。\n\nFastAPI 通过参数名进行检测：\n\n//// tab | Python 3.10+\n\n```Python hl_lines=\"6 8\"\n{!> ../../../docs_src/query_params/tutorial004_py310.py!}\n```\n\n////\n\n//// tab | Python 3.8+\n\n```Python hl_lines=\"8 10\"\n{!> ../../../docs_src/query_params/tutorial004.py!}\n```\n\n////\n\n## 必选查询参数\n\n为不是路径参数的参数声明默认值（至此，仅有查询参数），该参数就**不是必选**的了。\n\n如果只想把参数设为**可选**，但又不想指定参数的值，则要把默认值设为 `None`。\n\n如果要把查询参数设置为**必选**，就不要声明默认值：\n\n```Python hl_lines=\"6-7\"",
+                    "score": 18.594537
+                  },
+                  {
+                    "document_name": "query-params.md",
+                    "ordinal": 2,
+                    "text": ".0.1:8000/items/\n```\n\n与访问以下地址相同：\n\n```\nhttp://127.0.0.1:8000/items/?skip=0&limit=10\n```\n\n但如果访问：\n\n```\nhttp://127.0.0.1:8000/items/?skip=20\n```\n\n查询参数的值就是：\n\n* `skip=20`：在 URL 中设定的值\n* `limit=10`：使用默认值\n\n## 可选参数\n\n同理，把默认值设为 `None` 即可声明**可选的**查询参数：\n\n//// tab | Python 3.10+\n\n```Python hl_lines=\"7\"\n{!> ../../../docs_src/query_params/tutorial002_py310.py!}\n```\n\n////\n\n//// tab | Python 3.8+\n\n```Python hl_lines=\"9\"\n{!> ../../../docs_src/query_params/tutorial002.py!}\n```\n\n////\n\n本例中，查询参数 `q` 是可选的，默认值为 `None`。\n\n/// check | \"检查\"\n\n注意，**FastAPI** 可以识别出 `item_id` 是路径参数，`q` 不是路径参数，而是查询参数。\n\n///\n\n/// note | \"笔记\"\n\n因为默认值为 `= None`，FastAPI 把 `q` 识别为可选参数。",
+                    "score": 7.133489
+                  },
+                  {
+                    "document_name": "path-params.md",
+                    "ordinal": 4,
+                    "text": ".1:8000/docs\" class=\"external-link\" target=\"_blank\">http://127.0.0.1:8000/docs</a>，查看自动生成的 API 文档：\n\n<img src=\"/img/tutorial/path-params/image01.png\">\n\n/// check | \"检查\"\n\n还是使用 Python 类型声明，**FastAPI** 提供了（集成 Swagger UI 的）API 文档。\n\n注意，路径参数的类型是整数。\n\n///\n\n## 基于标准的好处，备选文档\n\n**FastAPI** 使用 <a href=\"https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.2.md\" class=\"external-link\" target=\"_blank\">OpenAPI</a> 生成概图，所以能兼容很多工具。\n\n因此，**FastAPI** 还内置了 ReDoc 生成的备选 API 文档，可在此查看 <a href=\"http://127.0.0.1:8000/redoc\" class=\"external-link\" target=\"_blank\">http://127.0.0.1:8000/redoc</a>：\n\n<img src=\"/img/tutorial/path-params/image02.png\">\n\n同样，还有很多兼容工具，包括多种语言的代码生成工具。\n\n## Pydantic",
+                    "score": 6.694664
+                  },
+                  {
+                    "document_name": "query-params.md",
+                    "ordinal": 1,
+                    "text": "# 查询参数\n\n声明的参数不是路径参数时，路径操作函数会把该参数自动解释为**查询**参数。\n\n```Python hl_lines=\"9\"\n{!../../../docs_src/query_params/tutorial001.py!}\n```\n\n查询字符串是键值对的集合，这些键值对位于 URL 的 `?` 之后，以 `&` 分隔。\n\n例如，以下 URL 中：\n\n```\nhttp://127.0.0.1:8000/items/?skip=0&limit=10\n```\n\n……查询参数为：\n\n* `skip`：值为 `0`\n* `limit`：值为 `10`\n\n这些值都是 URL 的组成部分，因此，它们的类型**本应**是字符串。\n\n但声明 Python 类型（上例中为 `int`）之后，这些值就会转换为声明的类型，并进行类型校验。\n\n所有应用于路径参数的流程也适用于查询参数：\n\n* （显而易见的）编辑器支持\n* 数据<abbr title=\"将来自 HTTP 请求的字符串转换为 Python 数据类型\">**解析**</abbr>\n* 数据校验\n* API 文档\n\n## 默认值\n\n查询参数不是路径的固定内容，它是可选的，还支持默认值。\n\n上例用 `skip=0` 和 `limit=10` 设定默认值。\n\n访问 URL：\n\n```\nhttp://127.0.0.1:8000/items/\n```\n\n与访问以下地址相同：\n\n```\nhttp://127.0.0.1:8000/items/?skip=0&limit=10\n```\n\n但如果访问：\n\n```",
+                    "score": 6.343009
+                  }
+                ],
+                "search_latency_ms": 5.023
+              },
+              {
+                "id": "FS01",
+                "question": "查询参数 q 之所以可选，是由 Optional[str] 还是默认值 None 决定的？",
+                "split": "dev",
+                "category": "scope",
+                "reason": null,
+                "evidence": [
+                  {
+                    "document": "query-params.md",
+                    "contains": "因为默认值为 `= None`，FastAPI 把 `q` 识别为可选参数。",
+                    "rank": 1
+                  },
+                  {
+                    "document": "query-params.md",
+                    "contains": "FastAPI 不使用 `Optional[str]` 中的 `Optional`（只使用 `str`）",
+                    "rank": 2
+                  }
+                ],
+                "full_hit": true,
+                "evidence_recall": 1.0,
+                "reciprocal_rank": 1.0,
+                "returned_any": true,
+                "sources": [
+                  {
+                    "document_name": "query-params.md",
+                    "ordinal": 2,
+                    "text": ".0.1:8000/items/\n```\n\n与访问以下地址相同：\n\n```\nhttp://127.0.0.1:8000/items/?skip=0&limit=10\n```\n\n但如果访问：\n\n```\nhttp://127.0.0.1:8000/items/?skip=20\n```\n\n查询参数的值就是：\n\n* `skip=20`：在 URL 中设定的值\n* `limit=10`：使用默认值\n\n## 可选参数\n\n同理，把默认值设为 `None` 即可声明**可选的**查询参数：\n\n//// tab | Python 3.10+\n\n```Python hl_lines=\"7\"\n{!> ../../../docs_src/query_params/tutorial002_py310.py!}\n```\n\n////\n\n//// tab | Python 3.8+\n\n```Python hl_lines=\"9\"\n{!> ../../../docs_src/query_params/tutorial002.py!}\n```\n\n////\n\n本例中，查询参数 `q` 是可选的，默认值为 `None`。\n\n/// check | \"检查\"\n\n注意，**FastAPI** 可以识别出 `item_id` 是路径参数，`q` 不是路径参数，而是查询参数。\n\n///\n\n/// note | \"笔记\"\n\n因为默认值为 `= None`，FastAPI 把 `q` 识别为可选参数。",
+                    "score": 23.955067
+                  },
+                  {
+                    "document_name": "query-params.md",
+                    "ordinal": 3,
+                    "text": "出 `item_id` 是路径参数，`q` 不是路径参数，而是查询参数。\n\n///\n\n/// note | \"笔记\"\n\n因为默认值为 `= None`，FastAPI 把 `q` 识别为可选参数。\n\nFastAPI 不使用 `Optional[str]` 中的 `Optional`（只使用 `str`），但 `Optional[str]` 可以帮助编辑器发现代码中的错误。\n\n///\n\n## 查询参数类型转换\n\n参数还可以声明为 `bool` 类型，FastAPI 会自动转换参数类型：\n\n//// tab | Python 3.10+\n\n```Python hl_lines=\"7\"\n{!> ../../../docs_src/query_params/tutorial003_py310.py!}\n```\n\n////\n\n//// tab | Python 3.8+\n\n```Python hl_lines=\"9\"\n{!> ../../../docs_src/query_params/tutorial003.py!}\n```\n\n////\n\n本例中，访问：\n\n```\nhttp://127.0.0.1:8000/items/foo?short=1\n```\n\n或\n\n```\nhttp://127.0.0.1:8000/items/foo?short=True\n```\n\n或\n\n```\nhttp://127.0.0.1:8000/items/foo?short=true\n```\n\n或\n\n```\nhttp://127.0.0.1:8000/items/foo?short=on\n```\n\n或",
+                    "score": 21.649836
+                  },
+                  {
+                    "document_name": "body.md",
+                    "ordinal": 8,
+                    "text": "/../docs_src/body/tutorial004_py310.py!}\n```\n\n////\n\n//// tab | Python 3.8+\n\n```Python hl_lines=\"18\"\n{!> ../../../docs_src/body/tutorial004.py!}\n```\n\n////\n\n函数参数按如下规则进行识别：\n\n- **路径**中声明了相同参数的参数，是路径参数\n- 类型是（`int`、`float`、`str`、`bool` 等）**单类型**的参数，是**查询**参数\n- 类型是 **Pydantic 模型**的参数，是**请求体**\n\n/// note | \"笔记\"\n\n因为默认值是 `None`， FastAPI 会把 `q` 当作可选参数。\n\nFastAPI 不使用 `Optional[str]` 中的 `Optional`， 但 `Optional` 可以让编辑器提供更好的支持，并检测错误。\n\n///\n\n## 不使用 Pydantic\n\n即便不使用 Pydantic 模型也能使用 **Body** 参数。详见[请求体 - 多参数：请求体中的单值](body-multiple-params.md#_2){.internal-link target=\\_blank}。",
+                    "score": 17.785441
+                  },
+                  {
+                    "document_name": "body.md",
+                    "ordinal": 2,
+                    "text": "./../docs_src/body/tutorial001_py310.py!}\n```\n\n////\n\n//// tab | Python 3.8+\n\n```Python hl_lines=\"4\"\n{!> ../../../docs_src/body/tutorial001.py!}\n```\n\n////\n\n## 创建数据模型\n\n把数据模型声明为继承 `BaseModel` 的类。\n\n使用 Python 标准类型声明所有属性：\n\n//// tab | Python 3.10+\n\n```Python hl_lines=\"5-9\"\n{!> ../../../docs_src/body/tutorial001_py310.py!}\n```\n\n////\n\n//// tab | Python 3.8+\n\n```Python hl_lines=\"7-11\"\n{!> ../../../docs_src/body/tutorial001.py!}\n```\n\n////\n\n与声明查询参数一样，包含默认值的模型属性是可选的，否则就是必选的。默认值为 `None` 的模型属性也是可选的。\n\n例如，上述模型声明如下 JSON **对象**（即 Python **字典**）：\n\n```JSON\n{\n    \"name\": \"Foo\",\n    \"description\": \"An optional description\",\n    \"price\": 45.2,\n    \"tax\": 3.5\n}\n```",
+                    "score": 14.427487
+                  },
+                  {
+                    "document_name": "query-params.md",
+                    "ordinal": 5,
+                    "text": "如果只想把参数设为**可选**，但又不想指定参数的值，则要把默认值设为 `None`。\n\n如果要把查询参数设置为**必选**，就不要声明默认值：\n\n```Python hl_lines=\"6-7\"\n{!../../../docs_src/query_params/tutorial005.py!}\n```\n\n这里的查询参数 `needy` 是类型为 `str` 的必选查询参数。\n\n在浏览器中打开如下 URL：\n\n```\nhttp://127.0.0.1:8000/items/foo-item\n```\n\n……因为路径中没有必选参数 `needy`，返回的响应中会显示如下错误信息：\n\n```JSON\n{\n    \"detail\": [\n        {\n            \"loc\": [\n                \"query\",\n                \"needy\"\n            ],\n            \"msg\": \"field required\",\n            \"type\": \"value_error.missing\"\n        }\n    ]\n}\n```\n\n`needy` 是必选参数，因此要在 URL 中设置值：\n\n```\nhttp://127.0.0.1:8000/items/foo-item?needy=sooooneedy\n```\n\n……这样就正常了：\n\n```JSON\n{\n    \"item_id\": \"foo-item\",\n    \"needy\": \"sooooneedy\"\n}\n```",
+                    "score": 14.385098
+                  }
+                ],
+                "search_latency_ms": 5.351
+              },
+              {
+                "id": "FS02",
+                "question": "FastAPI 完全不能让 GET 带请求体吗？支持和推荐使用是一回事吗？",
+                "split": "dev",
+                "category": "scope",
+                "reason": null,
+                "evidence": [
+                  {
+                    "document": "body.md",
+                    "contains": "FastAPI 也支持这种方式，只不过仅用于非常复杂或极端的用例。",
+                    "rank": 1
+                  },
+                  {
+                    "document": "body.md",
+                    "contains": "我们不建议使用 `GET`",
+                    "rank": 1
+                  }
+                ],
+                "full_hit": true,
+                "evidence_recall": 1.0,
+                "reciprocal_rank": 1.0,
+                "returned_any": true,
+                "sources": [
+                  {
+                    "document_name": "body.md",
+                    "ordinal": 1,
+                    "text": "# 请求体\n\nFastAPI 使用**请求体**从客户端（例如浏览器）向 API 发送数据。\n\n**请求体**是客户端发送给 API 的数据。**响应体**是 API 发送给客户端的数据。\n\nAPI 基本上肯定要发送**响应体**，但是客户端不一定发送**请求体**。\n\n使用 <a href=\"https://docs.pydantic.dev/\" class=\"external-link\" target=\"_blank\">Pydantic</a> 模型声明**请求体**，能充分利用它的功能和优点。\n\n/// info | \"说明\"\n\n发送数据使用 `POST`（最常用）、`PUT`、`DELETE`、`PATCH` 等操作。\n\n规范中没有定义使用 `GET` 发送请求体的操作，但不管怎样，FastAPI 也支持这种方式，只不过仅用于非常复杂或极端的用例。\n\n我们不建议使用 `GET`，因此，在 Swagger UI 交互文档中不会显示有关 `GET` 的内容，而且代理协议也不一定支持 `GET`。\n\n///\n\n## 导入 Pydantic 的 `BaseModel`\n\n从 `pydantic` 中导入 `BaseModel`：\n\n//// tab | Python 3.10+\n\n```Python hl_lines=\"2\"\n{!> ../../../docs_src/body/tutorial001_py310.py!}\n```\n\n////\n\n//// tab | Python 3.8+\n\n```Python hl_lines=\"4\"",
+                    "score": 10.904191
+                  },
+                  {
+                    "document_name": "body.md",
+                    "ordinal": 6,
+                    "text": "\">PyCharm</a> 和大多数 Python 编辑器也支持同样的功能：\n\n<img src=\"/img/tutorial/body/image05.png\">\n\n/// tip | \"提示\"\n\n使用 <a href=\"https://www.jetbrains.com/pycharm/\" class=\"external-link\" target=\"_blank\">PyCharm</a> 编辑器时，推荐安装 <a href=\"https://github.com/koxudaxi/pydantic-pycharm-plugin/\" class=\"external-link\" target=\"_blank\">Pydantic PyCharm 插件</a>。\n\n该插件用于完善 PyCharm 对 Pydantic 模型的支持，优化的功能如下：\n\n* 自动补全\n* 类型检查\n* 代码重构\n* 查找\n* 代码审查\n\n///\n\n## 使用模型\n\n在*路径操作*函数内部直接访问模型对象的属性：\n\n//// tab | Python 3.10+\n\n```Python hl_lines=\"19\"\n{!> ../../../docs_src/body/tutorial002_py310.py!}\n```\n\n////\n\n//// tab | Python 3.8+\n\n```Python hl_lines=\"21\"\n{!> ../../../docs_src/body/tutorial002.py!}\n```\n\n////\n\n## 请求体 + 路径参数",
+                    "score": 8.566852
+                  },
+                  {
+                    "document_name": "response-model.md",
+                    "ordinal": 2,
+                    "text": "////\n\n/// note\n\n注意，`response_model`是「装饰器」方法（`get`，`post` 等）的一个参数。不像之前的所有参数和请求体，它不属于*路径操作函数*。\n\n///\n\n它接收的类型与你将为 Pydantic 模型属性所声明的类型相同，因此它可以是一个 Pydantic 模型，但也可以是一个由 Pydantic 模型组成的 `list`，例如 `List[Item]`。\n\nFastAPI 将使用此 `response_model` 来：\n\n* 将输出数据转换为其声明的类型。\n* 校验数据。\n* 在 OpenAPI 的*路径操作*中为响应添加一个 JSON Schema。\n* 并在自动生成文档系统中使用。\n\n但最重要的是：\n\n* 会将输出数据限制在该模型定义内。下面我们会看到这一点有多重要。\n\n/// note | \"技术细节\"\n\n响应模型在参数中被声明，而不是作为函数返回类型的注解，这是因为路径函数可能不会真正返回该响应模型，而是返回一个 `dict`、数据库对象或其他模型，然后再使用 `response_model` 来执行字段约束和序列化。\n\n///\n\n## 返回与输入相同的数据\n\n现在我们声明一个 `UserIn` 模型，它将包含一个明文密码属性。\n\n```Python hl_lines=\"9  11\"\n{!../../../docs_src/response_model/tutorial002.py!}\n```\n\n我们正在使用此模型声明输入数据，并使用同一模型声明输出数据：\n\n```Python hl_lines=\"17-18\"",
+                    "score": 7.433525
+                  },
+                  {
+                    "document_name": "body.md",
+                    "ordinal": 7,
+                    "text": "3.8+\n\n```Python hl_lines=\"21\"\n{!> ../../../docs_src/body/tutorial002.py!}\n```\n\n////\n\n## 请求体 + 路径参数\n\n**FastAPI** 支持同时声明路径参数和请求体。\n\n**FastAPI** 能识别与**路径参数**匹配的函数参数，还能识别从**请求体**中获取的类型为 Pydantic 模型的函数参数。\n\n//// tab | Python 3.10+\n\n```Python hl_lines=\"15-16\"\n{!> ../../../docs_src/body/tutorial003_py310.py!}\n```\n\n////\n\n//// tab | Python 3.8+\n\n```Python hl_lines=\"17-18\"\n{!> ../../../docs_src/body/tutorial003.py!}\n```\n\n////\n\n## 请求体 + 路径参数 + 查询参数\n\n**FastAPI** 支持同时声明**请求体**、**路径参数**和**查询参数**。\n\n**FastAPI** 能够正确识别这三种参数，并从正确的位置获取数据。\n\n//// tab | Python 3.10+\n\n```Python hl_lines=\"16\"\n{!> ../../../docs_src/body/tutorial004_py310.py!}\n```\n\n////\n\n//// tab | Python 3.8+\n\n```Python hl_lines=\"18\"",
+                    "score": 6.962466
+                  },
+                  {
+                    "document_name": "response-model.md",
+                    "ordinal": 1,
+                    "text": "# 响应模型\n\n你可以在任意的*路径操作*中使用 `response_model` 参数来声明用于响应的模型：\n\n* `@app.get()`\n* `@app.post()`\n* `@app.put()`\n* `@app.delete()`\n* 等等。\n\n//// tab | Python 3.10+\n\n```Python hl_lines=\"17  22  24-27\"\n{!> ../../../docs_src/response_model/tutorial001_py310.py!}\n```\n\n////\n\n//// tab | Python 3.9+\n\n```Python hl_lines=\"17  22  24-27\"\n{!> ../../../docs_src/response_model/tutorial001_py39.py!}\n```\n\n////\n\n//// tab | Python 3.8+\n\n```Python hl_lines=\"17  22  24-27\"\n{!> ../../../docs_src/response_model/tutorial001.py!}\n```\n\n////\n\n/// note\n\n注意，`response_model`是「装饰器」方法（`get`，`post` 等）的一个参数。不像之前的所有参数和请求体，它不属于*路径操作函数*。\n\n///",
+                    "score": 6.851549
+                  }
+                ],
+                "search_latency_ms": 6.893
+              },
+              {
+                "id": "FM01",
+                "question": "查询参数 q 默认 None，而请求体模型某属性没有默认值，这两项分别是可选还是必填？",
+                "split": "dev",
+                "category": "multi_evidence",
+                "reason": null,
+                "evidence": [
+                  {
+                    "document": "query-params.md",
+                    "contains": "因为默认值为 `= None`，FastAPI 把 `q` 识别为可选参数。",
+                    "rank": 1
+                  },
+                  {
+                    "document": "body.md",
+                    "contains": "包含默认值的模型属性是可选的，否则就是必选的。",
+                    "rank": 2
+                  }
+                ],
+                "full_hit": true,
+                "evidence_recall": 1.0,
+                "reciprocal_rank": 1.0,
+                "returned_any": true,
+                "sources": [
+                  {
+                    "document_name": "query-params.md",
+                    "ordinal": 2,
+                    "text": ".0.1:8000/items/\n```\n\n与访问以下地址相同：\n\n```\nhttp://127.0.0.1:8000/items/?skip=0&limit=10\n```\n\n但如果访问：\n\n```\nhttp://127.0.0.1:8000/items/?skip=20\n```\n\n查询参数的值就是：\n\n* `skip=20`：在 URL 中设定的值\n* `limit=10`：使用默认值\n\n## 可选参数\n\n同理，把默认值设为 `None` 即可声明**可选的**查询参数：\n\n//// tab | Python 3.10+\n\n```Python hl_lines=\"7\"\n{!> ../../../docs_src/query_params/tutorial002_py310.py!}\n```\n\n////\n\n//// tab | Python 3.8+\n\n```Python hl_lines=\"9\"\n{!> ../../../docs_src/query_params/tutorial002.py!}\n```\n\n////\n\n本例中，查询参数 `q` 是可选的，默认值为 `None`。\n\n/// check | \"检查\"\n\n注意，**FastAPI** 可以识别出 `item_id` 是路径参数，`q` 不是路径参数，而是查询参数。\n\n///\n\n/// note | \"笔记\"\n\n因为默认值为 `= None`，FastAPI 把 `q` 识别为可选参数。",
+                    "score": 22.502932
+                  },
+                  {
+                    "document_name": "body.md",
+                    "ordinal": 2,
+                    "text": "./../docs_src/body/tutorial001_py310.py!}\n```\n\n////\n\n//// tab | Python 3.8+\n\n```Python hl_lines=\"4\"\n{!> ../../../docs_src/body/tutorial001.py!}\n```\n\n////\n\n## 创建数据模型\n\n把数据模型声明为继承 `BaseModel` 的类。\n\n使用 Python 标准类型声明所有属性：\n\n//// tab | Python 3.10+\n\n```Python hl_lines=\"5-9\"\n{!> ../../../docs_src/body/tutorial001_py310.py!}\n```\n\n////\n\n//// tab | Python 3.8+\n\n```Python hl_lines=\"7-11\"\n{!> ../../../docs_src/body/tutorial001.py!}\n```\n\n////\n\n与声明查询参数一样，包含默认值的模型属性是可选的，否则就是必选的。默认值为 `None` 的模型属性也是可选的。\n\n例如，上述模型声明如下 JSON **对象**（即 Python **字典**）：\n\n```JSON\n{\n    \"name\": \"Foo\",\n    \"description\": \"An optional description\",\n    \"price\": 45.2,\n    \"tax\": 3.5\n}\n```",
+                    "score": 22.413556
+                  },
+                  {
+                    "document_name": "response-model.md",
+                    "ordinal": 5,
+                    "text": "I** 将会负责过滤掉未在输出模型中声明的所有数据（使用 Pydantic）。\n\n## 在文档中查看\n\n当你查看自动化文档时，你可以检查输入模型和输出模型是否都具有自己的 JSON Schema：\n\n<img src=\"https://fastapi.tiangolo.com/img/tutorial/response-model/image01.png\">\n\n并且两种模型都将在交互式 API 文档中使用：\n\n<img src=\"https://fastapi.tiangolo.com/img/tutorial/response-model/image02.png\">\n\n## 响应模型编码参数\n\n你的响应模型可以具有默认值，例如：\n\n```Python hl_lines=\"11  13-14\"\n{!../../../docs_src/response_model/tutorial004.py!}\n```\n\n* `description: Union[str, None] = None` 具有默认值 `None`。\n* `tax: float = 10.5` 具有默认值 `10.5`.\n* `tags: List[str] = []` 具有一个空列表作为默认值： `[]`.\n\n但如果它们并没有存储实际的值，你可能想从结果中忽略它们的默认值。\n\n举个例子，当你在 NoSQL 数据库中保存了具有许多可选属性的模型，但你又不想发送充满默认值的很长的 JSON 响应。\n\n### 使用 `response_model_exclude_unset` 参数",
+                    "score": 18.450793
+                  },
+                  {
+                    "document_name": "query-params.md",
+                    "ordinal": 5,
+                    "text": "如果只想把参数设为**可选**，但又不想指定参数的值，则要把默认值设为 `None`。\n\n如果要把查询参数设置为**必选**，就不要声明默认值：\n\n```Python hl_lines=\"6-7\"\n{!../../../docs_src/query_params/tutorial005.py!}\n```\n\n这里的查询参数 `needy` 是类型为 `str` 的必选查询参数。\n\n在浏览器中打开如下 URL：\n\n```\nhttp://127.0.0.1:8000/items/foo-item\n```\n\n……因为路径中没有必选参数 `needy`，返回的响应中会显示如下错误信息：\n\n```JSON\n{\n    \"detail\": [\n        {\n            \"loc\": [\n                \"query\",\n                \"needy\"\n            ],\n            \"msg\": \"field required\",\n            \"type\": \"value_error.missing\"\n        }\n    ]\n}\n```\n\n`needy` 是必选参数，因此要在 URL 中设置值：\n\n```\nhttp://127.0.0.1:8000/items/foo-item?needy=sooooneedy\n```\n\n……这样就正常了：\n\n```JSON\n{\n    \"item_id\": \"foo-item\",\n    \"needy\": \"sooooneedy\"\n}\n```",
+                    "score": 17.568347
+                  },
+                  {
+                    "document_name": "body.md",
+                    "ordinal": 8,
+                    "text": "/../docs_src/body/tutorial004_py310.py!}\n```\n\n////\n\n//// tab | Python 3.8+\n\n```Python hl_lines=\"18\"\n{!> ../../../docs_src/body/tutorial004.py!}\n```\n\n////\n\n函数参数按如下规则进行识别：\n\n- **路径**中声明了相同参数的参数，是路径参数\n- 类型是（`int`、`float`、`str`、`bool` 等）**单类型**的参数，是**查询**参数\n- 类型是 **Pydantic 模型**的参数，是**请求体**\n\n/// note | \"笔记\"\n\n因为默认值是 `None`， FastAPI 会把 `q` 当作可选参数。\n\nFastAPI 不使用 `Optional[str]` 中的 `Optional`， 但 `Optional` 可以让编辑器提供更好的支持，并检测错误。\n\n///\n\n## 不使用 Pydantic\n\n即便不使用 Pydantic 模型也能使用 **Body** 参数。详见[请求体 - 多参数：请求体中的单值](body-multiple-params.md#_2){.internal-link target=\\_blank}。",
+                    "score": 16.841146
+                  }
+                ],
+                "search_latency_ms": 4.68
+              },
+              {
+                "id": "FM02",
+                "question": "无效请求数据触发的异常叫什么？另外，要限制正常响应只输出模型允许的字段，用什么参数？",
+                "split": "dev",
+                "category": "multi_evidence",
+                "reason": null,
+                "evidence": [
+                  {
+                    "document": "handling-errors.md",
+                    "contains": "请求中包含无效数据时，**FastAPI** 内部会触发 `RequestValidationError`。",
+                    "rank": 2
+                  },
+                  {
+                    "document": "response-model.md",
+                    "contains": "FastAPI 将使用此 `response_model` 来：",
+                    "rank": 3
+                  },
+                  {
+                    "document": "response-model.md",
+                    "contains": "会将输出数据限制在该模型定义内。",
+                    "rank": 3
+                  }
+                ],
+                "full_hit": true,
+                "evidence_recall": 1.0,
+                "reciprocal_rank": 0.5,
+                "returned_any": true,
+                "sources": [
+                  {
+                    "document_name": "handling-errors.md",
+                    "ordinal": 3,
+                    "text": "ample.com/items/bar`（`item_id` `「bar」` 不存在时），则会接收到 HTTP 状态码 - 404（「未找到」错误）及如下 JSON 响应结果：\n\n```JSON\n{\n  \"detail\": \"Item not found\"\n}\n\n```\n\n/// tip | \"提示\"\n\n触发 `HTTPException` 时，可以用参数 `detail` 传递任何能转换为 JSON 的值，不仅限于 `str`。\n\n还支持传递 `dict`、`list` 等数据结构。\n\n**FastAPI** 能自动处理这些数据，并将之转换为 JSON。\n\n///\n\n## 添加自定义响应头\n\n有些场景下要为 HTTP 错误添加自定义响应头。例如，出于某些方面的安全需要。\n\n一般情况下可能不会需要在代码中直接使用响应头。\n\n但对于某些高级应用场景，还是需要添加自定义响应头：\n\n```Python hl_lines=\"14\"\n{!../../../docs_src/handling_errors/tutorial002.py!}\n\n```\n\n## 安装自定义异常处理器\n\n添加自定义处理器，要使用 [Starlette 的异常工具](https://www.starlette.io/exceptions/)。\n\n假设要触发的自定义异常叫作 `UnicornException`。\n\n且需要 FastAPI 实现全局处理该异常。\n\n此时，可以用 `@app.exception_handler()` 添加自定义异常控制器：",
+                    "score": 17.000195
+                  },
+                  {
+                    "document_name": "handling-errors.md",
+                    "ordinal": 5,
+                    "text": "` 相同的 `fastapi.responses` 作为快捷方式，但大部分响应操作都可以直接从 Starlette 导入。同理，`Request` 也是如此。\n\n///\n\n## 覆盖默认异常处理器\n\n**FastAPI** 自带了一些默认异常处理器。\n\n触发 `HTTPException` 或请求无效数据时，这些处理器返回默认的 JSON 响应结果。\n\n不过，也可以使用自定义处理器覆盖默认异常处理器。\n\n### 覆盖请求验证异常\n\n请求中包含无效数据时，**FastAPI** 内部会触发 `RequestValidationError`。\n\n该异常也内置了默认异常处理器。\n\n覆盖默认异常处理器时需要导入 `RequestValidationError`，并用 `@app.excption_handler(RequestValidationError)` 装饰异常处理器。\n\n这样，异常处理器就可以接收 `Request` 与异常。\n\n```Python hl_lines=\"2  14-16\"\n{!../../../docs_src/handling_errors/tutorial004.py!}\n\n```\n\n访问 `/items/foo`，可以看到默认的 JSON 错误信息：\n\n```JSON\n{\n    \"detail\": [\n        {\n            \"loc\": [\n                \"path\",\n                \"item_id\"\n            ],",
+                    "score": 13.66431
+                  },
+                  {
+                    "document_name": "response-model.md",
+                    "ordinal": 2,
+                    "text": "////\n\n/// note\n\n注意，`response_model`是「装饰器」方法（`get`，`post` 等）的一个参数。不像之前的所有参数和请求体，它不属于*路径操作函数*。\n\n///\n\n它接收的类型与你将为 Pydantic 模型属性所声明的类型相同，因此它可以是一个 Pydantic 模型，但也可以是一个由 Pydantic 模型组成的 `list`，例如 `List[Item]`。\n\nFastAPI 将使用此 `response_model` 来：\n\n* 将输出数据转换为其声明的类型。\n* 校验数据。\n* 在 OpenAPI 的*路径操作*中为响应添加一个 JSON Schema。\n* 并在自动生成文档系统中使用。\n\n但最重要的是：\n\n* 会将输出数据限制在该模型定义内。下面我们会看到这一点有多重要。\n\n/// note | \"技术细节\"\n\n响应模型在参数中被声明，而不是作为函数返回类型的注解，这是因为路径函数可能不会真正返回该响应模型，而是返回一个 `dict`、数据库对象或其他模型，然后再使用 `response_model` 来执行字段约束和序列化。\n\n///\n\n## 返回与输入相同的数据\n\n现在我们声明一个 `UserIn` 模型，它将包含一个明文密码属性。\n\n```Python hl_lines=\"9  11\"\n{!../../../docs_src/response_model/tutorial002.py!}\n```\n\n我们正在使用此模型声明输入数据，并使用同一模型声明输出数据：\n\n```Python hl_lines=\"17-18\"",
+                    "score": 12.936815
+                  },
+                  {
+                    "document_name": "handling-errors.md",
+                    "ordinal": 2,
+                    "text": "xception`\n\n`HTTPException` 是额外包含了和 API 有关数据的常规 Python 异常。\n\n因为是 Python 异常，所以不能 `return`，只能 `raise`。\n\n如在调用*路径操作函数*里的工具函数时，触发了 `HTTPException`，FastAPI 就不再继续执行*路径操作函数*中的后续代码，而是立即终止请求，并把 `HTTPException` 的 HTTP 错误发送至客户端。\n\n在介绍依赖项与安全的章节中，您可以了解更多用 `raise` 异常代替 `return` 值的优势。\n\n本例中，客户端用 `ID` 请求的 `item` 不存在时，触发状态码为 `404` 的异常：\n\n```Python hl_lines=\"11\"\n{!../../../docs_src/handling_errors/tutorial001.py!}\n\n```\n\n### 响应结果\n\n请求为 `http://example.com/items/foo`（`item_id` 为 `「foo」`）时，客户端会接收到 HTTP 状态码 - 200 及如下 JSON 响应结果：\n\n```JSON\n{\n  \"item\": \"The Foo Wrestlers\"\n}\n\n```\n\n但如果客户端请求 `http://example.com/items/bar`（`item_id` `「bar」` 不存在时），则会接收到 HTTP 状态码 - 404（「未找到」错误）及如下 JSON 响应结果：\n\n```JSON\n{",
+                    "score": 11.973169
+                  },
+                  {
+                    "document_name": "handling-errors.md",
+                    "ordinal": 4,
+                    "text": "自定义异常叫作 `UnicornException`。\n\n且需要 FastAPI 实现全局处理该异常。\n\n此时，可以用 `@app.exception_handler()` 添加自定义异常控制器：\n\n```Python hl_lines=\"5-7  13-18  24\"\n{!../../../docs_src/handling_errors/tutorial003.py!}\n\n```\n\n请求 `/unicorns/yolo` 时，路径操作会触发 `UnicornException`。\n\n但该异常将会被 `unicorn_exception_handler` 处理。\n\n接收到的错误信息清晰明了，HTTP 状态码为 `418`，JSON 内容如下：\n\n```JSON\n{\"message\": \"Oops! yolo did something. There goes a rainbow...\"}\n\n```\n\n/// note | \"技术细节\"\n\n`from starlette.requests import Request` 和 `from starlette.responses import JSONResponse` 也可以用于导入 `Request` 和 `JSONResponse`。\n\n**FastAPI** 提供了与 `starlette.responses` 相同的 `fastapi.responses` 作为快捷方式，但大部分响应操作都可以直接从 Starlette 导入。同理，`Request` 也是如此。\n\n///\n\n## 覆盖默认异常处理器",
+                    "score": 10.899142
+                  }
+                ],
+                "search_latency_ms": 4.959
+              },
+              {
+                "id": "FN01",
+                "question": "这些文档给出的生产环境数据库连接池推荐大小是多少？",
+                "split": "dev",
+                "category": "unanswerable",
+                "reason": "资料提到共享数据库连接，但没有连接池大小或生产调优参数。",
+                "evidence": [],
+                "full_hit": null,
+                "evidence_recall": null,
+                "reciprocal_rank": null,
+                "returned_any": true,
+                "sources": [
+                  {
+                    "document_name": "dependencies.md",
+                    "ordinal": 1,
+                    "text": "# 依赖项\n\nFastAPI 提供了简单易用，但功能强大的**<abbr title=\"也称为组件、资源、提供者、服务、可注入项\">依赖注入</abbr>**系统。\n\n这个依赖系统设计的简单易用，可以让开发人员轻松地把组件集成至 **FastAPI**。\n\n## 什么是「依赖注入」\n\n编程中的**「依赖注入」**是声明代码（本文中为*路径操作函数* ）运行所需的，或要使用的「依赖」的一种方式。\n\n然后，由系统（本文中为 **FastAPI**）负责执行任意需要的逻辑，为代码提供这些依赖（「注入」依赖项）。\n\n依赖注入常用于以下场景：\n\n* 共享业务逻辑（复用相同的代码逻辑）\n* 共享数据库连接\n* 实现安全、验证、角色权限\n* 等……\n\n上述场景均可以使用**依赖注入**，将代码重复最小化。\n\n## 第一步\n\n接下来，我们学习一个非常简单的例子，尽管它过于简单，不是很实用。\n\n但通过这个例子，您可以初步了解「依赖注入」的工作机制。\n\n### 创建依赖项\n\n首先，要关注的是依赖项。\n\n依赖项就是一个函数，且可以使用与*路径操作函数*相同的参数：\n\n```Python hl_lines=\"8-11\"\n{!../../../docs_src/dependencies/tutorial001.py!}\n```\n\n大功告成。\n\n只用了**2 行**代码。\n\n依赖项函数的形式和结构与*路径操作函数*一样。\n\n因此，可以把依赖项当作没有「装饰器」（即，没有 `@app.get(\"/some-path\")` ）的路径操作函数。\n\n依赖项可以返回各种内容。\n\n本例中的依赖项预期接收如下参数：",
+                    "score": 7.837926
+                  },
+                  {
+                    "document_name": "dependencies.md",
+                    "ordinal": 5,
+                    "text": "的参数调用函数，并提取请求中的数据。\n\n实际上，所有（或大多数）网络框架的工作方式都是这样的。\n\n开发人员永远都不需要直接调用这些函数，这些函数是由框架（在此为 **FastAPI** ）调用的。\n\n通过依赖注入系统，只要告诉 **FastAPI** *路径操作函数* 还要「依赖」其他在*路径操作函数*之前执行的内容，**FastAPI** 就会执行函数代码，并「注入」函数返回的结果。\n\n其他与「依赖注入」概念相同的术语为：\n\n* 资源（Resource）\n* 提供方（Provider）\n* 服务（Service）\n* 可注入（Injectable）\n* 组件（Component）\n\n## **FastAPI** 插件\n\n**依赖注入**系统支持构建集成和「插件」。但实际上，FastAPI 根本**不需要创建「插件」**，因为使用依赖项可以声明不限数量的、可用于*路径操作函数*的集成与交互。\n\n创建依赖项非常简单、直观，并且还支持导入 Python 包。毫不夸张地说，只要几行代码就可以把需要的 Python 包与 API 函数集成在一起。\n\n下一章将详细介绍在关系型数据库、NoSQL 数据库、安全等方面使用依赖项的例子。\n\n## **FastAPI** 兼容性\n\n依赖注入系统如此简洁的特性，让 **FastAPI** 可以与下列系统兼容：\n\n* 关系型数据库\n* NoSQL 数据库\n* 外部支持库\n* 外部 API\n* 认证和鉴权系统\n* API 使用监控系统\n* 响应数据注入系统\n* 等等……\n\n## 简单而强大",
+                    "score": 5.35991
+                  },
+                  {
+                    "document_name": "dependencies.md",
+                    "ordinal": 6,
+                    "text": "与下列系统兼容：\n\n* 关系型数据库\n* NoSQL 数据库\n* 外部支持库\n* 外部 API\n* 认证和鉴权系统\n* API 使用监控系统\n* 响应数据注入系统\n* 等等……\n\n## 简单而强大\n\n虽然，**层级式依赖注入系统**的定义与使用十分简单，但它却非常强大。\n\n比如，可以定义依赖其他依赖项的依赖项。\n\n最后，依赖项层级树构建后，**依赖注入系统**会处理所有依赖项及其子依赖项，并为每一步操作提供（注入）结果。\n\n比如，下面有 4 个 API 路径操作（*端点*）：\n\n* `/items/public/`\n* `/items/private/`\n* `/users/{user_id}/activate`\n* `/items/pro/`\n\n开发人员可以使用依赖项及其子依赖项为这些路径操作添加不同的权限：\n\n```mermaid\ngraph TB\n\ncurrent_user([\"current_user\"])\nactive_user([\"active_user\"])\nadmin_user([\"admin_user\"])\npaying_user([\"paying_user\"])\n\npublic[\"/items/public/\"]\nprivate[\"/items/private/\"]\nactivate_user[\"/users/{user_id}/activate\"]\npro_items[\"/items/pro/\"]\n\ncurrent_user --> active_user\nactive_user --> admin_user",
+                    "score": 4.707983
+                  },
+                  {
+                    "document_name": "response-model.md",
+                    "ordinal": 5,
+                    "text": "I** 将会负责过滤掉未在输出模型中声明的所有数据（使用 Pydantic）。\n\n## 在文档中查看\n\n当你查看自动化文档时，你可以检查输入模型和输出模型是否都具有自己的 JSON Schema：\n\n<img src=\"https://fastapi.tiangolo.com/img/tutorial/response-model/image01.png\">\n\n并且两种模型都将在交互式 API 文档中使用：\n\n<img src=\"https://fastapi.tiangolo.com/img/tutorial/response-model/image02.png\">\n\n## 响应模型编码参数\n\n你的响应模型可以具有默认值，例如：\n\n```Python hl_lines=\"11  13-14\"\n{!../../../docs_src/response_model/tutorial004.py!}\n```\n\n* `description: Union[str, None] = None` 具有默认值 `None`。\n* `tax: float = 10.5` 具有默认值 `10.5`.\n* `tags: List[str] = []` 具有一个空列表作为默认值： `[]`.\n\n但如果它们并没有存储实际的值，你可能想从结果中忽略它们的默认值。\n\n举个例子，当你在 NoSQL 数据库中保存了具有许多可选属性的模型，但你又不想发送充满默认值的很长的 JSON 响应。\n\n### 使用 `response_model_exclude_unset` 参数",
+                    "score": 4.282654
+                  },
+                  {
+                    "document_name": "body.md",
+                    "ordinal": 6,
+                    "text": "\">PyCharm</a> 和大多数 Python 编辑器也支持同样的功能：\n\n<img src=\"/img/tutorial/body/image05.png\">\n\n/// tip | \"提示\"\n\n使用 <a href=\"https://www.jetbrains.com/pycharm/\" class=\"external-link\" target=\"_blank\">PyCharm</a> 编辑器时，推荐安装 <a href=\"https://github.com/koxudaxi/pydantic-pycharm-plugin/\" class=\"external-link\" target=\"_blank\">Pydantic PyCharm 插件</a>。\n\n该插件用于完善 PyCharm 对 Pydantic 模型的支持，优化的功能如下：\n\n* 自动补全\n* 类型检查\n* 代码重构\n* 查找\n* 代码审查\n\n///\n\n## 使用模型\n\n在*路径操作*函数内部直接访问模型对象的属性：\n\n//// tab | Python 3.10+\n\n```Python hl_lines=\"19\"\n{!> ../../../docs_src/body/tutorial002_py310.py!}\n```\n\n////\n\n//// tab | Python 3.8+\n\n```Python hl_lines=\"21\"\n{!> ../../../docs_src/body/tutorial002.py!}\n```\n\n////\n\n## 请求体 + 路径参数",
+                    "score": 3.952202
+                  }
+                ],
+                "search_latency_ms": 4.802
+              },
+              {
+                "id": "FN02",
+                "question": "依赖项中调用外部 API 时，FastAPI 默认几秒超时，又自动重试几次？",
+                "split": "dev",
+                "category": "unanswerable",
+                "reason": "资料仅列出外部 API 兼容性，没有超时或重试策略。",
+                "evidence": [],
+                "full_hit": null,
+                "evidence_recall": null,
+                "reciprocal_rank": null,
+                "returned_any": true,
+                "sources": [
+                  {
+                    "document_name": "dependencies.md",
+                    "ordinal": 5,
+                    "text": "的参数调用函数，并提取请求中的数据。\n\n实际上，所有（或大多数）网络框架的工作方式都是这样的。\n\n开发人员永远都不需要直接调用这些函数，这些函数是由框架（在此为 **FastAPI** ）调用的。\n\n通过依赖注入系统，只要告诉 **FastAPI** *路径操作函数* 还要「依赖」其他在*路径操作函数*之前执行的内容，**FastAPI** 就会执行函数代码，并「注入」函数返回的结果。\n\n其他与「依赖注入」概念相同的术语为：\n\n* 资源（Resource）\n* 提供方（Provider）\n* 服务（Service）\n* 可注入（Injectable）\n* 组件（Component）\n\n## **FastAPI** 插件\n\n**依赖注入**系统支持构建集成和「插件」。但实际上，FastAPI 根本**不需要创建「插件」**，因为使用依赖项可以声明不限数量的、可用于*路径操作函数*的集成与交互。\n\n创建依赖项非常简单、直观，并且还支持导入 Python 包。毫不夸张地说，只要几行代码就可以把需要的 Python 包与 API 函数集成在一起。\n\n下一章将详细介绍在关系型数据库、NoSQL 数据库、安全等方面使用依赖项的例子。\n\n## **FastAPI** 兼容性\n\n依赖注入系统如此简洁的特性，让 **FastAPI** 可以与下列系统兼容：\n\n* 关系型数据库\n* NoSQL 数据库\n* 外部支持库\n* 外部 API\n* 认证和鉴权系统\n* API 使用监控系统\n* 响应数据注入系统\n* 等等……\n\n## 简单而强大",
+                    "score": 14.591721
+                  },
+                  {
+                    "document_name": "dependencies.md",
+                    "ordinal": 6,
+                    "text": "与下列系统兼容：\n\n* 关系型数据库\n* NoSQL 数据库\n* 外部支持库\n* 外部 API\n* 认证和鉴权系统\n* API 使用监控系统\n* 响应数据注入系统\n* 等等……\n\n## 简单而强大\n\n虽然，**层级式依赖注入系统**的定义与使用十分简单，但它却非常强大。\n\n比如，可以定义依赖其他依赖项的依赖项。\n\n最后，依赖项层级树构建后，**依赖注入系统**会处理所有依赖项及其子依赖项，并为每一步操作提供（注入）结果。\n\n比如，下面有 4 个 API 路径操作（*端点*）：\n\n* `/items/public/`\n* `/items/private/`\n* `/users/{user_id}/activate`\n* `/items/pro/`\n\n开发人员可以使用依赖项及其子依赖项为这些路径操作添加不同的权限：\n\n```mermaid\ngraph TB\n\ncurrent_user([\"current_user\"])\nactive_user([\"active_user\"])\nadmin_user([\"admin_user\"])\npaying_user([\"paying_user\"])\n\npublic[\"/items/public/\"]\nprivate[\"/items/private/\"]\nactivate_user[\"/users/{user_id}/activate\"]\npro_items[\"/items/pro/\"]\n\ncurrent_user --> active_user\nactive_user --> admin_user",
+                    "score": 13.805016
+                  },
+                  {
+                    "document_name": "dependencies.md",
+                    "ordinal": 4,
+                    "text": "I** 调用依赖项的方式与*路径操作函数*一样，因此，定义依赖项函数，也要应用与路径操作函数相同的规则。\n\n即，既可以使用异步的 `async def`，也可以使用普通的 `def` 定义依赖项。\n\n在普通的 `def` *路径操作函数*中，可以声明异步的 `async def` 依赖项；也可以在异步的 `async def` *路径操作函数*中声明普通的 `def` 依赖项。\n\n上述这些操作都是可行的，**FastAPI** 知道该怎么处理。\n\n/// note | \"笔记\"\n\n如里不了解异步，请参阅[异步：*“着急了？”*](../../async.md){.internal-link target=_blank} 一章中 `async` 和 `await` 的内容。\n\n///\n\n## 与 OpenAPI 集成\n\n依赖项及子依赖项的所有请求声明、验证和需求都可以集成至同一个 OpenAPI 概图。\n\n所以，交互文档里也会显示依赖项的所有信息：\n\n<img src=\"/img/tutorial/dependencies/image01.png\">\n\n## 简单用法\n\n观察一下就会发现，只要*路径* 和*操作*匹配，就可以使用声明的路径操作函数。然后，**FastAPI** 会用正确的参数调用函数，并提取请求中的数据。\n\n实际上，所有（或大多数）网络框架的工作方式都是这样的。\n\n开发人员永远都不需要直接调用这些函数，这些函数是由框架（在此为 **FastAPI** ）调用的。",
+                    "score": 10.676052
+                  },
+                  {
+                    "document_name": "dependencies.md",
+                    "ordinal": 3,
+                    "text": "个参数。\n\n且该参数必须是可调用对象，比如函数。\n\n该函数接收的参数和*路径操作函数*的参数一样。\n\n/// tip | \"提示\"\n\n下一章介绍，除了函数还有哪些「对象」可以用作依赖项。\n\n///\n\n接收到新的请求时，**FastAPI** 执行如下操作：\n\n* 用正确的参数调用依赖项函数（「可依赖项」）\n* 获取函数返回的结果\n* 把函数返回的结果赋值给*路径操作函数*的参数\n\n```mermaid\ngraph TB\n\ncommon_parameters([\"common_parameters\"])\nread_items[\"/items/\"]\nread_users[\"/users/\"]\n\ncommon_parameters --> read_items\ncommon_parameters --> read_users\n```\n\n这样，只编写一次代码，**FastAPI** 就可以为多个*路径操作*共享这段代码 。\n\n/// check | \"检查\"\n\n注意，无需创建专门的类，并将之传递给 **FastAPI** 以进行「注册」或执行类似的操作。\n\n只要把它传递给 `Depends`，**FastAPI** 就知道该如何执行后续操作。\n\n///\n\n## 要不要使用 `async`？\n\n**FastAPI** 调用依赖项的方式与*路径操作函数*一样，因此，定义依赖项函数，也要应用与路径操作函数相同的规则。\n\n即，既可以使用异步的 `async def`，也可以使用普通的 `def` 定义依赖项。",
+                    "score": 10.389603
+                  },
+                  {
+                    "document_name": "dependencies.md",
+                    "ordinal": 2,
+                    "text": "函数*一样。\n\n因此，可以把依赖项当作没有「装饰器」（即，没有 `@app.get(\"/some-path\")` ）的路径操作函数。\n\n依赖项可以返回各种内容。\n\n本例中的依赖项预期接收如下参数：\n\n* 类型为 `str` 的可选查询参数 `q`\n* 类型为 `int` 的可选查询参数 `skip`，默认值是 `0`\n* 类型为 `int` 的可选查询参数 `limit`，默认值是 `100`\n\n然后，依赖项函数返回包含这些值的 `dict`。\n\n### 导入 `Depends`\n\n```Python hl_lines=\"3\"\n{!../../../docs_src/dependencies/tutorial001.py!}\n```\n\n### 声明依赖项\n\n与在*路径操作函数*参数中使用 `Body`、`Query` 的方式相同，声明依赖项需要使用 `Depends` 和一个新的参数：\n\n```Python hl_lines=\"15  20\"\n{!../../../docs_src/dependencies/tutorial001.py!}\n```\n\n虽然，在路径操作函数的参数中使用 `Depends` 的方式与 `Body`、`Query` 相同，但 `Depends` 的工作方式略有不同。\n\n这里只能传给 Depends 一个参数。\n\n且该参数必须是可调用对象，比如函数。\n\n该函数接收的参数和*路径操作函数*的参数一样。\n\n/// tip | \"提示\"\n\n下一章介绍，除了函数还有哪些「对象」可以用作依赖项。\n\n///",
+                    "score": 10.152579
+                  }
+                ],
+                "search_latency_ms": 6.155
+              }
+            ]
+          }
+        }
+      }
+    },
+    "runtime": {
+      "loaded": false,
+      "device": "CPU (BM25 only)"
+    }
+  },
+  "status": "passed"
+}

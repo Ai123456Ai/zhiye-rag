@@ -1,0 +1,12 @@
+[
+  {"question":"北京出差住宿报销上限是多少？","evidence_contains":"每人每晚 500 元"},
+  {"question":"普通城市的住宿标准是多少？","evidence_contains":"每人每晚 350 元"},
+  {"question":"出差餐补每天多少钱？","evidence_contains":"每人每天 80 元"},
+  {"question":"返程之后多久提交报销？","evidence_contains":"15 个自然日"},
+  {"question":"财务审核通过后多久付款？","evidence_contains":"5 个工作日"},
+  {"question":"年假申请需要提前多久？","evidence_contains":"提前 3 个工作日"},
+  {"question":"远程办公每月最多几天？","evidence_contains":"最多 4 天远程办公"},
+  {"question":"发现账号泄露怎么办？","evidence_contains":"立即联系信息安全团队"},
+  {"question":"账号密码长度要求是什么？","evidence_contains":"密码至少 12 位"},
+  {"question":"工作电脑发生设备故障如何报修？","evidence_contains":"IT 工单系统"}
+]

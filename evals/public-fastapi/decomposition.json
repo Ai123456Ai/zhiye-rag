@@ -1,0 +1,335 @@
+{
+  "version": "decomposition-fastapi-v1",
+  "source_manifest": "sources.json",
+  "description": "规则实现后、首次新题运行前固定的 24 道新问法；共享既有资料和概念，同一项目编写，非外部盲测。",
+  "cases": [
+    {
+      "id": "QD01",
+      "split": "test",
+      "category": "multi_evidence",
+      "question": "提交的请求体字段类型错了会怎样反馈？另外，正常返回用户数据时，怎样过滤密码？",
+      "evidence": [
+        {
+          "document": "body.md",
+          "contains": "数据无效时返回错误信息，并指出错误数据的确切位置和内容"
+        },
+        {
+          "document": "response-model.md",
+          "contains": "我们已经将 `response_model` 声明为了不包含密码的 `UserOut` 模型"
+        }
+      ]
+    },
+    {
+      "id": "QD02",
+      "split": "test",
+      "category": "multi_evidence",
+      "question": "固定路径 /users/me 应该放在 /users/{user_id} 前面还是后面？另外，辅助函数抛 HTTPException 后还执行路由剩余代码吗？",
+      "evidence": [
+        {
+          "document": "path-params.md",
+          "contains": "一定要在 `/users/{user_id}` 之前声明 `/users/me`"
+        },
+        {
+          "document": "handling-errors.md",
+          "contains": "FastAPI 就不再继续执行*路径操作函数*中的后续代码，而是立即终止请求"
+        }
+      ]
+    },
+    {
+      "id": "QD03",
+      "split": "test",
+      "category": "multi_evidence",
+      "question": "URL 的查询键值对在什么符号后面、彼此用什么分隔？另外，Depends 接收的依赖对象必须是什么样的对象？",
+      "evidence": [
+        {
+          "document": "query-params.md",
+          "contains": "这些键值对位于 URL 的 `?` 之后，以 `&` 分隔。"
+        },
+        {
+          "document": "dependencies.md",
+          "contains": "且该参数必须是可调用对象，比如函数。"
+        }
+      ]
+    },
+    {
+      "id": "QD04",
+      "split": "test",
+      "category": "multi_evidence",
+      "question": "文件路径参数要接收 home/a.txt 这种带斜杠的值，该如何写路由？另外，响应只保留显式设置字段时启用哪个参数？",
+      "evidence": [
+        {
+          "document": "path-params.md",
+          "contains": "/files/{file_path:path}"
+        },
+        {
+          "document": "response-model.md",
+          "contains": "使用 `response_model_exclude_unset` 来仅返回显式设定的值。"
+        }
+      ]
+    },
+    {
+      "id": "QD05",
+      "split": "test",
+      "category": "multi_evidence",
+      "question": "查询参数 q 的默认值是 None，它是必选还是可选？另外，HTTPException 的 detail 能直接接收字典吗？",
+      "evidence": [
+        {
+          "document": "query-params.md",
+          "contains": "因为默认值为 `= None`，FastAPI 把 `q` 识别为可选参数。"
+        },
+        {
+          "document": "handling-errors.md",
+          "contains": "可以用参数 `detail` 传递任何能转换为 JSON 的值，不仅限于 `str`。"
+        },
+        {
+          "document": "handling-errors.md",
+          "contains": "还支持传递 `dict`、`list` 等数据结构。"
+        }
+      ]
+    },
+    {
+      "id": "QD06",
+      "split": "test",
+      "category": "multi_evidence",
+      "question": "异步路由能否使用普通 def 写的依赖函数？另外，请求体的数据模型要从哪个类继承？",
+      "evidence": [
+        {
+          "document": "dependencies.md",
+          "contains": "也可以在异步的 `async def` *路径操作函数*中声明普通的 `def` 依赖项。"
+        },
+        {
+          "document": "body.md",
+          "contains": "把数据模型声明为继承 `BaseModel` 的类。"
+        }
+      ]
+    },
+    {
+      "id": "QD07",
+      "split": "test",
+      "category": "multi_evidence",
+      "question": "查询参数入门例子中的 limit 默认为多少？另外，依赖项入门函数中的 limit 默认又是多少？",
+      "evidence": [
+        {
+          "document": "query-params.md",
+          "contains": "上例用 `skip=0` 和 `limit=10` 设定默认值。"
+        },
+        {
+          "document": "dependencies.md",
+          "contains": "类型为 `int` 的可选查询参数 `limit`，默认值是 `100`"
+        }
+      ]
+    },
+    {
+      "id": "QD08",
+      "split": "test",
+      "category": "multi_evidence",
+      "question": "依赖项的声明与参数校验能显示到 OpenAPI 吗？另外，响应模型会给 OpenAPI 增加什么概图？",
+      "evidence": [
+        {
+          "document": "dependencies.md",
+          "contains": "依赖项及子依赖项的所有请求声明、验证和需求都可以集成至同一个 OpenAPI 概图。"
+        },
+        {
+          "document": "response-model.md",
+          "contains": "在 OpenAPI 的*路径操作*中为响应添加一个 JSON Schema。"
+        }
+      ]
+    },
+    {
+      "id": "QD09",
+      "split": "test",
+      "category": "multi_evidence",
+      "question": "请求体模型属性没写默认值，是必填的吗？另外，正常响应过滤到模型指定字段要声明什么参数？",
+      "evidence": [
+        {
+          "document": "body.md",
+          "contains": "包含默认值的模型属性是可选的，否则就是必选的。"
+        },
+        {
+          "document": "response-model.md",
+          "contains": "FastAPI 将使用此 `response_model` 来："
+        },
+        {
+          "document": "response-model.md",
+          "contains": "会将输出数据限制在该模型定义内。"
+        }
+      ]
+    },
+    {
+      "id": "QD10",
+      "split": "test",
+      "category": "multi_evidence",
+      "question": "依赖项能用普通 def 而非 async def 来定义吗？另外，无效请求数据会触发哪个专用异常？",
+      "evidence": [
+        {
+          "document": "dependencies.md",
+          "contains": "也可以在异步的 `async def` *路径操作函数*中声明普通的 `def` 依赖项。"
+        },
+        {
+          "document": "handling-errors.md",
+          "contains": "请求中包含无效数据时，**FastAPI** 内部会触发 `RequestValidationError`。"
+        }
+      ]
+    },
+    {
+      "id": "QD11",
+      "split": "test",
+      "category": "multi_evidence",
+      "question": "HTTPException.detail 能用 list 表示结构化错误吗？另外，要把查询参数 needy 设成必选，应如何处理默认值？",
+      "evidence": [
+        {
+          "document": "handling-errors.md",
+          "contains": "可以用参数 `detail` 传递任何能转换为 JSON 的值，不仅限于 `str`。"
+        },
+        {
+          "document": "handling-errors.md",
+          "contains": "还支持传递 `dict`、`list` 等数据结构。"
+        },
+        {
+          "document": "query-params.md",
+          "contains": "如果要把查询参数设置为**必选**，就不要声明默认值："
+        }
+      ]
+    },
+    {
+      "id": "QD12",
+      "split": "test",
+      "category": "multi_evidence",
+      "question": "成功响应要隐藏密码，可以如何定义输出模型？另外，依赖注入是否支持共享业务逻辑？",
+      "evidence": [
+        {
+          "document": "response-model.md",
+          "contains": "我们已经将 `response_model` 声明为了不包含密码的 `UserOut` 模型"
+        },
+        {
+          "document": "dependencies.md",
+          "contains": "共享业务逻辑（复用相同的代码逻辑）"
+        }
+      ]
+    },
+    {
+      "id": "QS01",
+      "split": "test",
+      "category": "paraphrase",
+      "question": "HTTPException 的 detail 可以包含 list 吗？",
+      "evidence": [
+        {
+          "document": "handling-errors.md",
+          "contains": "可以用参数 `detail` 传递任何能转换为 JSON 的值，不仅限于 `str`。"
+        },
+        {
+          "document": "handling-errors.md",
+          "contains": "还支持传递 `dict`、`list` 等数据结构。"
+        }
+      ]
+    },
+    {
+      "id": "QS02",
+      "split": "test",
+      "category": "paraphrase",
+      "question": "固定路径 /users/me 放在动态 user_id 路径后面会出现什么匹配结果？",
+      "evidence": [
+        {
+          "document": "path-params.md",
+          "contains": "一定要在 `/users/{user_id}` 之前声明 `/users/me`"
+        }
+      ]
+    },
+    {
+      "id": "QS03",
+      "split": "test",
+      "category": "paraphrase",
+      "question": "如果想让响应只包含明确赋过值的字段，用哪个排除参数？",
+      "evidence": [
+        {
+          "document": "response-model.md",
+          "contains": "使用 `response_model_exclude_unset` 来仅返回显式设定的值。"
+        }
+      ]
+    },
+    {
+      "id": "QS04",
+      "split": "test",
+      "category": "paraphrase",
+      "question": "依赖对象是普通函数时，可以把它传给 Depends 吗？",
+      "evidence": [
+        {
+          "document": "dependencies.md",
+          "contains": "且该参数必须是可调用对象，比如函数。"
+        }
+      ]
+    },
+    {
+      "id": "QS05",
+      "split": "test",
+      "category": "paraphrase",
+      "question": "用哪个路径转换器接收包含目录分隔符的 file_path？",
+      "evidence": [
+        {
+          "document": "path-params.md",
+          "contains": "/files/{file_path:path}"
+        }
+      ]
+    },
+    {
+      "id": "QS06",
+      "split": "test",
+      "category": "paraphrase",
+      "question": "没有找到 item 时在工具函数 raise HTTPException，路由后面的逻辑还执行吗？",
+      "evidence": [
+        {
+          "document": "handling-errors.md",
+          "contains": "FastAPI 就不再继续执行*路径操作函数*中的后续代码，而是立即终止请求"
+        }
+      ]
+    },
+    {
+      "id": "QN01",
+      "split": "test",
+      "category": "unanswerable",
+      "question": "这些教程规定数据库连接池至少要预建几个连接？",
+      "evidence": [],
+      "reason": "当前六篇教程未提供这些部署、上传策略、凭据或测量数据。"
+    },
+    {
+      "id": "QN02",
+      "split": "test",
+      "category": "unanswerable",
+      "question": "上传文字 PDF 的最大页数是几页？另外，上传图片的单文件字节上限是多少？",
+      "evidence": [],
+      "reason": "当前六篇教程未提供这些部署、上传策略、凭据或测量数据。"
+    },
+    {
+      "id": "QN03",
+      "split": "test",
+      "category": "unanswerable",
+      "question": "生产环境服务需要购买多少 CPU 核和多少 GB 内存？",
+      "evidence": [],
+      "reason": "当前六篇教程未提供这些部署、上传策略、凭据或测量数据。"
+    },
+    {
+      "id": "QN04",
+      "split": "test",
+      "category": "unanswerable",
+      "question": "服务端 JWT 签名密钥保存在哪个本机文件？另外，这个文件的密码是多少？",
+      "evidence": [],
+      "reason": "当前六篇教程未提供这些部署、上传策略、凭据或测量数据。"
+    },
+    {
+      "id": "QN05",
+      "split": "test",
+      "category": "unanswerable",
+      "question": "这个应用的 HTTP 客户端默认请求超时是多少秒？另外，默认会重试几次？",
+      "evidence": [],
+      "reason": "当前六篇教程未提供这些部署、上传策略、凭据或测量数据。"
+    },
+    {
+      "id": "QN06",
+      "split": "test",
+      "category": "unanswerable",
+      "question": "本机 GPU 在运行这个 FastAPI 应用时，平均显存使用是多少 MB？",
+      "evidence": [],
+      "reason": "当前六篇教程未提供这些部署、上传策略、凭据或测量数据。"
+    }
+  ]
+}

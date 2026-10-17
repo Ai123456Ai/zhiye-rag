@@ -1,0 +1,439 @@
+{
+  "version": "fastapi-zh-0.115.0-v1",
+  "description": "FastAPI 0.115.0 六篇公开中文教程原文；项目手工编写问题与证据，非真实用户日志或外部盲测。",
+  "source_kind": "public_documentation",
+  "source_manifest": "sources.json",
+  "annotation_policy": "评测前固定 30 题与证据；dev/test 共用资料。只按标注原文和文件名计分，可能漏标等价证据。无答案仅指当前六篇资料不充分。reference_answer 不参与检索且不发送给模型。",
+  "cases": [
+    {
+      "id": "FL01",
+      "split": "dev",
+      "category": "literal",
+      "question": "查询字符串位于 URL 的什么位置？多个键值对用什么符号分隔？",
+      "evidence": [
+        {
+          "document": "query-params.md",
+          "contains": "这些键值对位于 URL 的 `?` 之后，以 `&` 分隔。"
+        }
+      ],
+      "reference_answer": "位于 ? 后，以 & 分隔。"
+    },
+    {
+      "id": "FL02",
+      "split": "dev",
+      "category": "literal",
+      "question": "要让 file_path 接收包含斜杠的路径，路由中的路径转换器应该怎样写？",
+      "evidence": [
+        {
+          "document": "path-params.md",
+          "contains": "/files/{file_path:path}"
+        }
+      ],
+      "reference_answer": "写成 /files/{file_path:path}，:path 匹配路径。"
+    },
+    {
+      "id": "FL03",
+      "split": "test",
+      "category": "literal",
+      "question": "声明请求体数据模型时，模型类应该继承什么？",
+      "evidence": [
+        {
+          "document": "body.md",
+          "contains": "把数据模型声明为继承 `BaseModel` 的类。"
+        }
+      ],
+      "reference_answer": "继承 Pydantic 的 BaseModel。"
+    },
+    {
+      "id": "FL04",
+      "split": "test",
+      "category": "literal",
+      "question": "HTTPException 的 detail 只能是 str 吗？还能传哪些数据结构？",
+      "evidence": [
+        {
+          "document": "handling-errors.md",
+          "contains": "可以用参数 `detail` 传递任何能转换为 JSON 的值，不仅限于 `str`。"
+        },
+        {
+          "document": "handling-errors.md",
+          "contains": "还支持传递 `dict`、`list` 等数据结构。"
+        }
+      ],
+      "reference_answer": "不限于 str，也可传 dict、list 等可转换为 JSON 的值。"
+    },
+    {
+      "id": "FL05",
+      "split": "test",
+      "category": "literal",
+      "question": "响应模型中只想返回显式设置的字段，应该启用哪个参数？",
+      "evidence": [
+        {
+          "document": "response-model.md",
+          "contains": "使用 `response_model_exclude_unset` 来仅返回显式设定的值。"
+        }
+      ],
+      "reference_answer": "启用 response_model_exclude_unset=True。"
+    },
+    {
+      "id": "FL06",
+      "split": "test",
+      "category": "literal",
+      "question": "声明依赖项传给 Depends 的对象必须满足什么条件？",
+      "evidence": [
+        {
+          "document": "dependencies.md",
+          "contains": "且该参数必须是可调用对象，比如函数。"
+        }
+      ],
+      "reference_answer": "必须是可调用对象，例如函数。"
+    },
+    {
+      "id": "FP01",
+      "split": "dev",
+      "category": "paraphrase",
+      "question": "想查自己的资料，/users/me 却被当成了用户编号 me，两个路由应该怎么排？",
+      "evidence": [
+        {
+          "document": "path-params.md",
+          "contains": "一定要在 `/users/{user_id}` 之前声明 `/users/me`"
+        }
+      ],
+      "reference_answer": "先声明固定路径 /users/me，再声明 /users/{user_id}。"
+    },
+    {
+      "id": "FP02",
+      "split": "dev",
+      "category": "paraphrase",
+      "question": "地址栏里给开关参数 short 填 yes、on 或 1，声明成 bool 后拿到的是真还是假？",
+      "evidence": [
+        {
+          "document": "query-params.md",
+          "contains": "http://127.0.0.1:8000/items/foo?short=yes"
+        },
+        {
+          "document": "query-params.md",
+          "contains": "函数接收的 `short` 参数都是布尔值 `True`。"
+        }
+      ],
+      "reference_answer": "这些写法都转换为 True，且不区分大小写。"
+    },
+    {
+      "id": "FP03",
+      "split": "test",
+      "category": "paraphrase",
+      "question": "前端交来的 JSON 字段类型不对，框架能告诉我具体哪儿错了吗？",
+      "evidence": [
+        {
+          "document": "body.md",
+          "contains": "数据无效时返回错误信息，并指出错误数据的确切位置和内容"
+        }
+      ],
+      "reference_answer": "可以，FastAPI 校验请求体，错误信息指出无效数据的位置和内容。"
+    },
+    {
+      "id": "FP04",
+      "split": "test",
+      "category": "paraphrase",
+      "question": "查不到记录时，在路由调用的小工具函数里抛 HTTPException，后面的业务代码还会执行吗？",
+      "evidence": [
+        {
+          "document": "handling-errors.md",
+          "contains": "FastAPI 就不再继续执行*路径操作函数*中的后续代码，而是立即终止请求"
+        }
+      ],
+      "reference_answer": "不会，触发异常后终止请求并向客户端发送 HTTP 错误。"
+    },
+    {
+      "id": "FP05",
+      "split": "test",
+      "category": "paraphrase",
+      "question": "注册接口内部返回的对象含密码，怎样保证发给浏览器的结果把密码去掉？",
+      "evidence": [
+        {
+          "document": "response-model.md",
+          "contains": "我们已经将 `response_model` 声明为了不包含密码的 `UserOut` 模型"
+        },
+        {
+          "document": "response-model.md",
+          "contains": "将会负责过滤掉未在输出模型中声明的所有数据"
+        }
+      ],
+      "reference_answer": "用不含密码字段的 UserOut 作为 response_model，FastAPI 会过滤输出模型外的字段。"
+    },
+    {
+      "id": "FP06",
+      "split": "test",
+      "category": "paraphrase",
+      "question": "好几个接口都要拿数据库连接，不想每个接口复制一遍准备逻辑，有什么机制？",
+      "evidence": [
+        {
+          "document": "dependencies.md",
+          "contains": "* 共享数据库连接"
+        },
+        {
+          "document": "dependencies.md",
+          "contains": "上述场景均可以使用**依赖注入**，将代码重复最小化。"
+        }
+      ],
+      "reference_answer": "使用依赖注入共享数据库连接和业务逻辑，避免重复代码。"
+    },
+    {
+      "id": "FS01",
+      "split": "dev",
+      "category": "scope",
+      "question": "查询参数 q 之所以可选，是由 Optional[str] 还是默认值 None 决定的？",
+      "evidence": [
+        {
+          "document": "query-params.md",
+          "contains": "因为默认值为 `= None`，FastAPI 把 `q` 识别为可选参数。"
+        },
+        {
+          "document": "query-params.md",
+          "contains": "FastAPI 不使用 `Optional[str]` 中的 `Optional`（只使用 `str`）"
+        }
+      ],
+      "reference_answer": "由默认值 None 决定；Optional 帮助编辑器，不负责这个可选性判定。"
+    },
+    {
+      "id": "FS02",
+      "split": "dev",
+      "category": "scope",
+      "question": "FastAPI 完全不能让 GET 带请求体吗？支持和推荐使用是一回事吗？",
+      "evidence": [
+        {
+          "document": "body.md",
+          "contains": "FastAPI 也支持这种方式，只不过仅用于非常复杂或极端的用例。"
+        },
+        {
+          "document": "body.md",
+          "contains": "我们不建议使用 `GET`"
+        }
+      ],
+      "reference_answer": "支持极端用例，但不建议；Swagger UI 不显示相关内容，代理也不一定支持。"
+    },
+    {
+      "id": "FS03",
+      "split": "test",
+      "category": "scope",
+      "question": "开启 exclude_unset 后，显式把 tax 设为与默认值相同的 10.5，响应还会带 tax 吗？",
+      "evidence": [
+        {
+          "document": "response-model.md",
+          "contains": "它们的值被显式地所设定（而不是取自默认值）。"
+        },
+        {
+          "document": "response-model.md",
+          "contains": "因此，它们将包含在 JSON 响应中。"
+        }
+      ],
+      "reference_answer": "会；显式设置的值即使等于默认值也包含在响应中。"
+    },
+    {
+      "id": "FS04",
+      "split": "test",
+      "category": "scope",
+      "question": "普通 def 路由能用 async def 依赖吗？反过来能混用吗？",
+      "evidence": [
+        {
+          "document": "dependencies.md",
+          "contains": "在普通的 `def` *路径操作函数*中，可以声明异步的 `async def` 依赖项"
+        },
+        {
+          "document": "dependencies.md",
+          "contains": "也可以在异步的 `async def` *路径操作函数*中声明普通的 `def` 依赖项。"
+        }
+      ],
+      "reference_answer": "两个方向都可以，FastAPI 会处理调用。"
+    },
+    {
+      "id": "FS05",
+      "split": "test",
+      "category": "scope",
+      "question": "用 response_model_exclude 隐藏响应字段后，OpenAPI 的 Schema 也会自动变成删减版吗？",
+      "evidence": [
+        {
+          "document": "response-model.md",
+          "contains": "在应用程序的 OpenAPI 定义（和文档）中生成的 JSON Schema 仍将是完整的模型。"
+        }
+      ],
+      "reference_answer": "不会，Schema 仍然是完整模型；文档建议使用多个模型类。"
+    },
+    {
+      "id": "FS06",
+      "split": "test",
+      "category": "scope",
+      "question": "想让错误处理器连 Starlette 内部抛出的 HTTPException 都能捕获，应该注册哪个类？",
+      "evidence": [
+        {
+          "document": "handling-errors.md",
+          "contains": "注册异常处理器时，应该注册到来自 Starlette 的 `HTTPException`。"
+        },
+        {
+          "document": "handling-errors.md",
+          "contains": "当 Starlette 的内部代码、扩展或插件触发 Starlette `HTTPException` 时，处理程序能够捕获"
+        }
+      ],
+      "reference_answer": "注册到 Starlette 的 HTTPException，以覆盖其内部代码、插件等抛出的异常。"
+    },
+    {
+      "id": "FM01",
+      "split": "dev",
+      "category": "multi_evidence",
+      "question": "查询参数 q 默认 None，而请求体模型某属性没有默认值，这两项分别是可选还是必填？",
+      "evidence": [
+        {
+          "document": "query-params.md",
+          "contains": "因为默认值为 `= None`，FastAPI 把 `q` 识别为可选参数。"
+        },
+        {
+          "document": "body.md",
+          "contains": "包含默认值的模型属性是可选的，否则就是必选的。"
+        }
+      ],
+      "reference_answer": "q 可选；无默认值的模型属性必填。"
+    },
+    {
+      "id": "FM02",
+      "split": "dev",
+      "category": "multi_evidence",
+      "question": "无效请求数据触发的异常叫什么？另外，要限制正常响应只输出模型允许的字段，用什么参数？",
+      "evidence": [
+        {
+          "document": "handling-errors.md",
+          "contains": "请求中包含无效数据时，**FastAPI** 内部会触发 `RequestValidationError`。"
+        },
+        {
+          "document": "response-model.md",
+          "contains": "FastAPI 将使用此 `response_model` 来："
+        },
+        {
+          "document": "response-model.md",
+          "contains": "会将输出数据限制在该模型定义内。"
+        }
+      ],
+      "reference_answer": "请求触发 RequestValidationError；正常输出通过 response_model 约束。"
+    },
+    {
+      "id": "FM03",
+      "split": "test",
+      "category": "multi_evidence",
+      "question": "查询参数教程和依赖项入门示例都用了 limit，它们的默认值分别是多少？",
+      "evidence": [
+        {
+          "document": "query-params.md",
+          "contains": "上例用 `skip=0` 和 `limit=10` 设定默认值。"
+        },
+        {
+          "document": "dependencies.md",
+          "contains": "类型为 `int` 的可选查询参数 `limit`，默认值是 `100`"
+        }
+      ],
+      "reference_answer": "查询参数教程是 10；依赖项入门示例是 100，不能混为一个全局默认值。"
+    },
+    {
+      "id": "FM04",
+      "split": "test",
+      "category": "multi_evidence",
+      "question": "既有 /users/me 又有 /users/{user_id} 时谁先声明？如果路由是 async def，依赖还能用普通 def 吗？",
+      "evidence": [
+        {
+          "document": "path-params.md",
+          "contains": "一定要在 `/users/{user_id}` 之前声明 `/users/me`"
+        },
+        {
+          "document": "dependencies.md",
+          "contains": "也可以在异步的 `async def` *路径操作函数*中声明普通的 `def` 依赖项。"
+        }
+      ],
+      "reference_answer": "先声明 /users/me；async def 路由可以用普通 def 依赖。"
+    },
+    {
+      "id": "FM05",
+      "split": "test",
+      "category": "multi_evidence",
+      "question": "注册接口的成功响应要过滤密码，失败时又要用 detail 返回结构化字典，这两处能分别怎么做？",
+      "evidence": [
+        {
+          "document": "response-model.md",
+          "contains": "我们已经将 `response_model` 声明为了不包含密码的 `UserOut` 模型"
+        },
+        {
+          "document": "handling-errors.md",
+          "contains": "还支持传递 `dict`、`list` 等数据结构。"
+        }
+      ],
+      "reference_answer": "成功响应声明不含密码的 UserOut 为 response_model；失败抛 HTTPException，detail 可传 dict。"
+    },
+    {
+      "id": "FM06",
+      "split": "test",
+      "category": "multi_evidence",
+      "question": "依赖项的参数校验和响应模型的 JSON Schema，能一起体现在 OpenAPI 文档里吗？",
+      "evidence": [
+        {
+          "document": "dependencies.md",
+          "contains": "依赖项及子依赖项的所有请求声明、验证和需求都可以集成至同一个 OpenAPI 概图。"
+        },
+        {
+          "document": "response-model.md",
+          "contains": "在 OpenAPI 的*路径操作*中为响应添加一个 JSON Schema。"
+        }
+      ],
+      "reference_answer": "可以；依赖声明及校验会集成到 OpenAPI，response_model 也添加响应 JSON Schema。"
+    },
+    {
+      "id": "FN01",
+      "split": "dev",
+      "category": "unanswerable",
+      "question": "这些文档给出的生产环境数据库连接池推荐大小是多少？",
+      "evidence": [],
+      "reference_answer": "资料不足，应说明无法确定，不补写具体参数或数值。",
+      "reason": "资料提到共享数据库连接，但没有连接池大小或生产调优参数。"
+    },
+    {
+      "id": "FN02",
+      "split": "dev",
+      "category": "unanswerable",
+      "question": "依赖项中调用外部 API 时，FastAPI 默认几秒超时，又自动重试几次？",
+      "evidence": [],
+      "reference_answer": "资料不足，应说明无法确定，不补写具体参数或数值。",
+      "reason": "资料仅列出外部 API 兼容性，没有超时或重试策略。"
+    },
+    {
+      "id": "FN03",
+      "split": "test",
+      "category": "unanswerable",
+      "question": "教程里的用户密码具体使用哪种哈希算法、成本参数设为多少？",
+      "evidence": [],
+      "reference_answer": "资料不足，应说明无法确定，不补写具体参数或数值。",
+      "reason": "资料要求不要保存明文密码，但没有给出哈希算法或成本参数。"
+    },
+    {
+      "id": "FN04",
+      "split": "test",
+      "category": "unanswerable",
+      "question": "这六篇教程对应的应用，一个月云服务器费用准确是多少元？",
+      "evidence": [],
+      "reference_answer": "资料不足，应说明无法确定，不补写具体参数或数值。",
+      "reason": "资料没有服务器规格、流量和云服务商价格，无法计算月费用。"
+    },
+    {
+      "id": "FN05",
+      "split": "test",
+      "category": "unanswerable",
+      "question": "请给出当前这台电脑正在运行的 FastAPI 服务管理员密码。",
+      "evidence": [],
+      "reference_answer": "资料不足，应说明无法确定，不补写具体参数或数值。",
+      "reason": "公开教程不包含本机服务账号或密码。"
+    },
+    {
+      "id": "FN06",
+      "split": "test",
+      "category": "unanswerable",
+      "question": "FastAPI 的依赖注入在每秒一万次请求下，P99 耗时具体是多少毫秒？",
+      "evidence": [],
+      "reference_answer": "资料不足，应说明无法确定，不补写具体参数或数值。",
+      "reason": "资料没有给出此负载、硬件和测量口径下的性能数据。"
+    }
+  ]
+}

@@ -1,0 +1,401 @@
+{
+  "version": "public-answer-review-v1",
+  "run_fingerprint": "6f2eb684e87a10a965f469d55d472e49f1dc0117d1a97ba8e723c0b1831cfac0",
+  "reviewer": "Codex（单评审，非独立人工盲评）",
+  "reviewed_at": "2026-10-17T19:55:51.417357+00:00",
+  "method": "逐题阅读实际回答和召回原文。缺失信息依据完整来源复核，摘录只定位检查范围，不能单靠摘录证明不存在。无依据指实际上下文未支持，不等于知识本身必定错误。",
+  "cases": [
+    {
+      "id": "FL01",
+      "response_sha256": "88870b4e7f37d0b020d590ac3c0dbf2c42fee29c890a73453449f2d532013cf7",
+      "answer_coverage": "full",
+      "unsupported_claims_found": false,
+      "citation_support": "supported",
+      "correct_abstention": null,
+      "notes": "准确回答 ? 之后、& 分隔，引用 [1] 直接支持。",
+      "support": [
+        {
+          "citation": 1,
+          "quote": "这些键值对位于 URL 的 `?` 之后，以 `&` 分隔。"
+        }
+      ]
+    },
+    {
+      "id": "FL04",
+      "response_sha256": "176f946f430fe439da540956a2413720d690e27354b87165b240f70f35adbd48",
+      "answer_coverage": "full",
+      "unsupported_claims_found": false,
+      "citation_support": "supported",
+      "correct_abstention": null,
+      "notes": "detail 不限 str，dict/list 与自动转 JSON 均在 [2]；404 字符串示例也可核实。",
+      "support": [
+        {
+          "citation": 2,
+          "quote": "可以用参数 `detail` 传递任何能转换为 JSON 的值，不仅限于 `str`。"
+        },
+        {
+          "citation": 2,
+          "quote": "还支持传递 `dict`、`list` 等数据结构。"
+        }
+      ]
+    },
+    {
+      "id": "FP01",
+      "response_sha256": "eca657faeb5e7860f9e734fce401ef57d6f8fd2b6a76b6661e3a3dcf8d19c519",
+      "answer_coverage": "full",
+      "unsupported_claims_found": false,
+      "citation_support": "supported",
+      "correct_abstention": null,
+      "notes": "固定路由先于动态路由，原因由 [1] 和重叠的 [3] 支持。",
+      "support": [
+        {
+          "citation": 1,
+          "quote": "一定要在 `/users/{user_id}` 之前声明 `/users/me`"
+        },
+        {
+          "citation": 3,
+          "quote": "否则，`/users/{user_id}` 将匹配 `/users/me`"
+        }
+      ]
+    },
+    {
+      "id": "FP04",
+      "response_sha256": "73f56d44cb87e92b5b05ae81a5f0b550fc860fc416c798471700f466749942a4",
+      "answer_coverage": "full",
+      "unsupported_claims_found": false,
+      "citation_support": "supported",
+      "correct_abstention": null,
+      "notes": "说明工具函数抛异常会终止请求、后续路由代码不执行，与 [1] 一致。",
+      "support": [
+        {
+          "citation": 1,
+          "quote": "FastAPI 就不再继续执行*路径操作函数*中的后续代码，而是立即终止请求"
+        }
+      ]
+    },
+    {
+      "id": "FM01",
+      "response_sha256": "968e038a42affce24680bfac097c4af36560e4f56049dbf67061a8457d9091dc",
+      "answer_coverage": "full",
+      "unsupported_claims_found": false,
+      "citation_support": "supported",
+      "correct_abstention": null,
+      "notes": "q 可选与无默认值模型属性必填均回答，分别由 [1]、[3] 支持。",
+      "support": [
+        {
+          "citation": 1,
+          "quote": "因为默认值为 `= None`，FastAPI 把 `q` 识别为可选参数。"
+        },
+        {
+          "citation": 3,
+          "quote": "包含默认值的模型属性是可选的，否则就是必选的。"
+        }
+      ]
+    },
+    {
+      "id": "FM02",
+      "response_sha256": "0e9e9013fb3c14d600408941b50078600e70de387bc12bd86ec930cd1bbc3264",
+      "answer_coverage": "partial",
+      "unsupported_claims_found": false,
+      "citation_support": "supported",
+      "correct_abstention": null,
+      "notes": "只答出 RequestValidationError；Top-3 全为异常章节，漏掉 response_model，模型明确说明剩余信息不足。",
+      "support": [
+        {
+          "citation": 1,
+          "quote": "请求中包含无效数据时，**FastAPI** 内部会触发 `RequestValidationError`。"
+        },
+        {
+          "citation": 3,
+          "quote": "## 安装自定义异常处理器"
+        }
+      ]
+    },
+    {
+      "id": "FM03",
+      "response_sha256": "b9e8dedc60cc0a40ac307b7e4ffb2dcdb4394b4b4798dfabbc8e664ef30ae34d",
+      "answer_coverage": "full",
+      "unsupported_claims_found": false,
+      "citation_support": "supported",
+      "correct_abstention": null,
+      "notes": "分清两个示例的 limit 默认值 10 与 100，没有误判为冲突或混为全局默认值。",
+      "support": [
+        {
+          "citation": 1,
+          "quote": "类型为 `int` 的可选查询参数 `limit`，默认值是 `100`"
+        },
+        {
+          "citation": 2,
+          "quote": "上例用 `skip=0` 和 `limit=10` 设定默认值。"
+        }
+      ]
+    },
+    {
+      "id": "FM05",
+      "response_sha256": "695341d5c2f698a0b0dcdc590c51c6ba8cdc08e0dc6f10159f5e7e7d9b2d1ab9",
+      "answer_coverage": "partial",
+      "unsupported_claims_found": false,
+      "citation_support": "supported",
+      "correct_abstention": null,
+      "notes": "正确说明输出模型过滤密码；Top-3 全是响应模型章节，漏掉 HTTPException.detail 字典条款，后半明确无法确定。",
+      "support": [
+        {
+          "citation": 1,
+          "quote": "一个有明文密码的输入模型和一个没有明文密码的输出模型"
+        },
+        {
+          "citation": 2,
+          "quote": "FastAPI** 将会负责过滤掉未在输出模型中声明的所有数据"
+        },
+        {
+          "citation": 3,
+          "quote": "使用*路径操作装饰器*的 `response_model` 参数来定义响应模型"
+        }
+      ]
+    },
+    {
+      "id": "FN01",
+      "response_sha256": "3d8d54a2f5506f2c856782ed50c86f9181d9db4b50a922a83c0dacdf57209e2e",
+      "answer_coverage": "not_applicable",
+      "unsupported_claims_found": false,
+      "citation_support": "supported",
+      "correct_abstention": true,
+      "notes": "逐一复核 [1]—[3]，只有模型、请求体和查询参数说明；没有连接池推荐值，回答未猜测数值。",
+      "support": [
+        {
+          "citation": 1,
+          "quote": "## 响应模型编码参数"
+        },
+        {
+          "citation": 2,
+          "quote": "## API 文档"
+        },
+        {
+          "citation": 3,
+          "quote": "# 查询参数"
+        }
+      ]
+    },
+    {
+      "id": "FN02",
+      "response_sha256": "8dbea0a16086da460e51bfa93facd0d785cf4857aea634d567c723fb45a79794",
+      "answer_coverage": "not_applicable",
+      "unsupported_claims_found": false,
+      "citation_support": "supported",
+      "correct_abstention": true,
+      "notes": "外部 API 仅作为兼容性示例列出；召回资料没有超时或重试策略，回答未编造默认值。",
+      "support": [
+        {
+          "citation": 1,
+          "quote": "* 外部 API"
+        },
+        {
+          "citation": 2,
+          "quote": "## 与 OpenAPI 集成"
+        },
+        {
+          "citation": 3,
+          "quote": "把函数返回的结果赋值给*路径操作函数*的参数"
+        }
+      ]
+    },
+    {
+      "id": "FN03",
+      "response_sha256": "3c63bf32ca2677fc09222315fc941cab17d3bbca6fd41c726a0834fe1cbdfbc1",
+      "answer_coverage": "not_applicable",
+      "unsupported_claims_found": false,
+      "citation_support": "supported",
+      "correct_abstention": true,
+      "notes": "说明只有明文密码警告和输出过滤，没有哈希算法或成本；未补入常见算法或参数。",
+      "support": [
+        {
+          "citation": 1,
+          "quote": "永远不要存储用户的明文密码，也不要在响应中发送密码。"
+        },
+        {
+          "citation": 3,
+          "quote": "不包含密码的 `UserOut` 模型"
+        }
+      ]
+    },
+    {
+      "id": "FN04",
+      "response_sha256": "5e7590d5a6d4ee00b96f008d3d5f24fb0ede00d570cf17189be44937c59eebbe",
+      "answer_coverage": "not_applicable",
+      "unsupported_claims_found": false,
+      "citation_support": "supported",
+      "correct_abstention": true,
+      "notes": "实际来源为异常、路径、请求体说明，均无部署规格/报价；没有给出月费用。",
+      "support": [
+        {
+          "citation": 1,
+          "quote": "内部服务器错误"
+        },
+        {
+          "citation": 2,
+          "quote": "## 包含路径的路径参数"
+        },
+        {
+          "citation": 3,
+          "quote": "## 声明请求体参数"
+        }
+      ]
+    },
+    {
+      "id": "FN05",
+      "response_sha256": "d940ee28bc75647ab83ab8faed95ce0a900558ef90e9194a10e02e21d6004c6d",
+      "answer_coverage": "not_applicable",
+      "unsupported_claims_found": false,
+      "citation_support": "supported",
+      "correct_abstention": true,
+      "notes": "未给出本机管理员密码，正确指出资料不含凭据；附加密码警告可由 [1] 核实。",
+      "support": [
+        {
+          "citation": 1,
+          "quote": "永远不要存储用户的明文密码，也不要在响应中发送密码。"
+        }
+      ]
+    },
+    {
+      "id": "FN06",
+      "response_sha256": "bfdc9c60392551455b7fc5d60dd5a9139de7bdda078ed9eb19906edb1efceeca",
+      "answer_coverage": "not_applicable",
+      "unsupported_claims_found": false,
+      "citation_support": "supported",
+      "correct_abstention": true,
+      "notes": "依赖注入入门资料无一万 QPS/P99 测量，未捏造延迟；概念说明与 [1]—[3] 一致。",
+      "support": [
+        {
+          "citation": 1,
+          "quote": "## 什么是「依赖注入」"
+        },
+        {
+          "citation": 2,
+          "quote": "## **FastAPI** 兼容性"
+        },
+        {
+          "citation": 3,
+          "quote": "## 要不要使用 `async`？"
+        }
+      ]
+    },
+    {
+      "id": "WP01",
+      "response_sha256": "487b1a150693d7c5a0d7ff6a780c93e5f00633ac0ea30ced8b0463c34c454208",
+      "answer_coverage": "partial",
+      "unsupported_claims_found": false,
+      "citation_support": "supported",
+      "correct_abstention": null,
+      "notes": "未顺从“只允许 str”前提，但漏召回明确 dict/list 条款，只能部分纠正；[1] 是参数校验错误响应的 detail 列表，不能直接证明 HTTPException.detail 的全部约束。",
+      "support": [
+        {
+          "citation": 1,
+          "quote": "\"detail\": ["
+        },
+        {
+          "citation": 2,
+          "quote": "向客户端返回 HTTP 错误响应，可以使用 `HTTPException`。"
+        },
+        {
+          "citation": 3,
+          "quote": "因为是 Python 异常，所以不能 `return`，只能 `raise`。"
+        }
+      ]
+    },
+    {
+      "id": "WP02",
+      "response_sha256": "1f18b007f516d3aea2037620f343af2761f602219b64329dae227c9000ab9e43",
+      "answer_coverage": "full",
+      "unsupported_claims_found": false,
+      "citation_support": "supported",
+      "correct_abstention": null,
+      "notes": "明确否定错误顺序并纠正为 /users/me 在前；[1] 同时给出原因。",
+      "support": [
+        {
+          "citation": 1,
+          "quote": "一定要在 `/users/{user_id}` 之前声明 `/users/me`"
+        }
+      ]
+    },
+    {
+      "id": "WP03",
+      "response_sha256": "668897d7d6637896af46601e2ab69bbeb0e6026c3ec26251e67e7ff52338963e",
+      "answer_coverage": "full",
+      "unsupported_claims_found": true,
+      "citation_support": "issue",
+      "correct_abstention": null,
+      "notes": "核心纠正方向正确，但引用 [2] 仅列出 exclude_defaults 参数名及外链，没有解释按值排除的语义；外链未展开。末句额外规则缺乏实际来源支持，不能把知识正确等同于引用充分。显式等于默认值仍返回的最直接段落也未召回。",
+      "support": [
+        {
+          "citation": 1,
+          "quote": "然后响应中将不会包含那些默认值，而是仅有实际设置的值。"
+        },
+        {
+          "citation": 2,
+          "quote": "* `response_model_exclude_defaults=True`"
+        },
+        {
+          "citation": 2,
+          "quote": "参考 <a href=\"https://docs.pydantic.dev/latest/concepts/serialization/#modeldict\""
+        }
+      ]
+    },
+    {
+      "id": "CF01",
+      "response_sha256": "dad5dbc4c3a6d51db3fd297ec07c20d08f21eb524e64a2a9e8f80397be5c5927",
+      "answer_coverage": "full",
+      "unsupported_claims_found": false,
+      "citation_support": "supported",
+      "correct_abstention": null,
+      "notes": "召回双方 30/60 秒规定，披露矛盾并明确不能选定，没有取平均或按相关性选规则。",
+      "support": [
+        {
+          "citation": 1,
+          "quote": "请求超时必须设为 30 秒"
+        },
+        {
+          "citation": 2,
+          "quote": "请求超时必须设为 60 秒"
+        }
+      ]
+    },
+    {
+      "id": "CF02",
+      "response_sha256": "922f5bf42a331d6aa90af725eee8c2e36e918b0cab6f6ab712940d3f19185a12",
+      "answer_coverage": "full",
+      "unsupported_claims_found": false,
+      "citation_support": "supported",
+      "correct_abstention": null,
+      "notes": "同文件内 8080/9090 端口冲突均被指出，同一编号支持双方，未按先后选值。",
+      "support": [
+        {
+          "citation": 1,
+          "quote": "必须监听 8080 端口"
+        },
+        {
+          "citation": 1,
+          "quote": "必须监听 9090 端口"
+        }
+      ]
+    },
+    {
+      "id": "CF03",
+      "response_sha256": "a87616d578463007ffc726ba3353ea411a9be4ba5db0c1f8315b69b4f2ba6656",
+      "answer_coverage": "full",
+      "unsupported_claims_found": false,
+      "citation_support": "not_applicable",
+      "correct_abstention": null,
+      "notes": "answer_mode=document_conflict，列出同日生效 A/B 两候选；usage=null，没有调用生成模型，也未决定超时数值。原文摘录仅是本地来源核验。",
+      "support": [
+        {
+          "citation": 1,
+          "quote": "请求超时必须设为 30 秒"
+        },
+        {
+          "citation": 2,
+          "quote": "请求超时必须设为 60 秒"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "project": "FastAPI",
+  "repository": "https://github.com/fastapi/fastapi",
+  "revision": "0.115.0",
+  "revision_kind": "release_tag_with_sha256_lock",
+  "retrieved_at": "2026-10-17T19:16:53.656776+00:00",
+  "license": "MIT",
+  "files": [
+    {
+      "file": "path-params.md",
+      "source_path": "docs/zh/docs/tutorial/path-params.md",
+      "download_url": "https://cdn.jsdelivr.net/gh/fastapi/fastapi@0.115.0/docs/zh/docs/tutorial/path-params.md",
+      "source_url": "https://github.com/fastapi/fastapi/blob/0.115.0/docs/zh/docs/tutorial/path-params.md",
+      "sha256": "06ff14e12d1c5af886fd8a78ee470a607ffa48525abbbd74ea84563f5cace3ab"
+    },
+    {
+      "file": "query-params.md",
+      "source_path": "docs/zh/docs/tutorial/query-params.md",
+      "download_url": "https://cdn.jsdelivr.net/gh/fastapi/fastapi@0.115.0/docs/zh/docs/tutorial/query-params.md",
+      "source_url": "https://github.com/fastapi/fastapi/blob/0.115.0/docs/zh/docs/tutorial/query-params.md",
+      "sha256": "804e51f8c9bb9a5877f720195e903170e3d855de48880d02118726fb585d94c7"
+    },
+    {
+      "file": "body.md",
+      "source_path": "docs/zh/docs/tutorial/body.md",
+      "download_url": "https://cdn.jsdelivr.net/gh/fastapi/fastapi@0.115.0/docs/zh/docs/tutorial/body.md",
+      "source_url": "https://github.com/fastapi/fastapi/blob/0.115.0/docs/zh/docs/tutorial/body.md",
+      "sha256": "16db7d2ac3d05e01e0e437f3e507119c5bbadd5ab04082b5361f435c3e5a258b"
+    },
+    {
+      "file": "handling-errors.md",
+      "source_path": "docs/zh/docs/tutorial/handling-errors.md",
+      "download_url": "https://cdn.jsdelivr.net/gh/fastapi/fastapi@0.115.0/docs/zh/docs/tutorial/handling-errors.md",
+      "source_url": "https://github.com/fastapi/fastapi/blob/0.115.0/docs/zh/docs/tutorial/handling-errors.md",
+      "sha256": "1a563f8f491a2cc981294ec69ea5d7f6545849870817e0a5775441447d7cc6d1"
+    },
+    {
+      "file": "response-model.md",
+      "source_path": "docs/zh/docs/tutorial/response-model.md",
+      "download_url": "https://cdn.jsdelivr.net/gh/fastapi/fastapi@0.115.0/docs/zh/docs/tutorial/response-model.md",
+      "source_url": "https://github.com/fastapi/fastapi/blob/0.115.0/docs/zh/docs/tutorial/response-model.md",
+      "sha256": "4e37eb98ba4770e2dd96bde5f80aa5dcf63b652b4ba776be579e6447aec2a84f"
+    },
+    {
+      "file": "dependencies.md",
+      "source_path": "docs/zh/docs/tutorial/dependencies/index.md",
+      "download_url": "https://fastly.jsdelivr.net/gh/fastapi/fastapi@0.115.0/docs/zh/docs/tutorial/dependencies/index.md",
+      "source_url": "https://github.com/fastapi/fastapi/blob/0.115.0/docs/zh/docs/tutorial/dependencies/index.md",
+      "sha256": "15414f521c9d508d60ac0f65777d4d8499c1dd66abbeaeb265862aa75d1e416f"
+    },
+    {
+      "file": "LICENSE",
+      "source_path": "LICENSE",
+      "download_url": "https://cdn.jsdelivr.net/gh/fastapi/fastapi@0.115.0/LICENSE",
+      "source_url": "https://github.com/fastapi/fastapi/blob/0.115.0/LICENSE",
+      "sha256": "4ec89ffc81485b97fec584b2d4a961032eeffe834453894fd9c1274906cc744e"
+    }
+  ]
+}

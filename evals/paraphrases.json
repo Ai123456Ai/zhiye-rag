@@ -1,0 +1,12 @@
+[
+  {"question":"去首都办事，旅馆一晚上最多能报多少钱？","evidence_contains":"每人每晚 500 元"},
+  {"question":"到小城市办业务，酒店费用的限额是什么？","evidence_contains":"每人每晚 350 元"},
+  {"question":"在外地办公一天，吃饭的补贴有多少？","evidence_contains":"每人每天 80 元"},
+  {"question":"回公司以后要在几天内交费用单据？","evidence_contains":"15 个自然日"},
+  {"question":"票据都审完了，钱什么时候到账？","evidence_contains":"5 个工作日"},
+  {"question":"想休带薪假期，应当提前几天向领导提出？","evidence_contains":"提前 3 个工作日"},
+  {"question":"一个月能在家上班几次？","evidence_contains":"最多 4 天远程办公"},
+  {"question":"有人偷了我的登录凭据，应该找谁处理？","evidence_contains":"立即联系信息安全团队"},
+  {"question":"设置登录口令时最少要几个字符？","evidence_contains":"密码至少 12 位"},
+  {"question":"公司发的笔记本坏了该去哪里申请维修？","evidence_contains":"IT 工单系统"}
+]

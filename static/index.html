@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>知页 · 知识库问答</title><link rel="stylesheet" href="/static/style.css"><link rel="stylesheet" href="/static/metadata.css">
+</head>
+<body>
+  <aside>
+    <a class="brand" href="/">知页<span>KNOWLEDGE STUDIO</span></a>
+    <div class="library-heading"><h2>我的知识库</h2><span id="doc-count">0 份</span></div>
+    <details class="upload-metadata">
+      <summary>本次上传的版本信息（可选）</summary>
+      <p class="hint">同一手册的不同版本填写相同“所属手册”。未标注时不自动判断版本关系。</p>
+      <div class="metadata-fields">
+        <label>所属手册<input id="upload-document-key" maxlength="100" placeholder="例如：员工手册"></label>
+        <label>版本标记<input id="upload-version" maxlength="80" placeholder="例如：2026版"></label>
+        <label>生效日期<input id="upload-effective-from" type="date"></label>
+        <label>适用范围<input id="upload-scope" maxlength="100" placeholder="例如：北京分公司"></label>
+        <label>有效状态<select id="upload-status"><option value="active">有效</option><option value="archived">已归档</option></select></label>
+      </div>
+    </details>
+    <label class="upload" id="upload-label">＋ 添加资料<input id="file" type="file" accept=".txt,.md,.pdf" hidden></label>
+    <p class="hint">支持 PDF、Markdown、TXT · 单份 10 MB</p>
+    <button class="sample" id="sample">导入演示员工手册 ↗</button>
+    <div id="documents" class="documents"></div>
+    <div class="sidebar-foot">从资料出发，让答案有据可查。<br><a href="/docs" target="_blank" rel="noopener">API 文档 ↗</a></div>
+  </aside>
+  <main>
+    <header><span>工作空间 / 知识问答</span><span id="status" class="status">正在连接</span></header>
+    <section class="workspace">
+      <div class="eyebrow">YOUR KNOWLEDGE, CONNECTED</div>
+      <h1>让每一个问题，<br>找到资料里的答案<span>。</span></h1>
+      <p class="intro">上传文档，提出问题。一起查看答案，以及它背后的原文。</p>
+      <div class="suggestions">
+        <button data-question="北京出差住宿报销上限是多少？">北京出差住宿报销上限是多少？ ↗</button>
+        <button data-question="如何申请远程办公？">如何申请远程办公？ ↗</button>
+        <button data-question="年假有多少天？">年假有多少天？ ↗</button>
+      </div>
+      <form id="question-form">
+        <div class="settings document-filters">
+          <label>所属手册 <select id="document-filter"><option value="">全部手册</option></select></label>
+          <label>适用范围 <select id="scope-filter"><option value="">全部范围</option></select></label>
+        </div>
+        <label for="question" class="sr-only">输入问题</label>
+        <textarea id="question" maxlength="2000" placeholder="你想了解什么？" rows="3" required></textarea>
+        <div class="composer-foot">
+          <div class="settings"><label>检索 <select id="mode"><option value="bm25">关键词 BM25</option></select></label><label>来源数 <select id="top-k"><option>3</option><option selected>5</option><option>8</option></select></label><label id="rerank-option" hidden title="用本地模型重新比较候选资料，可能增加等待时间"><input id="rerank" type="checkbox" disabled> 重排序</label><label title="分别查找复合问题的各部分，可能增加检索时间"><input id="decompose" type="checkbox"> 问题拆解</label></div>
+          <button id="ask" type="submit">查找答案 ↗</button>
+        </div>
+      </form>
+      <p class="hint" id="mode-note">正在读取运行配置…</p>
+      <p class="hint">默认排除已归档、尚未生效和已被新版替代的资料；版本不明或范围不清时会先提示核实。</p>
+      <div id="notice" role="status" aria-live="polite"></div>
+      <section id="result" hidden>
+        <div class="result-heading"><h2 id="answer-label">回答</h2><span id="metrics"></span></div>
+        <div id="answer"></div>
+        <div id="warnings"></div>
+        <details id="query-plan" hidden><summary>本次分别查找的问题</summary><ol id="subqueries"></ol></details>
+        <div id="conflicts"></div>
+        <h3>参考来源 <span id="source-count"></span></h3>
+        <div id="sources"></div>
+      </section>
+    </section>
+    <footer>知页 / RAG 学习项目<span>引用可追溯，结论请结合原文核对</span></footer>
+  </main>
+  <dialog id="metadata-dialog" aria-labelledby="metadata-title">
+    <form id="metadata-form">
+      <h2 id="metadata-title">编辑版本信息</h2>
+      <p id="metadata-name" class="hint"></p>
+      <div class="metadata-fields">
+        <label>所属手册<input id="edit-document-key" maxlength="100" placeholder="同一手册的各版保持一致"></label>
+        <label>版本标记<input id="edit-version" maxlength="80"></label>
+        <label>生效日期<input id="edit-effective-from" type="date"></label>
+        <label>适用范围<input id="edit-scope" maxlength="100" placeholder="留空表示未标注范围"></label>
+        <label>有效状态<select id="edit-status"><option value="active">有效</option><option value="archived">已归档</option></select></label>
+      </div>
+      <p class="hint">版本标记仅用于展示。日期缺失时不会自行认为它早于或晚于另一版；仅对同一所属手册、同一范围比较日期。</p>
+      <p id="metadata-error" role="status"></p>
+      <div class="dialog-actions"><button id="metadata-cancel" type="button">取消</button><button type="submit">保存</button></div>
+    </form>
+  </dialog>
+  <dialog id="document-dialog" aria-labelledby="document-title">
+    <h2 id="document-title">文档原文</h2><p id="document-meta" class="hint"></p>
+    <div id="document-preview"></div>
+    <div class="dialog-actions"><button id="document-close" type="button">关闭</button></div>
+  </dialog>
+  <script src="/static/app.js" defer></script>
+</body>
+</html>

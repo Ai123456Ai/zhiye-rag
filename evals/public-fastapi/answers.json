@@ -1,0 +1,218 @@
+{
+  "version": "public-answer-v1",
+  "description": "14道既有公开文档题、3道错误前提题，以及3个独立虚构冲突场景。非独立盲测。",
+  "cases": [
+    {
+      "id": "FL01",
+      "benchmark_id": "FL01",
+      "evaluation_group": "normal"
+    },
+    {
+      "id": "FL04",
+      "benchmark_id": "FL04",
+      "evaluation_group": "normal"
+    },
+    {
+      "id": "FP01",
+      "benchmark_id": "FP01",
+      "evaluation_group": "normal"
+    },
+    {
+      "id": "FP04",
+      "benchmark_id": "FP04",
+      "evaluation_group": "normal"
+    },
+    {
+      "id": "FM01",
+      "benchmark_id": "FM01",
+      "evaluation_group": "normal"
+    },
+    {
+      "id": "FM02",
+      "benchmark_id": "FM02",
+      "evaluation_group": "normal"
+    },
+    {
+      "id": "FM03",
+      "benchmark_id": "FM03",
+      "evaluation_group": "normal"
+    },
+    {
+      "id": "FM05",
+      "benchmark_id": "FM05",
+      "evaluation_group": "normal"
+    },
+    {
+      "id": "FN01",
+      "benchmark_id": "FN01",
+      "evaluation_group": "missing"
+    },
+    {
+      "id": "FN02",
+      "benchmark_id": "FN02",
+      "evaluation_group": "missing"
+    },
+    {
+      "id": "FN03",
+      "benchmark_id": "FN03",
+      "evaluation_group": "missing"
+    },
+    {
+      "id": "FN04",
+      "benchmark_id": "FN04",
+      "evaluation_group": "missing"
+    },
+    {
+      "id": "FN05",
+      "benchmark_id": "FN05",
+      "evaluation_group": "missing"
+    },
+    {
+      "id": "FN06",
+      "benchmark_id": "FN06",
+      "evaluation_group": "missing"
+    },
+    {
+      "id": "WP01",
+      "split": "test",
+      "category": "scope",
+      "evaluation_group": "false_premise",
+      "question": "HTTPException 的 detail 只能传 str，因此字典必须先转成字符串，对吗？请依据资料纠正或确认。",
+      "evidence": [
+        {
+          "document": "handling-errors.md",
+          "contains": "可以用参数 `detail` 传递任何能转换为 JSON 的值，不仅限于 `str`。"
+        },
+        {
+          "document": "handling-errors.md",
+          "contains": "还支持传递 `dict`、`list` 等数据结构。"
+        }
+      ],
+      "reference_answer": "应否定错误前提：detail 不限于 str，可直接使用 dict、list 等可转换为 JSON 的值，并给出支持引用。"
+    },
+    {
+      "id": "WP02",
+      "split": "test",
+      "category": "scope",
+      "evaluation_group": "false_premise",
+      "question": "为了让 /users/me 正常访问，应该先声明 /users/{user_id} 再声明 /users/me，对吗？",
+      "evidence": [
+        {
+          "document": "path-params.md",
+          "contains": "一定要在 `/users/{user_id}` 之前声明 `/users/me`"
+        }
+      ],
+      "reference_answer": "应纠正顺序：先声明固定路径 /users/me，再声明 /users/{user_id}。不能顺从错误前提。"
+    },
+    {
+      "id": "WP03",
+      "split": "test",
+      "category": "scope",
+      "evaluation_group": "false_premise",
+      "question": "response_model_exclude_unset=True 会把所有值等于默认值的字段都删掉，即使我显式设置了也会删，对吗？",
+      "evidence": [
+        {
+          "document": "response-model.md",
+          "contains": "它们的值被显式地所设定（而不是取自默认值）。"
+        },
+        {
+          "document": "response-model.md",
+          "contains": "因此，它们将包含在 JSON 响应中。"
+        }
+      ],
+      "reference_answer": "应否定：exclude_unset 排除未显式设定的字段；显式设定且等于默认值的字段仍会返回。需要引用实际来源；证据不足时不能编造。"
+    },
+    {
+      "id": "CF01",
+      "split": "test",
+      "category": "multi_evidence",
+      "evaluation_group": "content_conflict",
+      "question": "星桥项目生产 API 的请求超时应该设为多少秒？两份运维说明针对同一服务、同一环境。",
+      "reference_answer": "明确指出两份资料对同一环境分别规定 30 秒和 60 秒，元信息不足以决定优先级；引用双方并要求核实，不自行选一个值或取平均。",
+      "fixture_documents": [
+        {
+          "name": "虚构运维说明A.md",
+          "text": "# 虚构冲突测试资料 A\n星桥项目生产 API 的请求超时必须设为 30 秒。适用环境为生产环境。此条款针对同一星桥项目服务。"
+        },
+        {
+          "name": "虚构运维说明B.md",
+          "text": "# 虚构冲突测试资料 B\n星桥项目生产 API 的请求超时必须设为 60 秒。适用环境为生产环境。此条款针对同一星桥项目服务。"
+        }
+      ],
+      "evidence": [
+        {
+          "document": "虚构运维说明A.md",
+          "contains": "请求超时必须设为 30 秒"
+        },
+        {
+          "document": "虚构运维说明B.md",
+          "contains": "请求超时必须设为 60 秒"
+        }
+      ]
+    },
+    {
+      "id": "CF02",
+      "split": "test",
+      "category": "scope",
+      "evaluation_group": "content_conflict",
+      "question": "星桥项目生产 API 的监听端口应该使用多少？资料两处描述的服务和环境相同。",
+      "reference_answer": "说明同一文件两处规定互相矛盾：8080 与 9090；引用证据，无法确定唯一端口，要求核实，不能按段落先后自行选定。",
+      "fixture_documents": [
+        {
+          "name": "虚构端口说明.md",
+          "text": "# 虚构冲突测试资料\n部署要求：星桥项目生产 API 必须监听 8080 端口。\n运维要求：同一星桥项目生产 API 必须监听 9090 端口。\n两条适用于同一生产环境、同一个 API 服务，均没有版本和优先级标记。"
+        }
+      ],
+      "evidence": [
+        {
+          "document": "虚构端口说明.md",
+          "contains": "必须监听 8080 端口"
+        },
+        {
+          "document": "虚构端口说明.md",
+          "contains": "必须监听 9090 端口"
+        }
+      ]
+    },
+    {
+      "id": "CF03",
+      "split": "test",
+      "category": "multi_evidence",
+      "evaluation_group": "version_conflict",
+      "question": "星桥项目生产 API 的请求超时应该设为多少秒？",
+      "reference_answer": "应在本地返回 document_conflict，列出同日生效的两个版本并要求核实；不调用生成 API，usage 为 null，不给出最终数值。",
+      "fixture_documents": [
+        {
+          "name": "虚构同日运维版A.md",
+          "text": "# 虚构版本测试 A\n星桥项目生产 API 的请求超时必须设为 30 秒。",
+          "metadata": {
+            "document_key": "星桥生产运维",
+            "version": "A",
+            "effective_from": "2025-01-01",
+            "scope": "生产"
+          }
+        },
+        {
+          "name": "虚构同日运维版B.md",
+          "text": "# 虚构版本测试 B\n星桥项目生产 API 的请求超时必须设为 60 秒。",
+          "metadata": {
+            "document_key": "星桥生产运维",
+            "version": "B",
+            "effective_from": "2025-01-01",
+            "scope": "生产"
+          }
+        }
+      ],
+      "evidence": [
+        {
+          "document": "虚构同日运维版A.md",
+          "contains": "请求超时必须设为 30 秒"
+        },
+        {
+          "document": "虚构同日运维版B.md",
+          "contains": "请求超时必须设为 60 秒"
+        }
+      ]
+    }
+  ]
+}

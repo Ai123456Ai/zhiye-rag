@@ -1,0 +1,5 @@
+# Preserve downloaded upstream bytes for SHA-256 provenance checks on Windows.
+evals/public-fastapi/corpus/*.md -text
+evals/public-fastapi/LICENSE -text
+evals/public-fastapi/sources.json text eol=lf
+evals/public-fastapi/benchmark.json text eol=lf

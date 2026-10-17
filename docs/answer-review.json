@@ -1,0 +1,590 @@
+{
+  "version": "review-v1",
+  "run_fingerprint": "6cb5487bd9f3fdf5bfd5990f5f2c9605e06a9ec5c61f80ada81a5fa70b6ed85a",
+  "reviewer": "Codex逐题对照实际回答和来源的单评审；非独立人工盲评，无额外裁判API调用",
+  "cases": [
+    {
+      "id": "H01",
+      "response_sha256": "a68f92c7e6464749161a113c66d4f102baa512ce3267b9c28a34f515e49c5ba6",
+      "answer_coverage": "full",
+      "unsupported_claims_found": false,
+      "citation_support": "supported",
+      "correct_abstention": null,
+      "notes": "区分员工与客户住宿预算；600元及超预算事前批准均在客户接待来源中。",
+      "support": [
+        {
+          "citation": 1,
+          "document": "01_国内差旅.md",
+          "quote": "住宿上限为每人每晚500元"
+        },
+        {
+          "citation": 3,
+          "document": "03_客户接待.md",
+          "quote": "单间每晚预算不超过600元"
+        },
+        {
+          "citation": 3,
+          "document": "03_客户接待.md",
+          "quote": "超预算须事前说明理由并取得分管负责人批准"
+        }
+      ]
+    },
+    {
+      "id": "H02",
+      "response_sha256": "4facb6bd9762b55e5af1ede6017db3342da5f775bf315cfcde4f2e6861a0dbfb",
+      "answer_coverage": "full",
+      "unsupported_claims_found": false,
+      "citation_support": "supported",
+      "correct_abstention": null,
+      "notes": "正确区分国内80元与海外45美元；补充的交易日汇率在海外制度内。",
+      "support": [
+        {
+          "citation": 1,
+          "document": "02_海外差旅.md",
+          "quote": "海外餐补为每人每天45美元"
+        },
+        {
+          "citation": 1,
+          "document": "02_海外差旅.md",
+          "quote": "交易当日公司财务系统公布的人民币汇率折算"
+        },
+        {
+          "citation": 2,
+          "document": "01_国内差旅.md",
+          "quote": "国内出差餐补为每人每天80元"
+        }
+      ]
+    },
+    {
+      "id": "H03",
+      "response_sha256": "29367f4a8ebff30930149f2089eaf29f1f2cef70ea79abe105cc17b15e007386",
+      "answer_coverage": "full",
+      "unsupported_claims_found": false,
+      "citation_support": "supported",
+      "correct_abstention": null,
+      "notes": "未把转正额度泛化到试用期；特殊情况由主管单独审批有明确原文。",
+      "support": [
+        {
+          "citation": 1,
+          "document": "06_远程办公.md",
+          "quote": "特殊情况由主管单独审批，不自动适用每月4天额度"
+        }
+      ]
+    },
+    {
+      "id": "H04",
+      "response_sha256": "6a619b387056125d491e0e9205afe05c4ab965fcbec4562a94373a3fd5192cfe",
+      "answer_coverage": "full",
+      "unsupported_claims_found": false,
+      "citation_support": "supported",
+      "correct_abstention": null,
+      "notes": "响应与修复、办公设备与线上P1均已区分；优先级调整也有设备制度依据。",
+      "support": [
+        {
+          "citation": 1,
+          "document": "08_设备维修.md",
+          "quote": "4个工作小时内首次响应，首次响应不等于修复完成"
+        },
+        {
+          "citation": 1,
+          "document": "08_设备维修.md",
+          "quote": "紧急故障可标注业务影响，由IT按影响范围调整优先级"
+        },
+        {
+          "citation": 2,
+          "document": "14_故障响应.md",
+          "quote": "单台办公电脑故障按设备维修工单处理，不套用线上P1响应规则"
+        }
+      ]
+    },
+    {
+      "id": "H05",
+      "response_sha256": "05ab9bd9d90f0e3741711be8b72df869677b315c1d0b5d3f69a690adc2f4d594",
+      "answer_coverage": "full",
+      "unsupported_claims_found": false,
+      "citation_support": "supported",
+      "correct_abstention": null,
+      "notes": "恰好5000元边界正确，未错误增加财务审批。",
+      "support": [
+        {
+          "citation": 1,
+          "document": "09_采购审批.md",
+          "quote": "金额恰好5000元仍由部门负责人审批"
+        }
+      ]
+    },
+    {
+      "id": "H06",
+      "response_sha256": "7bff2a07e6c720ba8bf4036db6316b853ef3d392cc4fe95452516537a72fc489",
+      "answer_coverage": "full",
+      "unsupported_claims_found": false,
+      "citation_support": "supported",
+      "correct_abstention": null,
+      "notes": "明确考试费不在该培训制度报销范围，未扩展为所有制度都不能报销。",
+      "support": [
+        {
+          "citation": 1,
+          "document": "16_培训报销.md",
+          "quote": "考试报名费不计入培训额度，也不在本制度报销范围"
+        }
+      ]
+    },
+    {
+      "id": "H07",
+      "response_sha256": "a9ba29f557758ef6b3752ebac061989411edf006d5603e2f1e6d6a556ea937cb",
+      "answer_coverage": "full",
+      "unsupported_claims_found": false,
+      "citation_support": "supported",
+      "correct_abstention": null,
+      "notes": "先自助重置，失败后服务台核验，未把忘记密码当成泄露事件。",
+      "support": [
+        {
+          "citation": 1,
+          "document": "07_账号安全.md",
+          "quote": "忘记密码时使用公司身份门户的自助重置流程"
+        },
+        {
+          "citation": 1,
+          "document": "07_账号安全.md",
+          "quote": "自助身份校验失败时，通过IT服务台核验身份后处理"
+        }
+      ]
+    },
+    {
+      "id": "H08",
+      "response_sha256": "96f0cd9a529622a442af7da347345a37ea0adb123226b3a8f4dfb9609adc611f",
+      "answer_coverage": "full",
+      "unsupported_claims_found": false,
+      "citation_support": "supported",
+      "correct_abstention": null,
+      "notes": "未将备份成功等同可恢复；演练频率、隔离环境和记录项均有依据。",
+      "support": [
+        {
+          "citation": 1,
+          "document": "15_备份恢复.md",
+          "quote": "备份作业显示成功不能代替恢复验证"
+        },
+        {
+          "citation": 1,
+          "document": "15_备份恢复.md",
+          "quote": "每周开展一次备份恢复演练，演练使用隔离环境"
+        },
+        {
+          "citation": 1,
+          "document": "15_备份恢复.md",
+          "quote": "演练需记录抽查对象、恢复步骤和验证结果"
+        }
+      ]
+    },
+    {
+      "id": "M01",
+      "response_sha256": "c44f8c3985ce48087b3abaefcdeccf883cf1defe9dfd65bba2c6c5b289c04cd3",
+      "answer_coverage": "full",
+      "unsupported_claims_found": false,
+      "citation_support": "supported",
+      "correct_abstention": null,
+      "notes": "15与30个自然日分别对应国内与海外，两个来源引用正确。",
+      "support": [
+        {
+          "citation": 2,
+          "document": "01_国内差旅.md",
+          "quote": "返程后15个自然日内"
+        },
+        {
+          "citation": 1,
+          "document": "02_海外差旅.md",
+          "quote": "返程后30个自然日内提交"
+        }
+      ]
+    },
+    {
+      "id": "M02",
+      "response_sha256": "7c3d7c9efb8fae4fa94babdbadc3d00d316d7429c66bae0e4b5cc158e3083cfa",
+      "answer_coverage": "full",
+      "unsupported_claims_found": false,
+      "citation_support": "supported",
+      "correct_abstention": null,
+      "notes": "远程提前1工作日、年假提前3工作日，主管审批也有原文。",
+      "support": [
+        {
+          "citation": 2,
+          "document": "06_远程办公.md",
+          "quote": "需提前1个工作日在考勤系统提交申请，并获得直属主管同意"
+        },
+        {
+          "citation": 1,
+          "document": "05_员工年假.md",
+          "quote": "普通年假申请至少提前3个工作日提交，由直属主管批准"
+        }
+      ]
+    },
+    {
+      "id": "M03",
+      "response_sha256": "e61feb5ef2a4572c0a0f93b6d1b2330d0791dbe117ada83564e391f1e3914ab9",
+      "answer_coverage": "full",
+      "unsupported_claims_found": false,
+      "citation_support": "supported",
+      "correct_abstention": null,
+      "notes": "9000元所需安全和金额审批、先后顺序均正确；额外的材料和禁止拆单条款有来源。",
+      "support": [
+        {
+          "citation": 1,
+          "document": "10_软件采购.md",
+          "quote": "必须先完成信息安全团队评审，再走通用采购的金额审批"
+        },
+        {
+          "citation": 1,
+          "document": "10_软件采购.md",
+          "quote": "9000元的订阅需要部门负责人和财务负责人审批"
+        },
+        {
+          "citation": 1,
+          "document": "10_软件采购.md",
+          "quote": "评审材料包括数据类别、服务部署区域、账号权限、数据删除机制和供应商安全说明"
+        },
+        {
+          "citation": 2,
+          "document": "09_采购审批.md",
+          "quote": "不允许分拆订单降低审批级别"
+        },
+        {
+          "citation": 2,
+          "document": "09_采购审批.md",
+          "quote": "通用采购应先申请、后下单"
+        }
+      ]
+    },
+    {
+      "id": "M04",
+      "response_sha256": "2d444020af401d682e03c84bbdbfb042bbff654b5e1c2ddf01b278611c68cf4f",
+      "answer_coverage": "full",
+      "unsupported_claims_found": false,
+      "citation_support": "supported",
+      "correct_abstention": null,
+      "notes": "多因素认证和至少12位密码分别可在入职、账号安全来源核对。",
+      "support": [
+        {
+          "citation": 2,
+          "document": "12_入职办理.md",
+          "quote": "账号开通时启用多因素认证"
+        },
+        {
+          "citation": 1,
+          "document": "07_账号安全.md",
+          "quote": "至少12位密码"
+        }
+      ]
+    },
+    {
+      "id": "M05",
+      "response_sha256": "7c25c1600c2d65444bded33ad9e9ebc1287457c3337b230da09aae7f64b56b86",
+      "answer_coverage": "full",
+      "unsupported_claims_found": false,
+      "citation_support": "supported",
+      "correct_abstention": null,
+      "notes": "每年3000元和审核后5工作日对应正确；退回重算、节假日排除均有原文。",
+      "support": [
+        {
+          "citation": 1,
+          "document": "16_培训报销.md",
+          "quote": "每人每年报销上限为3000元"
+        },
+        {
+          "citation": 2,
+          "document": "04_费用付款.md",
+          "quote": "财务审核通过后5个工作日内付款"
+        },
+        {
+          "citation": 2,
+          "document": "04_费用付款.md",
+          "quote": "付款时限从补齐材料并重新审核通过之日起计算。节假日不计入工作日"
+        }
+      ]
+    },
+    {
+      "id": "M06",
+      "response_sha256": "3fccefc9d9b4289371e242d7eddca3b7f9d55f92098128eccf8ab8348ee64e06",
+      "answer_coverage": "full",
+      "unsupported_claims_found": false,
+      "citation_support": "supported",
+      "correct_abstention": null,
+      "notes": "普通设备4工作小时与P1十分钟均为首次响应，未夸大为彻底修复承诺。",
+      "support": [
+        {
+          "citation": 2,
+          "document": "08_设备维修.md",
+          "quote": "4个工作小时内首次响应"
+        },
+        {
+          "citation": 1,
+          "document": "14_故障响应.md",
+          "quote": "P1故障要求10分钟内首次响应"
+        }
+      ]
+    },
+    {
+      "id": "M07",
+      "response_sha256": "3c53773597b785595aca0091393f48b924aa497da6681a0b827c38eb3aa6fb64",
+      "answer_coverage": "partial",
+      "unsupported_claims_found": false,
+      "citation_support": "supported",
+      "correct_abstention": null,
+      "notes": "18:00正确；实际上下文缺少数据分级文档，回答未猜测具体级别而说明无法确定。忠实于上下文，但未完整回答知识库可回答的第二问；这是漏召回导致的部分回答。",
+      "support": [
+        {
+          "citation": 1,
+          "document": "13_离职交接.md",
+          "quote": "离职当日18:00停用员工账号"
+        },
+        {
+          "citation": 1,
+          "document": "13_离职交接.md",
+          "quote": "客户资料交接遵守数据分级和最小权限原则。人员离职不改变资料的保密级别"
+        }
+      ]
+    },
+    {
+      "id": "M08",
+      "response_sha256": "9f501154fcfe6bf9cc77d39bd0128968bb23d08e35f4d988fae2f03781758723",
+      "answer_coverage": "full",
+      "unsupported_claims_found": false,
+      "citation_support": "supported",
+      "correct_abstention": null,
+      "notes": "每天02:00全量备份和数据、运维共同批准正确，补充保留30天有依据。",
+      "support": [
+        {
+          "citation": 1,
+          "document": "15_备份恢复.md",
+          "quote": "生产数据库每天02:00执行全量备份，备份保留30天"
+        },
+        {
+          "citation": 1,
+          "document": "15_备份恢复.md",
+          "quote": "生产恢复申请必须经数据负责人和运维负责人共同批准"
+        }
+      ]
+    },
+    {
+      "id": "N01",
+      "response_sha256": "990a7d7565fa226e437328a4931c7989fc17b295ee34f8d5dad5764b2d6179a8",
+      "answer_coverage": "not_applicable",
+      "unsupported_claims_found": false,
+      "citation_support": "supported",
+      "correct_abstention": true,
+      "notes": "明确无法确定年终奖月数，未给猜测数值；引用入职未承诺统一奖金，核对其余来源也未载月数。",
+      "support": [
+        {
+          "citation": 3,
+          "document": "12_入职办理.md",
+          "quote": "也未承诺统一薪资、奖金或转正涨幅"
+        }
+      ]
+    },
+    {
+      "id": "N02",
+      "response_sha256": "0ca13901d8475ee2de395865419ddba31f3c2c8df2d1e7cc43fcec7d194f689b",
+      "answer_coverage": "not_applicable",
+      "unsupported_claims_found": false,
+      "citation_support": "supported",
+      "correct_abstention": true,
+      "notes": "明确婚假天数未提供，没有误用年假天数。",
+      "support": [
+        {
+          "citation": 1,
+          "document": "05_员工年假.md",
+          "quote": "本文件没有规定婚假、产假和陪产假的天数"
+        }
+      ]
+    },
+    {
+      "id": "N03",
+      "response_sha256": "7a5c27498b309bb089edc5925ee38382b5d10502ab6705c8dbc73d5c0a36a749",
+      "answer_coverage": "not_applicable",
+      "unsupported_claims_found": false,
+      "citation_support": "supported",
+      "correct_abstention": true,
+      "notes": "拒绝给出彻底修复小时数，解释4工作小时仅首次响应，不套P1。",
+      "support": [
+        {
+          "citation": 1,
+          "document": "08_设备维修.md",
+          "quote": "首次响应不等于修复完成"
+        },
+        {
+          "citation": 1,
+          "document": "08_设备维修.md",
+          "quote": "本文没有承诺维修完成时限"
+        },
+        {
+          "citation": 2,
+          "document": "14_故障响应.md",
+          "quote": "单台办公电脑故障按设备维修工单处理，不套用线上P1响应规则"
+        }
+      ]
+    },
+    {
+      "id": "N04",
+      "response_sha256": "fe0e5c3d387a181edb8c19427057c7793332a4eb0c37fb17b7f6f93632d7762a",
+      "answer_coverage": "not_applicable",
+      "unsupported_claims_found": false,
+      "citation_support": "supported",
+      "correct_abstention": true,
+      "notes": "没有把P1首次响应10分钟说成RTO；明确RTO未规定。引用位置有句首形式，但支持关系可核对。",
+      "support": [
+        {
+          "citation": 1,
+          "document": "15_备份恢复.md",
+          "quote": "没有承诺RTO或RPO具体数值"
+        },
+        {
+          "citation": 2,
+          "document": "14_故障响应.md",
+          "quote": "首次响应是值班人员确认接手，不是保证10分钟修复"
+        }
+      ]
+    },
+    {
+      "id": "N05",
+      "response_sha256": "174d7af1b04fce49a2ba0ed3afc064f7d82384ac874597271ec4bb23cffd3cfe",
+      "answer_coverage": "not_applicable",
+      "unsupported_claims_found": false,
+      "citation_support": "supported",
+      "correct_abstention": true,
+      "notes": "未编造电话号码；通讯录或门户公告的建议在原文中。",
+      "support": [
+        {
+          "citation": 1,
+          "document": "07_账号安全.md",
+          "quote": "安全团队的电话号码；需要这些信息时查询公司通讯录或最新门户公告"
+        }
+      ]
+    },
+    {
+      "id": "N06",
+      "response_sha256": "f806e14fb6eb47182344bb7036094d74943ecf0dc2d29f8fdde9085322f50bcb",
+      "answer_coverage": "not_applicable",
+      "unsupported_claims_found": false,
+      "citation_support": "supported",
+      "correct_abstention": true,
+      "notes": "未把费用付款时限套在离职工资上，说明日期未规定。",
+      "support": [
+        {
+          "citation": 1,
+          "document": "13_离职交接.md",
+          "quote": "本流程没有规定离职补偿金额、竞业补偿标准或最终工资到账日期"
+        }
+      ]
+    },
+    {
+      "id": "N07",
+      "response_sha256": "46cb0dfe4be71c624c83cafb13d832c5153bc7522b138f114ce3f602e9e4ddc5",
+      "answer_coverage": "not_applicable",
+      "unsupported_claims_found": false,
+      "citation_support": "supported",
+      "correct_abstention": true,
+      "notes": "未给补贴金额，也未断言公司没有补贴；说明当前规则未规定、无法确定。",
+      "support": [
+        {
+          "citation": 1,
+          "document": "06_远程办公.md",
+          "quote": "也没有规定居家电费和网络费补贴"
+        }
+      ]
+    },
+    {
+      "id": "N08",
+      "response_sha256": "7c00deae99a41164e75a4897ebbcb73b73b71ca0350200d91a65b56298b62760",
+      "answer_coverage": "not_applicable",
+      "unsupported_claims_found": false,
+      "citation_support": "supported",
+      "correct_abstention": true,
+      "notes": "未把本机RTX4060当作公司配发配置，未编造品牌与显卡。",
+      "support": [
+        {
+          "citation": 1,
+          "document": "08_设备维修.md",
+          "quote": "也没有提供新员工电脑品牌、显卡型号或硬盘容量"
+        },
+        {
+          "citation": 2,
+          "document": "12_入职办理.md",
+          "quote": "IT发放工作电脑并开通员工账号"
+        }
+      ]
+    },
+    {
+      "id": "N09",
+      "response_sha256": "5d35ce5cc3d952560ce2160cfa668855a77a13c4e5a35082256c6994906fb60f",
+      "answer_coverage": "not_applicable",
+      "unsupported_claims_found": false,
+      "citation_support": "supported",
+      "correct_abstention": true,
+      "notes": "未混用30天与客户资料保存年限；对离职流程未列年限的说法也核对了完整来源，属于对所给资料的缺项描述。",
+      "support": [
+        {
+          "citation": 1,
+          "document": "11_数据分级.md",
+          "quote": "本文没有规定所有机密资料的统一保存年限"
+        },
+        {
+          "citation": 2,
+          "document": "15_备份恢复.md",
+          "quote": "30天是生产备份保留时间，不是所有机密资料的保存年限"
+        }
+      ]
+    },
+    {
+      "id": "N10",
+      "response_sha256": "bd3942fda435852a6a73d0267638405b9c3057c257974eb165c9ce00afe6dd09",
+      "answer_coverage": "not_applicable",
+      "unsupported_claims_found": false,
+      "citation_support": "supported",
+      "correct_abstention": true,
+      "notes": "未把200元餐费或600元酒店限额套给礼品；禁止现金购物卡来自接待制度。",
+      "support": [
+        {
+          "citation": 1,
+          "document": "03_客户接待.md",
+          "quote": "赠送礼品应符合廉洁要求，禁止现金及购物卡"
+        },
+        {
+          "citation": 1,
+          "document": "03_客户接待.md",
+          "quote": "本制度没有规定商务礼品的统一单件金额"
+        }
+      ]
+    },
+    {
+      "id": "N11",
+      "response_sha256": "beec46a02292a7e79495fd377f981d2f1d443596d74c9a2f99e29ac94d2a4913",
+      "answer_coverage": "not_applicable",
+      "unsupported_claims_found": false,
+      "citation_support": "supported",
+      "correct_abstention": true,
+      "notes": "未编造考试奖励金额或套用3000元课程额度。",
+      "support": [
+        {
+          "citation": 1,
+          "document": "16_培训报销.md",
+          "quote": "本制度没有规定考试通过奖励、资格证书补贴"
+        }
+      ]
+    },
+    {
+      "id": "N12",
+      "response_sha256": "d8657a2594ccee50dadee3c82c118b143d38a99cfac83b0d0fd79ce5f805357d",
+      "answer_coverage": "not_applicable",
+      "unsupported_claims_found": false,
+      "citation_support": "supported",
+      "correct_abstention": true,
+      "notes": "没有猜测统一试用期月数，并指出是否统一本身也无法确定。",
+      "support": [
+        {
+          "citation": 1,
+          "document": "12_入职办理.md",
+          "quote": "本流程未规定所有岗位的试用期长度"
+        }
+      ]
+    }
+  ]
+}
